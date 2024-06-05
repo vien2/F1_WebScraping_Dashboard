@@ -1,0 +1,2 @@
+#F1 Web Scraping and Dashboard Project
+La función de este proyecto es el web scraping de datos de F1, utilizando selenium, y, una vez recolectados y tratados, crear un dashboard para la visualización de los mismos.
