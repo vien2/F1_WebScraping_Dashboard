@@ -1,24 +1,32 @@
 from selenium.webdriver.chrome.service import Service as ChromeService
-from webdriver_manager.chrome import ChromeDriverManager
+from selenium.webdriver.chrome.service import Service
+from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.support import expected_conditions as EC
 from selenium import webdriver
 import time
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.common.by import By
-from selenium.common.exceptions import TimeoutException, NoSuchElementException
-import json
+from selenium.common.exceptions import TimeoutException, NoSuchElementException,StaleElementReferenceException
+import csv
 from utils import *
+from bs4 import BeautifulSoup
 
 def init_webdriver():
     try:
-        driver = webdriver.Chrome(service=ChromeService(ChromeDriverManager().install()))
+        chrome_service = Service(r'C:\ChromeDriver\chromedriverwin64\chromedriver.exe')
+        
+        chrome_options = Options()
+        chrome_options.add_argument("--disable-search-engine-choice-screen")
+
+        driver = webdriver.Chrome(service=chrome_service, options=chrome_options)
+        return driver
     except Exception as e:
-        print(f"Error al crear el diver: {e}")
-    return driver
+        print(f"Error al crear el driver: {e}")
+        return None
 
 def aceptar_cookies(driver):
     try:
-        iframe = driver.find_element(By.XPATH, '//iframe[@id="sp_message_iframe_1122886"]')
+        iframe = driver.find_element(By.XPATH, '//iframe[@id="sp_message_iframe_1149950"]')
         driver.switch_to.frame(iframe)
         try:
             wait = WebDriverWait(driver, 20)
@@ -35,46 +43,75 @@ def aceptar_cookies(driver):
 def get_race_result(driver, year, race_name):
     race_result = []
     try:
-        results_table = driver.find_element(By.CLASS_NAME, 'resultsarchive-table')
-        rows = results_table.find_elements(By.TAG_NAME, 'tr')[1:]  # Saltar la cabecera
-        for row in rows:
-            cols = row.find_elements(By.TAG_NAME, 'td')
-            if len(cols) >= 7:  # Asegurarse de que haya suficientes columnas
-                position = cols[1].text
-                number = cols[2].text
-                driver_name = cols[3].text
-                car_name = cols[4].get_attribute('innerText').strip()  # Acceder al texto del elemento
-                laps = cols[5].text
-                time_retired = cols[6].text
-                points = cols[7].text
-                
+        wait = WebDriverWait(driver, 5)
+        # Verificar si el mensaje de resultados no disponibles está presente
+        no_results_messages = driver.find_elements(By.CSS_SELECTOR, 'p.f1-text.f1-text__body')
+        for message in no_results_messages:
+            if message.text.strip() == "Results for this session aren’t available yet.":
                 race_result.append({
                     'year': year,
                     'race': race_name,
-                    'position': position,
-                    'number': number,
-                    'driver': driver_name,
-                    'car': car_name,
-                    'laps': laps,
-                    'time': time_retired,
-                    'points': points
+                    'position': None,
+                    'number': None,
+                    'driver': None,
+                    'car': None,
+                    'laps': None,
+                    'time': None,
+                    'points': None
                 })
+                return race_result
+        else:
+            # Espera explícita para la tabla con la clase especificada
+            results_table = wait.until(EC.presence_of_element_located((By.CSS_SELECTOR, 'table.f1-table.f1-table-with-data.w-full')))
+            
+            rows = results_table.find_elements(By.TAG_NAME, 'tr')[1:]  # Saltar la cabecera
+            for row in rows:
+                cols = row.find_elements(By.TAG_NAME, 'td')
+                if len(cols) >= 7:  # Asegurarse de que haya suficientes columnas
+                    position = cols[0].text
+                    number = cols[1].text
+                    driver_name = cols[2].text
+                    car_html = cols[3].get_attribute("innerHTML")
+                    soup = BeautifulSoup(car_html, 'html.parser')
+                    car_name = soup.get_text().strip()
+                    laps = cols[4].text
+                    time_retired = cols[5].text
+                    points = cols[6].text
+                    
+                    race_result.append({
+                        'year': year,
+                        'race': race_name,
+                        'position': position,
+                        'number': number,
+                        'driver': driver_name,
+                        'car': car_name,
+                        'laps': laps,
+                        'time': time_retired,
+                        'points': points
+                    })
     except Exception as e:
-        print(f"Error al extraer resultados de la carrera: {e}")
+        print(f"Error al extraer resultados de la carrera {race_name}: {e}")
     return race_result
 
 def get_race_urls(driver, year_url):
     driver.get(year_url)
     time.sleep(3)
-    
-    # Obtener URLs de los circuitos, excluyendo "ALL"
+
     race_urls = []
     try:
-        races = driver.find_elements(By.CSS_SELECTOR, '.resultsarchive-filter-item-link.FilterTrigger')
-        for race in races:
-            race_text = race.find_element(By.TAG_NAME, 'span').text.strip().lower()
-            if 'meetingKey' in race.get_attribute('data-name') and 'all' not in race_text:
-                race_urls.append(race.get_attribute('href'))
+        wait = WebDriverWait(driver, 10)
+        # Espera explícita para cualquier li con data-name="races"
+        race_elements = wait.until(EC.presence_of_all_elements_located((By.CSS_SELECTOR, 'li.f1-menu-item[data-name="races"]')))
+
+        for race in race_elements:
+            try:
+                race_text = race.find_element(By.TAG_NAME, 'a').text.strip().lower()
+                if 'all' not in race_text:
+                    race_url = race.find_element(By.TAG_NAME, 'a').get_attribute('href')
+                    race_urls.append(race_url)
+            except Exception as e:
+                print(f"Error al procesar la carrera: {e}")
+
     except Exception as e:
         print(f"Error al extraer URLs de los circuitos: {e}")
     return race_urls
@@ -83,51 +120,100 @@ def get_year_urls(driver):
     base_url = "https://www.formula1.com/en/results.html"
     driver.get(base_url)
     time.sleep(3)
+    aceptar_cookies(driver)
     year_urls = []
+
     try:
-        years = driver.find_elements(By.CSS_SELECTOR, '.resultsarchive-filter-item-link.FilterTrigger')
-        for year in years:
-            data_value = year.get_attribute('data-value')
-            if is_number(data_value):
-                year_value = int(data_value)
-                if 'races.html' in year.get_attribute('href') and 1950 <= year_value <= 2023:
-                    year_urls.append(year.get_attribute('href'))
+        # Espera explícita para el ul con la clase especificada
+        wait = WebDriverWait(driver, 10)
+        years_ul = wait.until(EC.presence_of_element_located((By.CSS_SELECTOR, 'ul.f1-menu-wrapper.flex.flex-col.gap-micro.f1-filters-wrapper.max-h-\\[7\\.5em\\].max-laptop\\:bg-brand-offWhite.overflow-y-auto.p-normal.relative')))
+
+        # Captura inicial de los elementos
+        years = years_ul.find_elements(By.CSS_SELECTOR, 'li.f1-menu-item[data-name="year"]')
+
+        for i in range(len(years)):
+            retries = 0
+            while retries < 3:  # Limitar a 3 reintentos
+                try:
+                    # Encuentra los elementos año nuevamente para evitar stale references
+                    years_ul = wait.until(EC.presence_of_element_located((By.CSS_SELECTOR, 'ul.f1-menu-wrapper.flex.flex-col.gap-micro.f1-filters-wrapper.max-h-\\[7\\.5em\\].max-laptop\\:bg-brand-offWhite.overflow-y-auto.p-normal.relative')))
+                    years = years_ul.find_elements(By.CSS_SELECTOR, 'li.f1-menu-item[data-name="year"]')
+                    year = years[i]
+                    
+                    # Captura data-value y href individualmente
+                    data_value = year.get_attribute('data-value')
+                    href = year.find_element(By.TAG_NAME, 'a').get_attribute('href')
+                    
+                    if is_number(data_value):
+                        year_value = int(data_value)
+                        if 'races' in href and 2022 <= year_value <= 2023:
+                            year_urls.append(href)
+                    break  # Sal del bucle si se capturan correctamente
+                except StaleElementReferenceException:
+                    print(f"Stale element at index {i}, retrying {retries+1}/3")
+                    retries += 1
+                except Exception as e:
+                    print(f"Error al capturar data-value y href: {e}")
+                    break
+        
     except Exception as e:
         print(f"Error al extraer URLs de los años: {e}")
+
     return year_urls
 
+def save_to_csv(data, filename, fieldnames):
+    try:
+        with open(filename, mode='w', newline='', encoding='utf-8') as file:
+            writer = csv.DictWriter(file, fieldnames=fieldnames)
+            writer.writeheader()
+            writer.writerows(data)
+        print(f"Datos guardados en {filename}")
+    except Exception as e:
+        print(f"Error al guardar en CSV: {e}")
+
 def main():
-    driver = webdriver.Chrome(service=ChromeService(ChromeDriverManager().install()))
-    all_data = {}
-    
+    driver = init_webdriver()
+    if driver is None:
+        return
+
     year_urls = get_year_urls(driver)
+
+    sections = {
+        'race_result': ['year','race','position', 'number', 'driver', 'car', 'laps', 'time', 'points'],
+        'fastest_laps': ['year','race','position', 'number', 'driver', 'car', 'lap', 'time_of_day', 'time', 'avg_speed'],
+        'pit_stop': ['year','race','stops', 'number', 'driver', 'car', 'lap', 'time_of_day', 'time', 'total'],
+        'starting_grid': ['year','race','position', 'number', 'driver', 'car', 'time'],
+        'qualifying': ['year','race','position', 'number', 'driver', 'car', 'q1', 'q2', 'q3', 'laps'],
+        'practice_3': ['year','race','position', 'number', 'driver', 'car', 'time', 'gap', 'laps'],
+        'practice_2': ['year','race','position', 'number', 'driver', 'car', 'time', 'gap', 'laps'],
+        'practice_1': ['year','race','position', 'number', 'driver', 'car', 'time', 'gap', 'laps']
+    }
     
-    for year_url in year_urls:
-        year = year_url.split('/')[-2]
-        print(f"Extrayendo datos del año {year}")
+    with open('./data/raw/f1_race_results.csv', mode='w', newline='', encoding='utf-8') as file:
+        writer = csv.writer(file)
+        writer.writerow(['year', 'race', 'position', 'number', 'driver', 'car', 'laps', 'time', 'points'])
         
-        race_urls = get_race_urls(driver, year_url)
-        race_data = {}
-        
-        for race_url in race_urls:
-            race_name = race_url.split('/')[-2].replace('-', ' ').title()
-            print(f"Extrayendo datos de la carrera: {race_name}")
+        for year_url in year_urls:
+            year = year_url.split('/')[-2]
+            print(f"Extrayendo datos del año {year}")
             
-            driver.get(race_url)
-            time.sleep(3)
+            race_urls = get_race_urls(driver, year_url)
             
-            race_result = get_race_result(driver, year, race_name)
-            print(race_result)
-            race_data[race_name] = {
-                'race_result': race_result
-            }
-        
-        all_data[year] = race_data
+            for race_url in race_urls:
+                race_name = race_url.split('/')[-2].replace('-', ' ').title()
+                print(f"Extrayendo datos de la carrera: {race_name} para el año: {year}")
+                
+                driver.get(race_url)
+                time.sleep(3)
+                
+                race_result = get_race_result(driver, year, race_name)
+                for result in race_result:
+                    writer.writerow([
+                        result['year'], result['race'], result['position'], result['number'],
+                        result['driver'], result['car'], result['laps'], result['time'], result['points']
+                    ])
     
     driver.quit()
-    
-    with open('f1_race_results.json', 'w') as f:
-        json.dump(all_data, f, indent=4)
 
 if __name__ == '__main__':
     main()
