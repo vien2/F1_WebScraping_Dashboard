@@ -146,7 +146,7 @@ def get_year_urls(driver):
                     
                     if is_number(data_value):
                         year_value = int(data_value)
-                        if 'races' in href and 2022 <= year_value <= 2023:
+                        if 'races' in href and 1950 <= year_value <= 2023:
                             year_urls.append(href)
                     break  # Sal del bucle si se capturan correctamente
                 except StaleElementReferenceException:
@@ -160,6 +160,21 @@ def get_year_urls(driver):
         print(f"Error al extraer URLs de los años: {e}")
 
     return year_urls
+
+def get_section_urls(driver, race_url):
+    driver.get(race_url)
+    time.sleep(3)
+    section_urls = {}
+    try:
+        wait = WebDriverWait(driver, 10)
+        section_elements = wait.until(EC.presence_of_all_elements_located((By.CSS_SELECTOR, 'ul.f1-menu-wrapper.flex.flex-col.gap-micro.f1-sidebar-wrapper li a')))
+        for section in section_elements:
+            section_name = section.text.strip().lower().replace(' ', '_')
+            section_url = section.get_attribute('href')
+            section_urls[section_name] = section_url
+    except Exception as e:
+        print(f"Error al extraer URLs de las secciones: {e}")
+    return section_urls
 
 def save_to_csv(data, filename, fieldnames):
     try:
@@ -180,38 +195,64 @@ def main():
 
     sections = {
         'race_result': ['year','race','position', 'number', 'driver', 'car', 'laps', 'time', 'points'],
-        'fastest_laps': ['year','race','position', 'number', 'driver', 'car', 'lap', 'time_of_day', 'time', 'avg_speed'],
-        'pit_stop': ['year','race','stops', 'number', 'driver', 'car', 'lap', 'time_of_day', 'time', 'total'],
-        'starting_grid': ['year','race','position', 'number', 'driver', 'car', 'time'],
-        'qualifying': ['year','race','position', 'number', 'driver', 'car', 'q1', 'q2', 'q3', 'laps'],
-        'practice_3': ['year','race','position', 'number', 'driver', 'car', 'time', 'gap', 'laps'],
-        'practice_2': ['year','race','position', 'number', 'driver', 'car', 'time', 'gap', 'laps'],
-        'practice_1': ['year','race','position', 'number', 'driver', 'car', 'time', 'gap', 'laps']
+        #'fastest_laps': ['year','race','position', 'number', 'driver', 'car', 'lap', 'time_of_day', 'time', 'avg_speed'],
+        #'pit_stop': ['year','race','stops', 'number', 'driver', 'car', 'lap', 'time_of_day', 'time', 'total'],
+        #'starting_grid': ['year','race','position', 'number', 'driver', 'car', 'time'],
+        #'qualifying': ['year','race','position', 'number', 'driver', 'car', 'q1', 'q2', 'q3', 'laps'],
+        #'practice_3': ['year','race','position', 'number', 'driver', 'car', 'time', 'gap', 'laps'],
+        #'practice_2': ['year','race','position', 'number', 'driver', 'car', 'time', 'gap', 'laps'],
+        #'practice_1': ['year','race','position', 'number', 'driver', 'car', 'time', 'gap', 'laps']
     }
+
+    all_data = {section: [] for section in sections}
     
-    with open('./data/raw/f1_race_results.csv', mode='w', newline='', encoding='utf-8') as file:
-        writer = csv.writer(file)
-        writer.writerow(['year', 'race', 'position', 'number', 'driver', 'car', 'laps', 'time', 'points'])
+    #with open('./data/raw/f1_race_results.csv', mode='w', newline='', encoding='utf-8') as file:
+    #    writer = csv.writer(file)
+    #    writer.writerow(['year', 'race', 'position', 'number', 'driver', 'car', 'laps', 'time', 'points'])
+
+    for year_url in year_urls:
+        year = year_url.split('/')[-2]
+        print(f"Extrayendo datos del año {year}")
         
-        for year_url in year_urls:
-            year = year_url.split('/')[-2]
-            print(f"Extrayendo datos del año {year}")
+        race_urls = get_race_urls(driver, year_url)
+
+        for race_url in race_urls:
+            race_name = race_url.split('/')[-2].replace('-', ' ').title()
+            print(f"Extrayendo datos de la carrera: {race_name} para el año: {year}")
+
+            section_urls = get_section_urls(driver, race_url)
+
+            for section_name, columns in sections.items():
+                if section_name in section_urls:
+                    #section_url = section_urls[section_name]
+                    print(f"Extrayendo datos de la sección: {section_name} para la carrera: {race_name} del año {year}")
+                    #aqui va la parte de cada seccion con un if
+                    race_result = get_race_result(driver, year, race_name)
+                    if race_result and all(key in race_result[0] for key in columns):
+                        all_data[section_name].extend(race_result)
+                        #save_to_csv(race_result, f'./data/raw/f1_{section_name}.csv', columns)
+                    #save_to_csv(race_result, f'./data/raw/f1_{section_name}.csv', columns)
+                else:
+                    print(f"No existe la sección {section_name} para la carrera {race_name} del año {year}")
+
+    for section_name, data in all_data.items():
+        if data:
+            save_to_csv(data, f'./data/raw/f1_{section_name}.csv', sections[section_name])
+        #race_urls = get_race_urls(driver, year_url)
+        
+        #for race_url in race_urls:
+        #    race_name = race_url.split('/')[-2].replace('-', ' ').title()
+        #    print(f"Extrayendo datos de la carrera: {race_name} para el año: {year}")
             
-            race_urls = get_race_urls(driver, year_url)
+        #    driver.get(race_url)
+        #    time.sleep(3)
             
-            for race_url in race_urls:
-                race_name = race_url.split('/')[-2].replace('-', ' ').title()
-                print(f"Extrayendo datos de la carrera: {race_name} para el año: {year}")
-                
-                driver.get(race_url)
-                time.sleep(3)
-                
-                race_result = get_race_result(driver, year, race_name)
-                for result in race_result:
-                    writer.writerow([
-                        result['year'], result['race'], result['position'], result['number'],
-                        result['driver'], result['car'], result['laps'], result['time'], result['points']
-                    ])
+        #    race_result = get_race_result(driver, year, race_name)
+        #    for result in race_result:
+        #        writer.writerow([
+        #            result['year'], result['race'], result['position'], result['number'],
+        #           result['driver'], result['car'], result['laps'], result['time'], result['points']
+        #        ])
     
     driver.quit()
 
