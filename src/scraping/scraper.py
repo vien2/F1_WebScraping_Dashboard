@@ -1,4 +1,3 @@
-from selenium.webdriver.chrome.service import Service as ChromeService
 from selenium.webdriver.chrome.service import Service
 from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.support import expected_conditions as EC
@@ -7,7 +6,6 @@ import time
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.common.by import By
 from selenium.common.exceptions import TimeoutException, NoSuchElementException,StaleElementReferenceException
-import csv
 from utils import *
 from bs4 import BeautifulSoup
 
@@ -67,7 +65,7 @@ def get_race_result(driver, year, race_name):
             rows = results_table.find_elements(By.TAG_NAME, 'tr')[1:]  # Saltar la cabecera
             for row in rows:
                 cols = row.find_elements(By.TAG_NAME, 'td')
-                if len(cols) >= 7:  # Asegurarse de que haya suficientes columnas
+                if len(cols) >= 6:  # Asegurarse de que haya suficientes columnas
                     position = cols[0].text
                     number = cols[1].text
                     driver_name = cols[2].text
@@ -92,6 +90,657 @@ def get_race_result(driver, year, race_name):
     except Exception as e:
         print(f"Error al extraer resultados de la carrera {race_name}: {e}")
     return race_result
+
+def get_fastest_laps(driver, year, race_name):
+    fastest_laps = []
+    try:
+        wait = WebDriverWait(driver, 10)
+        # Verificar si el mensaje de resultados no disponibles está presente
+        no_results_messages = driver.find_elements(By.CSS_SELECTOR, 'p.f1-text.f1-text__body')
+        for message in no_results_messages:
+            if message.text.strip() == "Results for this session aren’t available yet.":
+                fastest_laps.append({
+                    'year': year,
+                    'race': race_name,
+                    'position': None,
+                    'number': None,
+                    'driver': None,
+                    'car': None,
+                    'lap': None,
+                    'time_of_day': None,
+                    'time': None,
+                    'avg_speed': None
+                })
+                return fastest_laps
+        
+        # Espera explícita para la tabla con la clase especificada
+        results_table = wait.until(EC.presence_of_element_located((By.CSS_SELECTOR, 'table.f1-table.f1-table-with-data.w-full')))
+        rows = results_table.find_elements(By.TAG_NAME, 'tr')[1:]  # Saltar la cabecera
+        
+        for row in rows:
+            cols = row.find_elements(By.TAG_NAME, 'td')
+            if len(cols) == 7:
+                # Caso con 7 columnas
+                position = cols[0].text
+                number = cols[1].text
+                driver_name = cols[2].text
+                car_html = cols[3].get_attribute("innerHTML")
+                soup = BeautifulSoup(car_html, 'html.parser')
+                car_name = soup.get_text().strip()
+                lap = cols[4].text
+                time = cols[5].text
+                avg_speed = cols[6].text
+
+                fastest_laps.append({
+                    'year': year,
+                    'race': race_name,
+                    'position': position,
+                    'number': number,
+                    'driver': driver_name,
+                    'car': car_name,
+                    'lap': lap,
+                    'time_of_day': None,
+                    'time': time,
+                    'avg_speed': avg_speed
+                })
+            elif len(cols) == 8:
+                # Caso con 8 columnas
+                position = cols[0].text
+                number = cols[1].text
+                driver_name = cols[2].text
+                car_html = cols[3].get_attribute("innerHTML")
+                soup = BeautifulSoup(car_html, 'html.parser')
+                car_name = soup.get_text().strip()
+                lap = cols[4].text
+                time_of_day = cols[5].text
+                time = cols[6].text
+                avg_speed = cols[7].text
+
+                fastest_laps.append({
+                    'year': year,
+                    'race': race_name,
+                    'position': position,
+                    'number': number,
+                    'driver': driver_name,
+                    'car': car_name,
+                    'lap': lap,
+                    'time_of_day': time_of_day,
+                    'time': time,
+                    'avg_speed': avg_speed
+                })
+            elif len(cols) == 6:
+                # Caso con 6 columnas
+                position = cols[0].text
+                number = cols[1].text
+                driver_name = cols[2].text
+                car_html = cols[3].get_attribute("innerHTML")
+                soup = BeautifulSoup(car_html, 'html.parser')
+                car_name = soup.get_text().strip()
+                lap = cols[4].text
+                time = cols[5].text
+
+                fastest_laps.append({
+                    'year': year,
+                    'race': race_name,
+                    'position': position,
+                    'number': number,
+                    'driver': driver_name,
+                    'car': car_name,
+                    'lap': lap,
+                    'time_of_day': None,
+                    'time': time,
+                    'avg_speed': None
+                })
+            else:
+                print(f"Skipping row with unexpected columns count: {len(cols)} columns found")  # Debugging output
+
+    except Exception as e:
+        print(f"Error al extraer resultados de la carrera {race_name}: {e}")
+    return fastest_laps
+
+def get_pit_stop_summary(driver, year, race_name):
+    pit_stop_summary = []
+    try:
+        wait = WebDriverWait(driver, 5)
+        # Verificar si el mensaje de resultados no disponibles está presente
+        no_results_messages = driver.find_elements(By.CSS_SELECTOR, 'p.f1-text.f1-text__body')
+        for message in no_results_messages:
+            if message.text.strip() == "Results for this session aren’t available yet.":
+                pit_stop_summary.append({
+                    'year': year,
+                    'race': race_name,
+                    'stops': None,
+                    'number': None,
+                    'driver': None,
+                    'car': None,
+                    'lap': None,
+                    'time_of_day': None,
+                    'time': None,
+                    'total': None
+                })
+                return pit_stop_summary
+        else:
+            # Espera explícita para la tabla con la clase especificada
+            results_table = wait.until(EC.presence_of_element_located((By.CSS_SELECTOR, 'table.f1-table.f1-table-with-data.w-full')))
+            
+            rows = results_table.find_elements(By.TAG_NAME, 'tr')[1:]  # Saltar la cabecera
+            for row in rows:
+                cols = row.find_elements(By.TAG_NAME, 'td')
+                if len(cols) >= 7:  # Asegurarse de que haya suficientes columnas
+                    stops = cols[0].text
+                    number = cols[1].text
+                    driver_name = cols[2].text
+                    car_html = cols[3].get_attribute("innerHTML")
+                    soup = BeautifulSoup(car_html, 'html.parser')
+                    car_name = soup.get_text().strip()
+                    lap = cols[4].text
+                    time_of_day = cols[5].text
+                    time = cols[6].text
+                    total = cols[7].text
+                  
+                    pit_stop_summary.append({
+                        'year': year,
+                        'race': race_name,
+                        'stops': stops,
+                        'number': number,
+                        'driver': driver_name,
+                        'car': car_name,
+                        'lap': lap,
+                        'time_of_day': time_of_day,
+                        'time': time,
+                        'total': total
+                    })
+    except Exception as e:
+        print(f"Error al extraer resultados de la carrera {race_name}: {e}")
+    return pit_stop_summary
+
+def get_starting_grid(driver, year, race_name):
+    starting_grid = []
+    try:
+        wait = WebDriverWait(driver, 5)
+        # Verificar si el mensaje de resultados no disponibles está presente
+        no_results_messages = driver.find_elements(By.CSS_SELECTOR, 'p.f1-text.f1-text__body')
+        for message in no_results_messages:
+            if message.text.strip() == "Results for this session aren’t available yet.":
+                starting_grid.append({
+                    'year': year,
+                    'race': race_name,
+                    'position': None,
+                    'number': None,
+                    'driver': None,
+                    'car': None,
+                    'time': None
+                })
+                return starting_grid
+        else:
+            # Espera explícita para la tabla con la clase especificada
+            results_table = wait.until(EC.presence_of_element_located((By.CSS_SELECTOR, 'table.f1-table.f1-table-with-data.w-full')))
+            
+            rows = results_table.find_elements(By.TAG_NAME, 'tr')[1:]  # Saltar la cabecera
+            for row in rows:
+                cols = row.find_elements(By.TAG_NAME, 'td')
+                if len(cols) >= 4:  # Asegurarse de que haya suficientes columnas
+                    position = cols[0].text
+                    number = cols[1].text
+                    driver_name = cols[2].text
+                    car_html = cols[3].get_attribute("innerHTML")
+                    soup = BeautifulSoup(car_html, 'html.parser')
+                    car_name = soup.get_text().strip()
+                    time = cols[4].text
+
+                    starting_grid.append({
+                        'year': year,
+                        'race': race_name,
+                        'position': position,
+                        'number': number,
+                        'driver': driver_name,
+                        'car': car_name,
+                        'time': time
+                    })
+    except Exception as e:
+        print(f"Error al extraer resultados de la carrera {race_name}: {e}")
+    return starting_grid
+
+def get_qualifying(driver, year, race_name):
+    qualifying = []
+    try:
+        wait = WebDriverWait(driver, 5)
+        # Verificar si el mensaje de resultados no disponibles está presente
+        no_results_messages = driver.find_elements(By.CSS_SELECTOR, 'p.f1-text.f1-text__body')
+        for message in no_results_messages:
+            if message.text.strip() == "Results for this session aren’t available yet.":
+                qualifying.append({
+                    'year': year,
+                    'race': race_name,
+                    'position': None,
+                    'number': None,
+                    'driver': None,
+                    'car': None,
+                    'q1': None,
+                    'q2': None,
+                    'q3': None,
+                    'laps': None
+                })
+                return qualifying
+        else:
+            # Espera explícita para la tabla con la clase especificada
+            results_table = wait.until(EC.presence_of_element_located((By.CSS_SELECTOR, 'table.f1-table.f1-table-with-data.w-full')))
+            
+            rows = results_table.find_elements(By.TAG_NAME, 'tr')[1:]  # Saltar la cabecera
+            for row in rows:
+                cols = row.find_elements(By.TAG_NAME, 'td')
+                if len(cols) == 8:  # Asegurarse de que haya suficientes columnas
+                    position = cols[0].text
+                    number = cols[1].text
+                    driver_name = cols[2].text
+                    car_html = cols[3].get_attribute("innerHTML")
+                    soup = BeautifulSoup(car_html, 'html.parser')
+                    car_name = soup.get_text().strip()
+                    q1 = cols[4].text
+                    q2 = cols[5].text
+                    q3 = cols[6].text
+                    laps = cols[7].text
+                    
+                    qualifying.append({
+                        'year': year,
+                        'race': race_name,
+                        'position': position,
+                        'number': number,
+                        'driver': driver_name,
+                        'car': car_name,
+                        'q1': q1,
+                        'q2': q2,
+                        'q3': q3,
+                        'time': None,
+                        'laps': laps
+                    })
+                elif len(cols) == 5:
+                    position = cols[0].text
+                    number = cols[1].text
+                    driver_name = cols[2].text
+                    car_html = cols[3].get_attribute("innerHTML")
+                    soup = BeautifulSoup(car_html, 'html.parser')
+                    car_name = soup.get_text().strip()
+                    time = cols[4].text
+                    
+                    qualifying.append({
+                        'year': year,
+                        'race': race_name,
+                        'position': position,
+                        'number': number,
+                        'driver': driver_name,
+                        'car': car_name,
+                        'q1': q1,
+                        'q2': q2,
+                        'q3': q3,
+                        'time': time,
+                        'laps': laps
+                    })
+    except Exception as e:
+        print(f"Error al extraer resultados de la carrera {race_name}: {e}")
+    return qualifying
+
+def get_practice_3(driver, year, race_name):
+    practice_3 = []
+    try:
+        wait = WebDriverWait(driver, 5)
+        # Verificar si el mensaje de resultados no disponibles está presente
+        no_results_messages = driver.find_elements(By.CSS_SELECTOR, 'p.f1-text.f1-text__body')
+        for message in no_results_messages:
+            if message.text.strip() == "Results for this session aren’t available yet.":
+                practice_3.append({
+                    'year': year,
+                    'race': race_name,
+                    'position': None,
+                    'number': None,
+                    'driver': None,
+                    'car': None,
+                    'time': None,
+                    'gap': None,
+                    'laps': None
+                })
+                return practice_3
+        else:
+            # Espera explícita para la tabla con la clase especificada
+            results_table = wait.until(EC.presence_of_element_located((By.CSS_SELECTOR, 'table.f1-table.f1-table-with-data.w-full')))
+            
+            rows = results_table.find_elements(By.TAG_NAME, 'tr')[1:]  # Saltar la cabecera
+            for row in rows:
+                cols = row.find_elements(By.TAG_NAME, 'td')
+                if len(cols) >= 6:  # Asegurarse de que haya suficientes columnas
+                    position = cols[0].text
+                    number = cols[1].text
+                    driver_name = cols[2].text
+                    car_html = cols[3].get_attribute("innerHTML")
+                    soup = BeautifulSoup(car_html, 'html.parser')
+                    car_name = soup.get_text().strip()
+                    time = cols[4].text
+                    gap = cols[5].text
+                    laps = cols[6].text
+                    
+                    practice_3.append({
+                        'year': year,
+                        'race': race_name,
+                        'position': position,
+                        'number': number,
+                        'driver': driver_name,
+                        'car': car_name,
+                        'time': time,
+                        'gap': gap,
+                        'laps': laps
+                    })
+    except Exception as e:
+        print(f"Error al extraer resultados de la carrera {race_name}: {e}")
+    return practice_3
+
+def get_practice_2(driver, year, race_name):
+    practice_2 = []
+    try:
+        wait = WebDriverWait(driver, 5)
+        # Verificar si el mensaje de resultados no disponibles está presente
+        no_results_messages = driver.find_elements(By.CSS_SELECTOR, 'p.f1-text.f1-text__body')
+        for message in no_results_messages:
+            if message.text.strip() == "Results for this session aren’t available yet.":
+                practice_2.append({
+                    'year': year,
+                    'race': race_name,
+                    'position': None,
+                    'number': None,
+                    'driver': None,
+                    'car': None,
+                    'time': None,
+                    'gap': None,
+                    'laps': None
+                })
+                return practice_2
+        else:
+            # Espera explícita para la tabla con la clase especificada
+            results_table = wait.until(EC.presence_of_element_located((By.CSS_SELECTOR, 'table.f1-table.f1-table-with-data.w-full')))
+            
+            rows = results_table.find_elements(By.TAG_NAME, 'tr')[1:]  # Saltar la cabecera
+            for row in rows:
+                cols = row.find_elements(By.TAG_NAME, 'td')
+                if len(cols) >= 6:  # Asegurarse de que haya suficientes columnas
+                    position = cols[0].text
+                    number = cols[1].text
+                    driver_name = cols[2].text
+                    car_html = cols[3].get_attribute("innerHTML")
+                    soup = BeautifulSoup(car_html, 'html.parser')
+                    car_name = soup.get_text().strip()
+                    time = cols[4].text
+                    gap = cols[5].text
+                    laps = cols[6].text
+                    
+                    practice_2.append({
+                        'year': year,
+                        'race': race_name,
+                        'position': position,
+                        'number': number,
+                        'driver': driver_name,
+                        'car': car_name,
+                        'time': time,
+                        'gap': gap,
+                        'laps': laps
+                    })
+    except Exception as e:
+        print(f"Error al extraer resultados de la carrera {race_name}: {e}")
+    return practice_2
+
+def get_practice_1(driver, year, race_name):
+    practice_1 = []
+    try:
+        wait = WebDriverWait(driver, 5)
+        # Verificar si el mensaje de resultados no disponibles está presente
+        no_results_messages = driver.find_elements(By.CSS_SELECTOR, 'p.f1-text.f1-text__body')
+        for message in no_results_messages:
+            if message.text.strip() == "Results for this session aren’t available yet.":
+                practice_1.append({
+                    'year': year,
+                    'race': race_name,
+                    'position': None,
+                    'number': None,
+                    'driver': None,
+                    'car': None,
+                    'time': None,
+                    'gap': None,
+                    'laps': None
+                })
+                return practice_1
+        else:
+            # Espera explícita para la tabla con la clase especificada
+            results_table = wait.until(EC.presence_of_element_located((By.CSS_SELECTOR, 'table.f1-table.f1-table-with-data.w-full')))
+            
+            rows = results_table.find_elements(By.TAG_NAME, 'tr')[1:]  # Saltar la cabecera
+            for row in rows:
+                cols = row.find_elements(By.TAG_NAME, 'td')
+                if len(cols) >= 6:  # Asegurarse de que haya suficientes columnas
+                    position = cols[0].text
+                    number = cols[1].text
+                    driver_name = cols[2].text
+                    car_html = cols[3].get_attribute("innerHTML")
+                    soup = BeautifulSoup(car_html, 'html.parser')
+                    car_name = soup.get_text().strip()
+                    time = cols[4].text
+                    gap = cols[5].text
+                    laps = cols[6].text
+                    
+                    practice_1.append({
+                        'year': year,
+                        'race': race_name,
+                        'position': position,
+                        'number': number,
+                        'driver': driver_name,
+                        'car': car_name,
+                        'time': time,
+                        'gap': gap,
+                        'laps': laps
+                    })
+    except Exception as e:
+        print(f"Error al extraer resultados de la carrera {race_name}: {e}")
+    return practice_1
+
+def get_warm_up(driver, year, race_name):
+    warm_up = []
+    try:
+        wait = WebDriverWait(driver, 5)
+        # Verificar si el mensaje de resultados no disponibles está presente
+        no_results_messages = driver.find_elements(By.CSS_SELECTOR, 'p.f1-text.f1-text__body')
+        for message in no_results_messages:
+            if message.text.strip() == "Results for this session aren’t available yet.":
+                warm_up.append({
+                    'year': year,
+                    'race': race_name,
+                    'position': None,
+                    'number': None,
+                    'driver': None,
+                    'car': None,
+                    'time': None,
+                    'gap': None,
+                    'laps': None
+                })
+                return warm_up
+        else:
+            # Espera explícita para la tabla con la clase especificada
+            results_table = wait.until(EC.presence_of_element_located((By.CSS_SELECTOR, 'table.f1-table.f1-table-with-data.w-full')))
+            
+            rows = results_table.find_elements(By.TAG_NAME, 'tr')[1:]  # Saltar la cabecera
+            for row in rows:
+                cols = row.find_elements(By.TAG_NAME, 'td')
+                if len(cols) == 7:  # Asegurarse de que haya suficientes columnas
+                    position = cols[0].text
+                    number = cols[1].text
+                    driver_name = cols[2].text
+                    car_html = cols[3].get_attribute("innerHTML")
+                    soup = BeautifulSoup(car_html, 'html.parser')
+                    car_name = soup.get_text().strip()
+                    time = cols[4].text
+                    gap = cols[5].text
+                    laps = cols[6].text
+                    
+                    warm_up.append({
+                        'year': year,
+                        'race': race_name,
+                        'position': position,
+                        'number': number,
+                        'driver': driver_name,
+                        'car': car_name,
+                        'time': time,
+                        'gap': gap,
+                        'laps': laps
+                    })
+    except Exception as e:
+        print(f"Error al extraer resultados de la carrera {race_name}: {e}")
+    return warm_up
+
+def get_overall_qualifying(driver, year, race_name):
+    overall_qualifying = []
+    try:
+        wait = WebDriverWait(driver, 5)
+        # Verificar si el mensaje de resultados no disponibles está presente
+        no_results_messages = driver.find_elements(By.CSS_SELECTOR, 'p.f1-text.f1-text__body')
+        for message in no_results_messages:
+            if message.text.strip() == "Results for this session aren’t available yet.":
+                overall_qualifying.append({
+                    'year': year,
+                    'race': race_name,
+                    'position': None,
+                    'number': None,
+                    'driver': None,
+                    'car': None,
+                    'time': None,
+                    'laps': None
+                })
+                return overall_qualifying
+        else:
+            # Espera explícita para la tabla con la clase especificada
+            results_table = wait.until(EC.presence_of_element_located((By.CSS_SELECTOR, 'table.f1-table.f1-table-with-data.w-full')))
+            
+            rows = results_table.find_elements(By.TAG_NAME, 'tr')[1:]  # Saltar la cabecera
+            for row in rows:
+                cols = row.find_elements(By.TAG_NAME, 'td')
+                if len(cols) == 6:  # Asegurarse de que haya suficientes columnas
+                    position = cols[0].text
+                    number = cols[1].text
+                    driver_name = cols[2].text
+                    car_html = cols[3].get_attribute("innerHTML")
+                    soup = BeautifulSoup(car_html, 'html.parser')
+                    car_name = soup.get_text().strip()
+                    time = cols[4].text
+                    laps = cols[5].text
+                    
+                    overall_qualifying.append({
+                        'year': year,
+                        'race': race_name,
+                        'position': position,
+                        'number': number,
+                        'driver': driver_name,
+                        'car': car_name,
+                        'time': time,
+                        'laps': laps
+                    })
+    except Exception as e:
+        print(f"Error al extraer resultados de la carrera {race_name}: {e}")
+    return overall_qualifying
+
+def get_qualifying_2(driver, year, race_name):
+    qualifying_2 = []
+    try:
+        wait = WebDriverWait(driver, 5)
+        # Verificar si el mensaje de resultados no disponibles está presente
+        no_results_messages = driver.find_elements(By.CSS_SELECTOR, 'p.f1-text.f1-text__body')
+        for message in no_results_messages:
+            if message.text.strip() == "Results for this session aren’t available yet.":
+                qualifying_2.append({
+                    'year': year,
+                    'race': race_name,
+                    'position': None,
+                    'number': None,
+                    'driver': None,
+                    'car': None,
+                    'time': None,
+                    'laps': None
+                })
+                return qualifying_2
+        else:
+            # Espera explícita para la tabla con la clase especificada
+            results_table = wait.until(EC.presence_of_element_located((By.CSS_SELECTOR, 'table.f1-table.f1-table-with-data.w-full')))
+            
+            rows = results_table.find_elements(By.TAG_NAME, 'tr')[1:]  # Saltar la cabecera
+            for row in rows:
+                cols = row.find_elements(By.TAG_NAME, 'td')
+                if len(cols) == 6:  # Asegurarse de que haya suficientes columnas
+                    position = cols[0].text
+                    number = cols[1].text
+                    driver_name = cols[2].text
+                    car_html = cols[3].get_attribute("innerHTML")
+                    soup = BeautifulSoup(car_html, 'html.parser')
+                    car_name = soup.get_text().strip()
+                    time = cols[4].text
+                    laps = cols[5].text
+                    
+                    qualifying_2.append({
+                        'year': year,
+                        'race': race_name,
+                        'position': position,
+                        'number': number,
+                        'driver': driver_name,
+                        'car': car_name,
+                        'time': time,
+                        'laps': laps
+                    })
+    except Exception as e:
+        print(f"Error al extraer resultados de la carrera {race_name}: {e}")
+    return qualifying_2
+
+def get_qualifying_1(driver, year, race_name):
+    qualifying_1 = []
+    try:
+        wait = WebDriverWait(driver, 5)
+        # Verificar si el mensaje de resultados no disponibles está presente
+        no_results_messages = driver.find_elements(By.CSS_SELECTOR, 'p.f1-text.f1-text__body')
+        for message in no_results_messages:
+            if message.text.strip() == "Results for this session aren’t available yet.":
+                qualifying_1.append({
+                    'year': year,
+                    'race': race_name,
+                    'position': None,
+                    'number': None,
+                    'driver': None,
+                    'car': None,
+                    'time': None,
+                    'laps': None
+                })
+                return qualifying_1
+        else:
+            # Espera explícita para la tabla con la clase especificada
+            results_table = wait.until(EC.presence_of_element_located((By.CSS_SELECTOR, 'table.f1-table.f1-table-with-data.w-full')))
+            
+            rows = results_table.find_elements(By.TAG_NAME, 'tr')[1:]  # Saltar la cabecera
+            for row in rows:
+                cols = row.find_elements(By.TAG_NAME, 'td')
+                if len(cols) == 6:  # Asegurarse de que haya suficientes columnas
+                    position = cols[0].text
+                    number = cols[1].text
+                    driver_name = cols[2].text
+                    car_html = cols[3].get_attribute("innerHTML")
+                    soup = BeautifulSoup(car_html, 'html.parser')
+                    car_name = soup.get_text().strip()
+                    time = cols[4].text
+                    laps = cols[5].text
+                    
+                    qualifying_1.append({
+                        'year': year,
+                        'race': race_name,
+                        'position': position,
+                        'number': number,
+                        'driver': driver_name,
+                        'car': car_name,
+                        'time': time,
+                        'laps': laps
+                    })
+    except Exception as e:
+        print(f"Error al extraer resultados de la carrera {race_name}: {e}")
+    return qualifying_1
 
 def get_race_urls(driver, year_url):
     driver.get(year_url)
@@ -176,16 +825,6 @@ def get_section_urls(driver, race_url):
         print(f"Error al extraer URLs de las secciones: {e}")
     return section_urls
 
-def save_to_csv(data, filename, fieldnames):
-    try:
-        with open(filename, mode='w', newline='', encoding='utf-8') as file:
-            writer = csv.DictWriter(file, fieldnames=fieldnames)
-            writer.writeheader()
-            writer.writerows(data)
-        print(f"Datos guardados en {filename}")
-    except Exception as e:
-        print(f"Error al guardar en CSV: {e}")
-
 def main():
     driver = init_webdriver()
     if driver is None:
@@ -194,14 +833,18 @@ def main():
     year_urls = get_year_urls(driver)
 
     sections = {
-        'race_result': ['year','race','position', 'number', 'driver', 'car', 'laps', 'time', 'points'],
+        #'race_result': ['year','race','position', 'number', 'driver', 'car', 'laps', 'time', 'points'],
         #'fastest_laps': ['year','race','position', 'number', 'driver', 'car', 'lap', 'time_of_day', 'time', 'avg_speed'],
-        #'pit_stop': ['year','race','stops', 'number', 'driver', 'car', 'lap', 'time_of_day', 'time', 'total'],
+        'pit_stop_summary': ['year','race','stops', 'number', 'driver', 'car', 'lap', 'time_of_day', 'time', 'total'],
         #'starting_grid': ['year','race','position', 'number', 'driver', 'car', 'time'],
         #'qualifying': ['year','race','position', 'number', 'driver', 'car', 'q1', 'q2', 'q3', 'laps'],
         #'practice_3': ['year','race','position', 'number', 'driver', 'car', 'time', 'gap', 'laps'],
         #'practice_2': ['year','race','position', 'number', 'driver', 'car', 'time', 'gap', 'laps'],
-        #'practice_1': ['year','race','position', 'number', 'driver', 'car', 'time', 'gap', 'laps']
+        #'practice_1': ['year','race','position', 'number', 'driver', 'car', 'time', 'gap', 'laps'],
+        'warm_up': ['year','race','position', 'number', 'driver', 'car', 'time', 'laps'],
+        'overall_qualifying': ['year','race','position', 'number', 'driver', 'car', 'time', 'laps'],
+        'qualifying_2': ['year','race','position', 'number', 'driver', 'car', 'time','laps'],
+        'qualifying_1': ['year','race','position', 'number', 'driver', 'car','time', 'laps']
     }
 
     all_data = {section: [] for section in sections}
@@ -224,14 +867,70 @@ def main():
 
             for section_name, columns in sections.items():
                 if section_name in section_urls:
-                    #section_url = section_urls[section_name]
+                    section_url = section_urls[section_name]
+                    driver.get(section_url)
+                    time.sleep(3)
                     print(f"Extrayendo datos de la sección: {section_name} para la carrera: {race_name} del año {year}")
-                    #aqui va la parte de cada seccion con un if
-                    race_result = get_race_result(driver, year, race_name)
-                    if race_result and all(key in race_result[0] for key in columns):
-                        all_data[section_name].extend(race_result)
-                        #save_to_csv(race_result, f'./data/raw/f1_{section_name}.csv', columns)
-                    #save_to_csv(race_result, f'./data/raw/f1_{section_name}.csv', columns)
+                    
+                    if section_name == 'race_result':
+                        race_result = get_race_result(driver, year, race_name)
+                        if race_result and all(key in race_result[0] for key in columns):
+                            all_data[section_name].extend(race_result)
+
+                    elif section_name == 'fastest_laps':
+                        fastest_laps = get_fastest_laps(driver, year, race_name)
+                        if fastest_laps and all(key in fastest_laps[0] for key in columns):
+                            all_data[section_name].extend(fastest_laps)
+
+                    elif section_name == 'pit_stop_summary':
+                        pit_stop_summary = get_pit_stop_summary(driver, year, race_name)
+                        if pit_stop_summary and all(key in pit_stop_summary[0] for key in columns):
+                            all_data[section_name].extend(pit_stop_summary)
+
+                    elif section_name == 'starting_grid':
+                        starting_grid = get_starting_grid(driver, year, race_name)
+                        if starting_grid and all(key in starting_grid[0] for key in columns):
+                            all_data[section_name].extend(starting_grid)
+
+                    elif section_name == 'qualifying':
+                        qualifying = get_qualifying(driver, year, race_name)
+                        if qualifying and all(key in qualifying[0] for key in columns):
+                            all_data[section_name].extend(qualifying)
+
+                    elif section_name == 'practice_3':
+                        practice_3 = get_practice_3(driver, year, race_name)
+                        if practice_3 and all(key in practice_3[0] for key in columns):
+                            all_data[section_name].extend(practice_3)
+
+                    elif section_name == 'practice_2':
+                        practice_2 = get_practice_2(driver, year, race_name)
+                        if practice_2 and all(key in practice_2[0] for key in columns):
+                            all_data[section_name].extend(practice_2)
+                    
+                    elif section_name == 'practice_1':
+                        practice_1 = get_practice_1(driver, year, race_name)
+                        if practice_1 and all(key in practice_1[0] for key in columns):
+                            all_data[section_name].extend(practice_1)
+
+                    elif section_name == 'warm_up':
+                        warm_up = get_warm_up(driver, year, race_name)
+                        if warm_up and all(key in warm_up[0] for key in columns):
+                            all_data[section_name].extend(warm_up)
+
+                    elif section_name == 'overall_qualifying':
+                        overall_qualifying = get_overall_qualifying(driver, year, race_name)
+                        if overall_qualifying and all(key in overall_qualifying[0] for key in columns):
+                            all_data[section_name].extend(overall_qualifying)
+
+                    elif section_name == 'qualifying_2':
+                        qualifying_2 = get_qualifying_2(driver, year, race_name)
+                        if qualifying_2 and all(key in qualifying_2[0] for key in columns):
+                            all_data[section_name].extend(qualifying_2)
+
+                    elif section_name == 'qualifying_1':
+                        qualifying_1 = get_qualifying_1(driver, year, race_name)
+                        if qualifying_1 and all(key in qualifying_1[0] for key in columns):
+                            all_data[section_name].extend(qualifying_1)
                 else:
                     print(f"No existe la sección {section_name} para la carrera {race_name} del año {year}")
 
