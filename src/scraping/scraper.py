@@ -319,6 +319,7 @@ def get_qualifying(driver, year, race_name):
                     'q1': None,
                     'q2': None,
                     'q3': None,
+                    'time': None,
                     'laps': None
                 })
                 return qualifying
@@ -370,9 +371,32 @@ def get_qualifying(driver, year, race_name):
                         'number': number,
                         'driver': driver_name,
                         'car': car_name,
-                        'q1': q1,
-                        'q2': q2,
-                        'q3': q3,
+                        'q1': None,
+                        'q2': None,
+                        'q3': None,
+                        'time': time,
+                        'laps': None
+                    })
+                elif len(cols) == 6:
+                    position = cols[0].text
+                    number = cols[1].text
+                    driver_name = cols[2].text
+                    car_html = cols[3].get_attribute("innerHTML")
+                    soup = BeautifulSoup(car_html, 'html.parser')
+                    car_name = soup.get_text().strip()
+                    time = cols[4].text
+                    laps = cols[5].text
+                    
+                    qualifying.append({
+                        'year': year,
+                        'race': race_name,
+                        'position': position,
+                        'number': number,
+                        'driver': driver_name,
+                        'car': car_name,
+                        'q1': None,
+                        'q2': None,
+                        'q3': None,
                         'time': time,
                         'laps': laps
                     })
@@ -460,7 +484,7 @@ def get_practice_2(driver, year, race_name):
             rows = results_table.find_elements(By.TAG_NAME, 'tr')[1:]  # Saltar la cabecera
             for row in rows:
                 cols = row.find_elements(By.TAG_NAME, 'td')
-                if len(cols) >= 6:  # Asegurarse de que haya suficientes columnas
+                if len(cols) == 7:  # Asegurarse de que haya suficientes columnas
                     position = cols[0].text
                     number = cols[1].text
                     driver_name = cols[2].text
@@ -481,6 +505,27 @@ def get_practice_2(driver, year, race_name):
                         'time': time,
                         'gap': gap,
                         'laps': laps
+                    })
+                elif len(cols) == 6:  # Asegurarse de que haya suficientes columnas
+                    position = cols[0].text
+                    number = cols[1].text
+                    driver_name = cols[2].text
+                    car_html = cols[3].get_attribute("innerHTML")
+                    soup = BeautifulSoup(car_html, 'html.parser')
+                    car_name = soup.get_text().strip()
+                    time = cols[4].text
+                    gap = cols[5].text
+                    
+                    practice_2.append({
+                        'year': year,
+                        'race': race_name,
+                        'position': position,
+                        'number': number,
+                        'driver': driver_name,
+                        'car': car_name,
+                        'time': time,
+                        'gap': gap,
+                        'laps': None
                     })
     except Exception as e:
         print(f"Error al extraer resultados de la carrera {race_name}: {e}")
@@ -534,6 +579,27 @@ def get_practice_1(driver, year, race_name):
                         'time': time,
                         'gap': gap,
                         'laps': laps
+                    })
+                elif len(cols) == 6:  # Asegurarse de que haya suficientes columnas
+                    position = cols[0].text
+                    number = cols[1].text
+                    driver_name = cols[2].text
+                    car_html = cols[3].get_attribute("innerHTML")
+                    soup = BeautifulSoup(car_html, 'html.parser')
+                    car_name = soup.get_text().strip()
+                    time = cols[4].text
+                    gap = cols[5].text
+                    
+                    practice_1.append({
+                        'year': year,
+                        'race': race_name,
+                        'position': position,
+                        'number': number,
+                        'driver': driver_name,
+                        'car': car_name,
+                        'time': time,
+                        'gap': gap,
+                        'laps': None
                     })
     except Exception as e:
         print(f"Error al extraer resultados de la carrera {race_name}: {e}")
@@ -835,16 +901,16 @@ def main():
     sections = {
         #'race_result': ['year','race','position', 'number', 'driver', 'car', 'laps', 'time', 'points'],
         #'fastest_laps': ['year','race','position', 'number', 'driver', 'car', 'lap', 'time_of_day', 'time', 'avg_speed'],
-        'pit_stop_summary': ['year','race','stops', 'number', 'driver', 'car', 'lap', 'time_of_day', 'time', 'total'],
+        #'pit_stop_summary': ['year','race','stops', 'number', 'driver', 'car', 'lap', 'time_of_day', 'time', 'total'],
         #'starting_grid': ['year','race','position', 'number', 'driver', 'car', 'time'],
-        #'qualifying': ['year','race','position', 'number', 'driver', 'car', 'q1', 'q2', 'q3', 'laps'],
+        #'qualifying': ['year','race','position', 'number', 'driver', 'car', 'q1', 'q2', 'q3', 'time', 'laps'],
         #'practice_3': ['year','race','position', 'number', 'driver', 'car', 'time', 'gap', 'laps'],
-        #'practice_2': ['year','race','position', 'number', 'driver', 'car', 'time', 'gap', 'laps'],
+        'practice_2': ['year','race','position', 'number', 'driver', 'car', 'time', 'gap', 'laps'],
         #'practice_1': ['year','race','position', 'number', 'driver', 'car', 'time', 'gap', 'laps'],
-        'warm_up': ['year','race','position', 'number', 'driver', 'car', 'time', 'laps'],
-        'overall_qualifying': ['year','race','position', 'number', 'driver', 'car', 'time', 'laps'],
-        'qualifying_2': ['year','race','position', 'number', 'driver', 'car', 'time','laps'],
-        'qualifying_1': ['year','race','position', 'number', 'driver', 'car','time', 'laps']
+        #'warm_up': ['year','race','position', 'number', 'driver', 'car', 'time', 'laps'],
+        #'overall_qualifying': ['year','race','position', 'number', 'driver', 'car', 'time', 'laps'],
+        #'qualifying_2': ['year','race','position', 'number', 'driver', 'car', 'time','laps'],
+        #'qualifying_1': ['year','race','position', 'number', 'driver', 'car','time', 'laps']
     }
 
     all_data = {section: [] for section in sections}
