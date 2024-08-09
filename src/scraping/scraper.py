@@ -986,14 +986,110 @@ def get_section_urls(driver, race_url):
         print(f"Error al extraer URLs de las secciones: {e}")
     return section_urls
 
+def extract_all_drivers(driver):
+    all_drivers_data = []
+    drivers_page_url="https://www.formula1.com/en/drivers"
+
+    # Navegar a la página de todos los pilotos
+    driver.get(drivers_page_url)
+    time.sleep(3)
+    aceptar_cookies(driver)
+    time.sleep(3)
+
+    # Esperar que los elementos se carguen
+    wait = WebDriverWait(driver, 10)
+    driver_links = wait.until(EC.presence_of_all_elements_located((By.CSS_SELECTOR, 'a.outline.outline-offset-4.outline-brand-black.group')))
+
+    # Iterar sobre cada piloto y extraer los datos
+    for i in range(len(driver_links)):
+        try:
+            # Navegar de nuevo a la página de la lista de pilotos
+            driver.get(drivers_page_url)
+            time.sleep(3)
+            
+            # Volver a encontrar los enlaces en cada iteración
+            driver_links = driver.find_elements(By.CSS_SELECTOR, 'a.outline.outline-offset-4.outline-brand-black.group.outline-0')
+            
+            # Obtener el enlace actual
+            link = driver_links[i]
+            
+            # Navegar a la página del piloto
+            driver.get(link.get_attribute('href'))
+            time.sleep(3)
+            
+            # Recoger los datos del piloto
+            driver_data = get_driver_details(driver)
+            if driver_data:
+                all_drivers_data.extend(driver_data)  # Añadir a la lista de datos
+        except Exception as e:
+            print(f"Error al procesar el enlace de piloto: {e}")
+
+    # Guardar los datos en un archivo CSV
+    if all_drivers_data:
+        columns = ['name', 'team', 'country', 'podiums', 'points', 'grands_prix_entered', 'world_championships', 'highest_race_finish', 'highest_grid_position', 'date_of_birth', 'place_of_birth', 'profile_img', 'helmet_img']
+        save_to_csv(all_drivers_data, './data/raw/f1_drivers_2024.csv', columns)
+
+def get_driver_details(driver):
+    driver_data = []
+    wait = WebDriverWait(driver, 10)
+    try:
+        # Obtener el nombre del piloto
+        driver_name = driver.find_element(By.CSS_SELECTOR, 'h1.f1-heading').text
+
+        dl_element = wait.until(EC.presence_of_element_located((By.CSS_SELECTOR, 'div.f1-dl')))
+
+        # Capturar todos los <dt> y <dd> dentro del <dl>
+        driver_stats = dl_element.find_elements(By.TAG_NAME, 'dt')
+        stats_values = dl_element.find_elements(By.TAG_NAME, 'dd')
+
+        # Asegurarse de que ambos elementos coinciden en longitud
+        if len(driver_stats) == len(stats_values):
+            stats_dict = {driver_stats[i].text: stats_values[i].text for i in range(len(driver_stats))}
+        else:
+            print("Error: La cantidad de etiquetas <dt> y <dd> no coincide")
+
+
+        # Obtener las imágenes (perfil y casco)
+        try:
+            profile_img = driver.find_element(By.CSS_SELECTOR, 'img.f1-c-image').get_attribute('src')
+        except NoSuchElementException:
+            profile_img = None  # Asignar None si no se encuentra la imagen
+
+        try:
+            helmet_img = driver.find_element(By.CSS_SELECTOR, 'img.f1-c-image.w-full.h-full.object-cover').get_attribute('src')
+        except NoSuchElementException:
+            helmet_img = None  # Asignar None si no se encuentra la imagen
+
+        # Agregar todos los datos a un diccionario
+        driver_data.append({
+            'name': driver_name,
+            'team': stats_dict.get('Team'),
+            'country': stats_dict.get('Country'),
+            'podiums': stats_dict.get('Podiums'),
+            'points': stats_dict.get('Points'),
+            'grands_prix_entered': stats_dict.get('Grands Prix entered'),
+            'world_championships': stats_dict.get('World Championships'),
+            'highest_race_finish': stats_dict.get('Highest race finish'),
+            'highest_grid_position': stats_dict.get('Highest grid position'),
+            'date_of_birth': stats_dict.get('Date of birth'),
+            'place_of_birth': stats_dict.get('Place of birth'),
+            'profile_img': profile_img,
+            'helmet_img': helmet_img
+        })
+
+    except Exception as e:
+        print(f"Error al extraer datos del piloto: {e}")
+    
+    return driver_data
+
 def main():
     driver = init_webdriver()
     if driver is None:
         return
 
-    year_urls = get_year_urls(driver)
+    #year_urls = get_year_urls(driver)
 
-    sections = {
+    #sections = {
         #'race_result': ['year','race','position', 'number', 'driver', 'car', 'laps', 'time', 'points'],
         #'fastest_laps': ['year','race','position', 'number', 'driver', 'car', 'lap', 'time_of_day', 'time', 'avg_speed'],
         #'pit_stop_summary': ['year','race','stops', 'number', 'driver', 'car', 'lap', 'time_of_day', 'time', 'total'],
@@ -1006,17 +1102,19 @@ def main():
         #'overall_qualifying': ['year','race','position', 'number', 'driver', 'car', 'time', 'laps'],
         #'qualifying_2': ['year','race','position', 'number', 'driver', 'car', 'time','laps'],
         #'qualifying_1': ['year','race','position', 'number', 'driver', 'car','time', 'laps']
-    }
+    #}
 
-    all_data = {section: [] for section in sections}
-    all_data_drivers = []
-    all_data_teams = []
+    #all_data = {section: [] for section in sections}
+    #all_data_drivers = []
+    #all_data_teams = []
 
+    extract_all_drivers(driver)
+    """
     for year_url in year_urls:
         year = year_url.split('/')[-2]
         print(f"Extrayendo datos del año {year}")
             
-        """
+        
         race_urls = get_race_urls(driver, year_url)
 
         for race_url in race_urls:
@@ -1097,7 +1195,7 @@ def main():
         driver_data = get_drivers_data(driver, year)
         if driver_data:
             all_data_drivers.extend(driver_data)
-        """
+        
         team_data = get_teams_data(driver, year)
         if team_data:
             all_data_teams.extend(team_data)
@@ -1107,7 +1205,7 @@ def main():
     if all_data_teams:
         columns = ['year', 'position', 'team', 'points']
         save_to_csv(all_data_teams, './data/raw/f1_teams_all.csv', columns)
-    """
+    
     for section_name, data in all_data.items():
         if data:
             save_to_csv(data, f'./data/raw/f1_{section_name}.csv', sections[section_name])
