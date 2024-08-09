@@ -698,33 +698,33 @@ def get_overall_qualifying(driver, year, race_name):
                     'laps': None
                 })
                 return overall_qualifying
-        else:
-            # Espera explícita para la tabla con la clase especificada
-            results_table = wait.until(EC.presence_of_element_located((By.CSS_SELECTOR, 'table.f1-table.f1-table-with-data.w-full')))
-            
-            rows = results_table.find_elements(By.TAG_NAME, 'tr')[1:]  # Saltar la cabecera
-            for row in rows:
-                cols = row.find_elements(By.TAG_NAME, 'td')
-                if len(cols) == 6:  # Asegurarse de que haya suficientes columnas
-                    position = cols[0].text
-                    number = cols[1].text
-                    driver_name = cols[2].text
-                    car_html = cols[3].get_attribute("innerHTML")
-                    soup = BeautifulSoup(car_html, 'html.parser')
-                    car_name = soup.get_text().strip()
-                    time = cols[4].text
-                    laps = cols[5].text
-                    
-                    overall_qualifying.append({
-                        'year': year,
-                        'race': race_name,
-                        'position': position,
-                        'number': number,
-                        'driver': driver_name,
-                        'car': car_name,
-                        'time': time,
-                        'laps': laps
-                    })
+            else:
+                # Espera explícita para la tabla con la clase especificada
+                results_table = wait.until(EC.presence_of_element_located((By.CSS_SELECTOR, 'table.f1-table.f1-table-with-data.w-full')))
+                
+                rows = results_table.find_elements(By.TAG_NAME, 'tr')[1:]  # Saltar la cabecera
+                for row in rows:
+                    cols = row.find_elements(By.TAG_NAME, 'td')
+                    if len(cols) == 6:  # Asegurarse de que haya suficientes columnas
+                        position = cols[0].text
+                        number = cols[1].text
+                        driver_name = cols[2].text
+                        car_html = cols[3].get_attribute("innerHTML")
+                        soup = BeautifulSoup(car_html, 'html.parser')
+                        car_name = soup.get_text().strip()
+                        time = cols[4].text
+                        laps = cols[5].text
+                        
+                        overall_qualifying.append({
+                            'year': year,
+                            'race': race_name,
+                            'position': position,
+                            'number': number,
+                            'driver': driver_name,
+                            'car': car_name,
+                            'time': time,
+                            'laps': laps
+                        })
     except Exception as e:
         print(f"Error al extraer resultados de la carrera {race_name}: {e}")
     return overall_qualifying
@@ -748,33 +748,33 @@ def get_qualifying_2(driver, year, race_name):
                     'laps': None
                 })
                 return qualifying_2
-        else:
-            # Espera explícita para la tabla con la clase especificada
-            results_table = wait.until(EC.presence_of_element_located((By.CSS_SELECTOR, 'table.f1-table.f1-table-with-data.w-full')))
-            
-            rows = results_table.find_elements(By.TAG_NAME, 'tr')[1:]  # Saltar la cabecera
-            for row in rows:
-                cols = row.find_elements(By.TAG_NAME, 'td')
-                if len(cols) == 6:  # Asegurarse de que haya suficientes columnas
-                    position = cols[0].text
-                    number = cols[1].text
-                    driver_name = cols[2].text
-                    car_html = cols[3].get_attribute("innerHTML")
-                    soup = BeautifulSoup(car_html, 'html.parser')
-                    car_name = soup.get_text().strip()
-                    time = cols[4].text
-                    laps = cols[5].text
-                    
-                    qualifying_2.append({
-                        'year': year,
-                        'race': race_name,
-                        'position': position,
-                        'number': number,
-                        'driver': driver_name,
-                        'car': car_name,
-                        'time': time,
-                        'laps': laps
-                    })
+            else:
+                # Espera explícita para la tabla con la clase especificada
+                results_table = wait.until(EC.presence_of_element_located((By.CSS_SELECTOR, 'table.f1-table.f1-table-with-data.w-full')))
+                
+                rows = results_table.find_elements(By.TAG_NAME, 'tr')[1:]  # Saltar la cabecera
+                for row in rows:
+                    cols = row.find_elements(By.TAG_NAME, 'td')
+                    if len(cols) == 6:  # Asegurarse de que haya suficientes columnas
+                        position = cols[0].text
+                        number = cols[1].text
+                        driver_name = cols[2].text
+                        car_html = cols[3].get_attribute("innerHTML")
+                        soup = BeautifulSoup(car_html, 'html.parser')
+                        car_name = soup.get_text().strip()
+                        time = cols[4].text
+                        laps = cols[5].text
+                        
+                        qualifying_2.append({
+                            'year': year,
+                            'race': race_name,
+                            'position': position,
+                            'number': number,
+                            'driver': driver_name,
+                            'car': car_name,
+                            'time': time,
+                            'laps': laps
+                        })
     except Exception as e:
         print(f"Error al extraer resultados de la carrera {race_name}: {e}")
     return qualifying_2
@@ -798,36 +798,110 @@ def get_qualifying_1(driver, year, race_name):
                     'laps': None
                 })
                 return qualifying_1
-        else:
-            # Espera explícita para la tabla con la clase especificada
-            results_table = wait.until(EC.presence_of_element_located((By.CSS_SELECTOR, 'table.f1-table.f1-table-with-data.w-full')))
-            
-            rows = results_table.find_elements(By.TAG_NAME, 'tr')[1:]  # Saltar la cabecera
-            for row in rows:
-                cols = row.find_elements(By.TAG_NAME, 'td')
-                if len(cols) == 6:  # Asegurarse de que haya suficientes columnas
-                    position = cols[0].text
-                    number = cols[1].text
-                    driver_name = cols[2].text
-                    car_html = cols[3].get_attribute("innerHTML")
-                    soup = BeautifulSoup(car_html, 'html.parser')
-                    car_name = soup.get_text().strip()
-                    time = cols[4].text
-                    laps = cols[5].text
-                    
-                    qualifying_1.append({
-                        'year': year,
-                        'race': race_name,
-                        'position': position,
-                        'number': number,
-                        'driver': driver_name,
-                        'car': car_name,
-                        'time': time,
-                        'laps': laps
-                    })
+            else:
+                # Espera explícita para la tabla con la clase especificada
+                results_table = wait.until(EC.presence_of_element_located((By.CSS_SELECTOR, 'table.f1-table.f1-table-with-data.w-full')))
+                
+                rows = results_table.find_elements(By.TAG_NAME, 'tr')[1:]  # Saltar la cabecera
+                for row in rows:
+                    cols = row.find_elements(By.TAG_NAME, 'td')
+                    if len(cols) == 6:  # Asegurarse de que haya suficientes columnas
+                        position = cols[0].text
+                        number = cols[1].text
+                        driver_name = cols[2].text
+                        car_html = cols[3].get_attribute("innerHTML")
+                        soup = BeautifulSoup(car_html, 'html.parser')
+                        car_name = soup.get_text().strip()
+                        time = cols[4].text
+                        laps = cols[5].text
+                        
+                        qualifying_1.append({
+                            'year': year,
+                            'race': race_name,
+                            'position': position,
+                            'number': number,
+                            'driver': driver_name,
+                            'car': car_name,
+                            'time': time,
+                            'laps': laps
+                        })
     except Exception as e:
         print(f"Error al extraer resultados de la carrera {race_name}: {e}")
     return qualifying_1
+
+def get_drivers_data(driver, year):
+    driver.get(f"https://www.formula1.com/en/results/{year}/drivers")
+    time.sleep(3)
+    
+    driver_data = []
+    try:
+        wait = WebDriverWait(driver, 10)
+        # Espera explícita para la tabla con la clase especificada
+        results_table = wait.until(EC.presence_of_element_located((By.CSS_SELECTOR, 'table.f1-table.f1-table-with-data.w-full')))
+        
+        rows = results_table.find_elements(By.TAG_NAME, 'tr')[1:]  # Saltar la cabecera
+        for row in rows:
+            cols = row.find_elements(By.TAG_NAME, 'td')
+            if len(cols) == 5:
+                position = cols[0].text
+                driver_name = cols[1].text
+                nationality = cols[2].text
+                car_html = cols[3].get_attribute("innerHTML")
+                soup = BeautifulSoup(car_html, 'html.parser')
+                car_name = soup.get_text().strip()
+                points = cols[4].text
+                
+                driver_data.append({
+                    'year': year,
+                    'position': position,
+                    'driver': driver_name,
+                    'nationality': nationality,
+                    'car': car_name,
+                    'points': points
+                })
+    except Exception as e:
+        print(f"Error al extraer datos de drivers para el año {year}: {e}")
+    return driver_data
+
+def get_teams_data(driver, year):
+    driver.get(f"https://www.formula1.com/en/results/{year}/team")
+    time.sleep(3)
+    
+    team_data = []
+    try:
+        wait = WebDriverWait(driver, 10)
+        warning_message = driver.find_elements(By.XPATH, '//p[contains(text(), "The Constructors Championship was not awarded")]')
+        if warning_message:
+            team_data.append({
+                'year': year,
+                'position': None,
+                'team': None,
+                'points': None
+            })
+            return team_data
+        else:
+            # Espera explícita para la tabla con la clase especificada
+            results_table = wait.until(EC.presence_of_element_located((By.CSS_SELECTOR, 'table.f1-table.f1-table-with-data.w-full')))
+
+            rows = results_table.find_elements(By.TAG_NAME, 'tr')[1:]  # Saltar la cabecera
+            for row in rows:
+                cols = row.find_elements(By.TAG_NAME, 'td')
+                if len(cols) == 3:
+                    position = cols[0].text
+                    team_html = cols[1].get_attribute("innerHTML")
+                    soup = BeautifulSoup(team_html, 'html.parser')
+                    team = soup.get_text().strip()
+                    points = cols[2].text
+                    
+                    team_data.append({
+                        'year': year,
+                        'position': position,
+                        'team': team,
+                        'points': points
+                    })
+    except Exception as e:
+        print(f"Error al extraer datos de drivers para el año {year}: {e}")
+    return team_data
 
 def get_race_urls(driver, year_url):
     driver.get(year_url)
@@ -931,19 +1005,18 @@ def main():
         #'warm_up': ['year','race','position', 'number', 'driver', 'car', 'time', 'gap', 'laps'],
         #'overall_qualifying': ['year','race','position', 'number', 'driver', 'car', 'time', 'laps'],
         #'qualifying_2': ['year','race','position', 'number', 'driver', 'car', 'time','laps'],
-        'qualifying_1': ['year','race','position', 'number', 'driver', 'car','time', 'laps']
+        #'qualifying_1': ['year','race','position', 'number', 'driver', 'car','time', 'laps']
     }
 
     all_data = {section: [] for section in sections}
-    
-    #with open('./data/raw/f1_race_results.csv', mode='w', newline='', encoding='utf-8') as file:
-    #    writer = csv.writer(file)
-    #    writer.writerow(['year', 'race', 'position', 'number', 'driver', 'car', 'laps', 'time', 'points'])
+    all_data_drivers = []
+    all_data_teams = []
 
     for year_url in year_urls:
         year = year_url.split('/')[-2]
         print(f"Extrayendo datos del año {year}")
-        
+            
+        """
         race_urls = get_race_urls(driver, year_url)
 
         for race_url in race_urls:
@@ -1020,26 +1093,25 @@ def main():
                             all_data[section_name].extend(qualifying_1)
                 else:
                     print(f"No existe la sección {section_name} para la carrera {race_name} del año {year}")
-
+        
+        driver_data = get_drivers_data(driver, year)
+        if driver_data:
+            all_data_drivers.extend(driver_data)
+        """
+        team_data = get_teams_data(driver, year)
+        if team_data:
+            all_data_teams.extend(team_data)
+    if all_data_drivers:
+        columns = ['year', 'position', 'driver', 'nationality', 'car', 'points']
+        save_to_csv(all_data_drivers, './data/raw/f1_drivers_all.csv', columns)
+    if all_data_teams:
+        columns = ['year', 'position', 'team', 'points']
+        save_to_csv(all_data_teams, './data/raw/f1_teams_all.csv', columns)
+    """
     for section_name, data in all_data.items():
         if data:
             save_to_csv(data, f'./data/raw/f1_{section_name}.csv', sections[section_name])
-        #race_urls = get_race_urls(driver, year_url)
-        
-        #for race_url in race_urls:
-        #    race_name = race_url.split('/')[-2].replace('-', ' ').title()
-        #    print(f"Extrayendo datos de la carrera: {race_name} para el año: {year}")
-            
-        #    driver.get(race_url)
-        #    time.sleep(3)
-            
-        #    race_result = get_race_result(driver, year, race_name)
-        #    for result in race_result:
-        #        writer.writerow([
-        #            result['year'], result['race'], result['position'], result['number'],
-        #           result['driver'], result['car'], result['laps'], result['time'], result['points']
-        #        ])
-    
+    """
     driver.quit()
 
 if __name__ == '__main__':
