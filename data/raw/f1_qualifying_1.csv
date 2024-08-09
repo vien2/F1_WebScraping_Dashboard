@@ -1,0 +1,2050 @@
+year,race,position,number,driver,car,time,laps
+2005,Australia,1,6, Fisichella,Renault,1:33.171,3
+2005,Australia,2,16, Trulli,Toyota,1:35.270,3
+2005,Australia,3,7, Webber,Williams BMW,1:36.717,3
+2005,Australia,4,11, Villeneuve,Sauber Petronas,1:36.984,3
+2005,Australia,5,15, Klien,RBR Cosworth,1:37.486,3
+2005,Australia,6,14, Coulthard,RBR Cosworth,1:38.320,3
+2005,Australia,7,8, Heidfeld,Williams BMW,1:39.717,3
+2005,Australia,8,3, Button,BAR Honda,1:41.512,3
+2005,Australia,9,19, Karthikeyan,Jordan Toyota,1:44.357,3
+2005,Australia,10,9, Räikkönen,McLaren Mercedes,1:44.997,3
+2005,Australia,11,10, Montoya,McLaren Mercedes,1:45.325,3
+2005,Australia,12,2, Barrichello,Ferrari,1:45.481,3
+2005,Australia,13,18, Monteiro,Jordan Toyota,1:46.846,3
+2005,Australia,14,5, Alonso,Renault,1:47.708,3
+2005,Australia,15,21, Albers,Minardi Cosworth,1:49.230,3
+2005,Australia,16,20, Friesacher,Minardi Cosworth,1:50.864,3
+2005,Australia,17,17, Schumacher,Toyota,1:51.495,3
+2005,Australia,18,1, Schumacher,Ferrari,1:57.931,3
+2005,Australia,19,4, Sato,BAR Honda,,1
+2005,Australia,20,12, Massa,Sauber Petronas,,2
+2005,Malaysia,1,5, Alonso,Renault,1:32.582,3
+2005,Malaysia,2,16, Trulli,Toyota,1:32.672,3
+2005,Malaysia,3,6, Fisichella,Renault,1:32.765,3
+2005,Malaysia,4,9, Räikkönen,McLaren Mercedes,1:32.839,3
+2005,Malaysia,5,17, Schumacher,Toyota,1:33.106,3
+2005,Malaysia,6,7, Webber,Williams BMW,1:33.204,3
+2005,Malaysia,7,10, Montoya,McLaren Mercedes,1:33.333,3
+2005,Malaysia,8,8, Heidfeld,Williams BMW,1:33.464,3
+2005,Malaysia,9,3, Button,BAR Honda,1:33.616,3
+2005,Malaysia,10,15, Klien,RBR Cosworth,1:33.724,3
+2005,Malaysia,11,14, Coulthard,RBR Cosworth,1:33.809,3
+2005,Malaysia,12,1, Schumacher,Ferrari,1:34.072,3
+2005,Malaysia,13,12, Massa,Sauber Petronas,1:34.151,3
+2005,Malaysia,14,2, Barrichello,Ferrari,1:34.162,3
+2005,Malaysia,15,4, Davidson,BAR Honda,1:34.866,3
+2005,Malaysia,16,11, Villeneuve,Sauber Petronas,1:34.887,3
+2005,Malaysia,17,19, Karthikeyan,Jordan Toyota,1:37.806,3
+2005,Malaysia,18,18, Monteiro,Jordan Toyota,1:37.856,3
+2005,Malaysia,19,20, Friesacher,Minardi Cosworth,1:39.268,3
+2005,Malaysia,20,21, Albers,Minardi Cosworth,1:40.432,3
+2005,Bahrain,1,5, Alonso,Renault,1:29.848,3
+2005,Bahrain,2,16, Trulli,Toyota,1:29.993,3
+2005,Bahrain,3,1, Schumacher,Ferrari,1:30.237,3
+2005,Bahrain,4,8, Heidfeld,Williams BMW,1:30.390,3
+2005,Bahrain,5,6, Fisichella,Renault,1:30.445,3
+2005,Bahrain,6,7, Webber,Williams BMW,1:30.592,3
+2005,Bahrain,7,9, Räikkönen,McLaren Mercedes,1:30.594,3
+2005,Bahrain,8,15, Klien,RBR Cosworth,1:30.646,3
+2005,Bahrain,9,10, de la Rosa,McLaren Mercedes,1:30.725,3
+2005,Bahrain,10,12, Massa,Sauber Petronas,1:30.933,3
+2005,Bahrain,11,17, Schumacher,Toyota,1:30.952,3
+2005,Bahrain,12,3, Button,BAR Honda,1:30.957,3
+2005,Bahrain,13,4, Sato,BAR Honda,1:31.113,3
+2005,Bahrain,14,14, Coulthard,RBR Cosworth,1:31.211,3
+2005,Bahrain,15,2, Barrichello,Ferrari,1:31.826,3
+2005,Bahrain,16,11, Villeneuve,Sauber Petronas,1:32.318,3
+2005,Bahrain,17,19, Karthikeyan,Jordan Toyota,1:33.190,3
+2005,Bahrain,18,18, Monteiro,Jordan Toyota,1:33.424,3
+2005,Bahrain,19,21, Albers,Minardi Cosworth,1:34.005,3
+2005,Bahrain,20,20, Friesacher,Minardi Cosworth,1:34.848,3
+2005,San Marino,1,9, Räikkönen,McLaren Mercedes,1:19.886,3
+2005,San Marino,2,5, Alonso,Renault,1:19.889,3
+2005,San Marino,3,1, Schumacher,Ferrari,1:20.260,3
+2005,San Marino,4,7, Webber,Williams BMW,1:20.442,3
+2005,San Marino,5,3, Button,BAR Honda,1:20.464,3
+2005,San Marino,6,16, Trulli,Toyota,1:20.492,3
+2005,San Marino,7,12, Massa,Sauber Petronas,1:20.593,3
+2005,San Marino,8,10, Wurz,McLaren Mercedes,1:20.632,3
+2005,San Marino,9,8, Heidfeld,Williams BMW,1:20.807,3
+2005,San Marino,10,4, Sato,BAR Honda,1:20.851,3
+2005,San Marino,11,2, Barrichello,Ferrari,1:20.892,3
+2005,San Marino,12,17, Schumacher,Toyota,1:20.994,3
+2005,San Marino,13,11, Villeneuve,Sauber Petronas,1:20.999,3
+2005,San Marino,14,14, Coulthard,RBR Cosworth,1:21.632,3
+2005,San Marino,15,6, Fisichella,Renault,1:21.708,3
+2005,San Marino,16,15, Liuzzi,RBR Cosworth,1:21.804,3
+2005,San Marino,17,19, Karthikeyan,Jordan Toyota,1:23.123,3
+2005,San Marino,18,18, Monteiro,Jordan Toyota,1:25.100,3
+2005,San Marino,19,21, Albers,Minardi Cosworth,1:25.921,3
+2005,San Marino,20,20, Friesacher,Minardi Cosworth,1:26.484,3
+2005,Spain,1,16, Trulli,Toyota,1:14.795,3
+2005,Spain,2,5, Alonso,Renault,1:14.811,3
+2005,Spain,3,9, Räikkönen,McLaren Mercedes,1:14.819,3
+2005,Spain,4,17, Schumacher,Toyota,1:14.870,3
+2005,Spain,5,8, Heidfeld,Williams BMW,1:15.038,3
+2005,Spain,6,7, Webber,Williams BMW,1:15.042,3
+2005,Spain,7,1, Schumacher,Ferrari,1:15.398,3
+2005,Spain,8,6, Fisichella,Renault,1:15.601,3
+2005,Spain,9,2, Barrichello,Ferrari,1:15.746,3
+2005,Spain,10,14, Coulthard,RBR Cosworth,1:15.795,3
+2005,Spain,11,12, Massa,Sauber Petronas,1:15.863,3
+2005,Spain,12,10, Montoya,McLaren Mercedes,1:15.902,3
+2005,Spain,13,15, Liuzzi,RBR Cosworth,1:16.288,3
+2005,Spain,14,11, Villeneuve,Sauber Petronas,1:16.794,3
+2005,Spain,15,19, Karthikeyan,Jordan Toyota,1:18.557,3
+2005,Spain,16,18, Monteiro,Jordan Toyota,1:19.040,3
+2005,Spain,17,21, Albers,Minardi Cosworth,1:19.563,3
+2005,Spain,18,20, Friesacher,Minardi Cosworth,1:20.306,3
+2005,Monaco,1,9, Räikkönen,McLaren Mercedes,1:13.644,3
+2005,Monaco,2,5, Alonso,Renault,1:14.125,3
+2005,Monaco,3,7, Webber,Williams BMW,1:14.584,3
+2005,Monaco,4,6, Fisichella,Renault,1:14.783,3
+2005,Monaco,5,10, Montoya,McLaren Mercedes,1:14.858,3
+2005,Monaco,6,8, Heidfeld,Williams BMW,1:15.128,3
+2005,Monaco,7,16, Trulli,Toyota,1:15.189,3
+2005,Monaco,8,14, Coulthard,RBR Cosworth,1:15.329,3
+2005,Monaco,9,11, Villeneuve,Sauber Petronas,1:15.921,3
+2005,Monaco,10,2, Barrichello,Ferrari,1:16.142,3
+2005,Monaco,11,1, Schumacher,Ferrari,1:16.186,3
+2005,Monaco,12,12, Massa,Sauber Petronas,1:16.218,3
+2005,Monaco,13,15, Liuzzi,RBR Cosworth,1:16.817,3
+2005,Monaco,14,20, Friesacher,Minardi Cosworth,1:18.574,3
+2005,Monaco,15,21, Albers,Minardi Cosworth,1:19.229,3
+2005,Monaco,16,18, Monteiro,Jordan Toyota,1:19.408,3
+2005,Monaco,17,19, Karthikeyan,Jordan Toyota,1:19.474,3
+2005,Monaco,18,17, Schumacher,Toyota,,2
+2004,Australia,1,3, Montoya,Williams BMW,1:25.226,3
+2004,Australia,2,1, Schumacher,Ferrari,1:25.301,3
+2004,Australia,3,4, Schumacher,Williams BMW,1:25.445,3
+2004,Australia,4,6, Räikkönen,McLaren Mercedes,1:25.592,3
+2004,Australia,5,5, Coulthard,McLaren Mercedes,1:25.652,3
+2004,Australia,6,9, Button,BAR Honda,1:25.898,3
+2004,Australia,7,8, Alonso,Renault,1:25.928,3
+2004,Australia,8,2, Barrichello,Ferrari,1:25.992,3
+2004,Australia,9,14, Webber,Jaguar Cosworth,1:26.232,3
+2004,Australia,10,11, Fisichella,Sauber Petronas,1:26.286,3
+2004,Australia,11,10, Sato,BAR Honda,1:26.737,3
+2004,Australia,12,12, Massa,Sauber Petronas,1:26.833,3
+2004,Australia,13,17, Panis,Toyota,1:27.253,3
+2004,Australia,14,15, Klien,Jaguar Cosworth,1:27.258,3
+2004,Australia,15,7, Trulli,Renault,1:27.357,3
+2004,Australia,16,18, Heidfeld,Jordan Ford,1:27.469,3
+2004,Australia,17,16, da Matta,Toyota,1:28.274,3
+2004,Australia,18,19, Pantano,Jordan Ford,1:29.156,3
+2004,Australia,19,20, Bruni,Minardi Cosworth,1:30.912,3
+2004,Australia,20,21, Baumgartner,Minardi Cosworth,1:32.606,3
+2004,Malaysia,1,8, Alonso,Renault,1:33.193,3
+2004,Malaysia,2,7, Trulli,Renault,1:33.264,3
+2004,Malaysia,3,6, Räikkönen,McLaren Mercedes,1:33.452,3
+2004,Malaysia,4,1, Schumacher,Ferrari,1:33.865,3
+2004,Malaysia,5,14, Webber,Jaguar Cosworth,1:34.016,3
+2004,Malaysia,6,2, Barrichello,Ferrari,1:34.132,3
+2004,Malaysia,7,5, Coulthard,McLaren Mercedes,1:34.321,3
+2004,Malaysia,8,9, Button,BAR Honda,1:34.528,3
+2004,Malaysia,9,4, Schumacher,Williams BMW,1:34.777,3
+2004,Malaysia,10,11, Fisichella,Sauber Petronas,1:34.877,3
+2004,Malaysia,11,3, Montoya,Williams BMW,1:34.941,4
+2004,Malaysia,12,10, Sato,BAR Honda,1:34.971,3
+2004,Malaysia,13,12, Massa,Sauber Petronas,1:35.132,3
+2004,Malaysia,14,17, Panis,Toyota,1:35.247,3
+2004,Malaysia,15,15, Klien,Jaguar Cosworth,1:35.618,3
+2004,Malaysia,16,16, da Matta,Toyota,1:35.684,3
+2004,Malaysia,17,18, Heidfeld,Jordan Ford,1:36.769,3
+2004,Malaysia,18,20, Bruni,Minardi Cosworth,1:38.729,3
+2004,Malaysia,19,21, Baumgartner,Minardi Cosworth,1:39.805,3
+2004,Malaysia,20,19, Pantano,Jordan Ford,,0
+2004,Bahrain,1,4, Schumacher,Williams BMW,1:29.968,3
+2004,Bahrain,2,3, Montoya,Williams BMW,1:30.247,3
+2004,Bahrain,3,6, Räikkönen,McLaren Mercedes,1:30.353,3
+2004,Bahrain,4,1, Schumacher,Ferrari,1:30.751,3
+2004,Bahrain,5,17, Panis,Toyota,1:31.001,3
+2004,Bahrain,6,8, Alonso,Renault,1:31.040,3
+2004,Bahrain,7,7, Trulli,Renault,1:31.103,3
+2004,Bahrain,8,9, Button,BAR Honda,1:31.131,3
+2004,Bahrain,9,10, Sato,BAR Honda,1:31.135,3
+2004,Bahrain,10,11, Fisichella,Sauber Petronas,1:31.203,3
+2004,Bahrain,11,2, Barrichello,Ferrari,1:31.283,3
+2004,Bahrain,12,16, da Matta,Toyota,1:31.329,3
+2004,Bahrain,13,5, Coulthard,McLaren Mercedes,1:31.364,3
+2004,Bahrain,14,15, Klien,Jaguar Cosworth,1:31.868,3
+2004,Bahrain,15,14, Webber,Jaguar Cosworth,1:31.945,3
+2004,Bahrain,16,12, Massa,Sauber Petronas,1:32.152,3
+2004,Bahrain,17,18, Heidfeld,Jordan Ford,1:32.640,3
+2004,Bahrain,18,19, Pantano,Jordan Ford,1:33.598,3
+2004,Bahrain,19,20, Bruni,Minardi Cosworth,1:34.879,3
+2004,Bahrain,20,21, Baumgartner,Minardi Cosworth,1:35.632,3
+2004,San Marino,1,3, Montoya,Williams BMW,1:19.805,3
+2004,San Marino,2,4, Schumacher,Williams BMW,1:20.423,3
+2004,San Marino,3,1, Schumacher,Ferrari,1:20.440,3
+2004,San Marino,4,5, Coulthard,McLaren Mercedes,1:20.566,3
+2004,San Marino,5,9, Button,BAR Honda,1:20.632,3
+2004,San Marino,6,11, Fisichella,Sauber Petronas,1:20.716,3
+2004,San Marino,7,2, Barrichello,Ferrari,1:20.927,3
+2004,San Marino,8,10, Sato,BAR Honda,1:20.984,3
+2004,San Marino,9,6, Räikkönen,McLaren Mercedes,1:21.181,3
+2004,San Marino,10,17, Panis,Toyota,1:21.231,3
+2004,San Marino,11,14, Webber,Jaguar Cosworth,1:21.458,3
+2004,San Marino,12,7, Trulli,Renault,1:21.669,3
+2004,San Marino,13,16, da Matta,Toyota,1:21.737,3
+2004,San Marino,14,8, Alonso,Renault,1:21.799,3
+2004,San Marino,15,12, Massa,Sauber Petronas,1:22.154,3
+2004,San Marino,16,15, Klien,Jaguar Cosworth,1:22.246,3
+2004,San Marino,17,18, Heidfeld,Jordan Ford,1:23.055,3
+2004,San Marino,18,19, Pantano,Jordan Ford,1:24.643,3
+2004,San Marino,19,20, Bruni,Minardi Cosworth,1:26.463,3
+2004,San Marino,20,21, Baumgartner,Minardi Cosworth,1:27.319,3
+2004,Spain,1,3, Montoya,Williams BMW,1:15.574,3
+2004,Spain,2,11, Fisichella,Sauber Petronas,1:15.746,3
+2004,Spain,3,12, Massa,Sauber Petronas,1:15.771,3
+2004,Spain,4,4, Schumacher,Williams BMW,1:16.040,3
+2004,Spain,5,7, Trulli,Renault,1:16.156,3
+2004,Spain,6,17, Panis,Toyota,1:16.168,3
+2004,Spain,7,14, Webber,Jaguar Cosworth,1:16.212,3
+2004,Spain,8,6, Räikkönen,McLaren Mercedes,1:16.240,3
+2004,Spain,9,1, Schumacher,Ferrari,1:16.320,3
+2004,Spain,10,10, Sato,BAR Honda,1:16.434,3
+2004,Spain,11,9, Button,BAR Honda,1:16.462,3
+2004,Spain,12,5, Coulthard,McLaren Mercedes,1:16.465,3
+2004,Spain,13,2, Barrichello,Ferrari,1:16.655,3
+2004,Spain,14,16, da Matta,Toyota,1:16.758,3
+2004,Spain,15,8, Alonso,Renault,1:17.011,3
+2004,Spain,16,18, Heidfeld,Jordan Ford,1:17.043,3
+2004,Spain,17,15, Klien,Jaguar Cosworth,1:17.863,3
+2004,Spain,18,19, Pantano,Jordan Ford,1:17.965,3
+2004,Spain,19,20, Bruni,Minardi Cosworth,1:20.372,3
+2004,Spain,20,21, Baumgartner,Minardi Cosworth,1:21.620,3
+2004,Monaco,1,4, Schumacher,Williams BMW,1:14.483,3
+2004,Monaco,2,6, Räikkönen,McLaren Mercedes,1:14.659,3
+2004,Monaco,3,5, Coulthard,McLaren Mercedes,1:14.728,3
+2004,Monaco,4,9, Button,BAR Honda,1:14.799,3
+2004,Monaco,5,11, Fisichella,Sauber Petronas,1:14.814,3
+2004,Monaco,6,8, Alonso,Renault,1:14.816,3
+2004,Monaco,7,10, Sato,BAR Honda,1:14.931,3
+2004,Monaco,8,7, Trulli,Renault,1:14.993,3
+2004,Monaco,9,3, Montoya,Williams BMW,1:15.029,3
+2004,Monaco,10,17, Panis,Toyota,1:15.125,3
+2004,Monaco,11,2, Barrichello,Ferrari,1:15.329,3
+2004,Monaco,12,12, Massa,Sauber Petronas,1:15.436,3
+2004,Monaco,13,16, da Matta,Toyota,1:15.738,3
+2004,Monaco,14,1, Schumacher,Ferrari,1:15.927,3
+2004,Monaco,15,14, Webber,Jaguar Cosworth,1:16.161,3
+2004,Monaco,16,15, Klien,Jaguar Cosworth,1:16.379,3
+2004,Monaco,17,18, Heidfeld,Jordan Ford,1:16.914,3
+2004,Monaco,18,19, Pantano,Jordan Ford,1:17.674,3
+2004,Monaco,19,21, Baumgartner,Minardi Cosworth,1:20.468,3
+2004,Monaco,20,20, Bruni,Minardi Cosworth,1:20.740,3
+2004,Europe,1,10, Sato,BAR Honda,1:27.691,3
+2004,Europe,2,1, Schumacher,Ferrari,1:28.278,3
+2004,Europe,3,4, Schumacher,Williams BMW,1:28.655,3
+2004,Europe,4,5, Coulthard,McLaren Mercedes,1:28.717,3
+2004,Europe,5,9, Button,BAR Honda,1:28.816,3
+2004,Europe,6,6, Räikkönen,McLaren Mercedes,1:28.897,3
+2004,Europe,7,2, Barrichello,Ferrari,1:29.014,3
+2004,Europe,8,8, Alonso,Renault,1:29.069,3
+2004,Europe,9,3, Montoya,Williams BMW,1:29.092,3
+2004,Europe,10,17, Panis,Toyota,1:29.243,3
+2004,Europe,11,16, da Matta,Toyota,1:29.272,3
+2004,Europe,12,11, Fisichella,Sauber Petronas,1:29.327,5
+2004,Europe,13,7, Trulli,Renault,1:29.905,3
+2004,Europe,14,14, Webber,Jaguar Cosworth,1:30.579,3
+2004,Europe,15,15, Klien,Jaguar Cosworth,1:30.933,4
+2004,Europe,16,12, Massa,Sauber Petronas,1:31.879,3
+2004,Europe,17,19, Pantano,Jordan Ford,1:31.928,3
+2004,Europe,18,18, Heidfeld,Jordan Ford,1:32.216,3
+2004,Europe,19,21, Baumgartner,Minardi Cosworth,1:33.061,3
+2004,Europe,20,20, Bruni,Minardi Cosworth,1:33.077,3
+2004,Canada,1,4, Schumacher,Williams BMW,1:12.441,3
+2004,Canada,2,3, Montoya,Williams BMW,1:12.746,3
+2004,Canada,3,8, Alonso,Renault,1:12.826,3
+2004,Canada,4,10, Sato,BAR Honda,1:12.989,3
+2004,Canada,5,7, Trulli,Renault,1:13.149,3
+2004,Canada,6,5, Coulthard,McLaren Mercedes,1:13.206,3
+2004,Canada,7,9, Button,BAR Honda,1:13.333,3
+2004,Canada,8,1, Schumacher,Ferrari,1:13.463,3
+2004,Canada,9,6, Räikkönen,McLaren Mercedes,1:13.602,3
+2004,Canada,10,11, Fisichella,Sauber Petronas,1:13.663,3
+2004,Canada,11,2, Barrichello,Ferrari,1:13.782,3
+2004,Canada,12,16, da Matta,Toyota,1:13.807,3
+2004,Canada,13,17, Panis,Toyota,1:14.166,3
+2004,Canada,14,12, Massa,Sauber Petronas,1:14.392,3
+2004,Canada,15,14, Webber,Jaguar Cosworth,1:14.715,3
+2004,Canada,16,15, Klien,Jaguar Cosworth,1:14.751,3
+2004,Canada,17,18, Heidfeld,Jordan Ford,1:15.657,3
+2004,Canada,18,19, Glock,Jordan Ford,1:16.865,3
+2004,Canada,19,21, Baumgartner,Minardi Cosworth,1:17.903,3
+2004,Canada,20,20, Bruni,Minardi Cosworth,,1
+2004,United States,1,2, Barrichello,Ferrari,1:09.454,3
+2004,United States,2,3, Montoya,Williams BMW,1:09.824,3
+2004,United States,3,17, Panis,Toyota,1:09.923,3
+2004,United States,4,10, Sato,BAR Honda,1:10.002,3
+2004,United States,5,4, Schumacher,Williams BMW,1:10.003,3
+2004,United States,6,8, Alonso,Renault,1:10.078,3
+2004,United States,7,16, da Matta,Toyota,1:10.108,3
+2004,United States,8,9, Button,BAR Honda,1:10.115,3
+2004,United States,9,1, Schumacher,Ferrari,1:10.129,3
+2004,United States,10,7, Trulli,Renault,1:10.559,3
+2004,United States,11,11, Fisichella,Sauber Petronas,1:10.997,3
+2004,United States,12,5, Coulthard,McLaren Mercedes,1:11.068,3
+2004,United States,13,12, Massa,Sauber Petronas,1:11.315,3
+2004,United States,14,6, Räikkönen,McLaren Mercedes,1:11.415,3
+2004,United States,15,14, Webber,Jaguar Cosworth,1:11.444,3
+2004,United States,16,15, Klien,Jaguar Cosworth,1:11.777,3
+2004,United States,17,19, Pantano,Jordan Ford,1:12.017,3
+2004,United States,18,18, Heidfeld,Jordan Ford,1:12.329,3
+2004,United States,19,20, Bruni,Minardi Cosworth,1:13.776,3
+2004,United States,20,21, Baumgartner,Minardi Cosworth,1:14.396,3
+2004,France,1,3, Montoya,Williams BMW,1:13.377,3
+2004,France,2,1, Schumacher,Ferrari,1:13.541,3
+2004,France,3,5, Coulthard,McLaren Mercedes,1:13.649,3
+2004,France,4,6, Räikkönen,McLaren Mercedes,1:13.736,3
+2004,France,5,8, Alonso,Renault,1:13.750,3
+2004,France,6,9, Button,BAR Honda,1:13.772,3
+2004,France,7,7, Trulli,Renault,1:13.949,3
+2004,France,8,10, Sato,BAR Honda,1:14.130,3
+2004,France,9,4, Gene,Williams BMW,1:14.133,3
+2004,France,10,16, da Matta,Toyota,1:14.245,3
+2004,France,11,17, Panis,Toyota,1:14.540,3
+2004,France,12,12, Massa,Sauber Petronas,1:14.627,3
+2004,France,13,15, Klien,Jaguar Cosworth,1:15.205,3
+2004,France,14,14, Webber,Jaguar Cosworth,1:15.332,3
+2004,France,15,11, Fisichella,Sauber Petronas,1:15.793,3
+2004,France,16,19, Pantano,Jordan Ford,1:15.913,3
+2004,France,17,18, Heidfeld,Jordan Ford,1:16.366,3
+2004,France,18,20, Bruni,Minardi Cosworth,1:18.070,3
+2004,France,19,21, Baumgartner,Minardi Cosworth,1:18.108,3
+2004,Great Britain,1,9, Button,BAR Honda,1:18.872,3
+2004,Great Britain,2,12, Massa,Sauber Petronas,1:19.317,3
+2004,Great Britain,3,17, Panis,Toyota,1:19.697,3
+2004,Great Britain,4,19, Pantano,Jordan Ford,1:21.350,3
+2004,Great Britain,5,7, Trulli,Renault,1:21.496,3
+2004,Great Britain,6,6, Räikkönen,McLaren Mercedes,1:21.639,3
+2004,Great Britain,7,8, Alonso,Renault,1:21.923,3
+2004,Great Britain,8,16, da Matta,Toyota,1:22.507,3
+2004,Great Britain,9,20, Bruni,Minardi Cosworth,1:22.529,3
+2004,Great Britain,10,21, Baumgartner,Minardi Cosworth,1:23.116,3
+2004,Great Britain,11,5, Coulthard,McLaren Mercedes,1:23.521,3
+2004,Great Britain,12,2, Barrichello,Ferrari,1:24.817,3
+2004,Great Britain,13,10, Sato,BAR Honda,1:28.910,3
+2004,Great Britain,14,1, Schumacher,Ferrari,1:30.293,3
+2004,Great Britain,15,3, Montoya,Williams BMW,1:34.386,3
+2004,Great Britain,16,4, Gene,Williams BMW,1:34.981,3
+2004,Great Britain,17,14, Webber,Jaguar Cosworth,1:35.853,3
+2004,Great Britain,18,15, Klien,Jaguar Cosworth,1:38.648,3
+2004,Great Britain,19,11, Fisichella,Sauber Petronas,,2
+2004,Great Britain,20,18, Heidfeld,Jordan Ford,,2
+2004,Germany,1,3, Montoya,Williams BMW,1:13.391,3
+2004,Germany,2,4, Pizzonia,Williams BMW,1:13.422,3
+2004,Germany,3,9, Button,BAR Honda,1:13.535,3
+2004,Germany,4,8, Alonso,Renault,1:13.582,3
+2004,Germany,5,5, Coulthard,McLaren Mercedes,1:13.640,3
+2004,Germany,6,17, Panis,Toyota,1:13.641,3
+2004,Germany,7,7, Trulli,Renault,1:13.737,3
+2004,Germany,8,6, Räikkönen,McLaren Mercedes,1:13.842,3
+2004,Germany,9,12, Massa,Sauber Petronas,1:13.899,3
+2004,Germany,10,11, Fisichella,Sauber Petronas,1:13.914,3
+2004,Germany,11,1, Schumacher,Ferrari,1:14.042,3
+2004,Germany,12,2, Barrichello,Ferrari,1:14.111,3
+2004,Germany,13,10, Sato,BAR Honda,1:14.465,3
+2004,Germany,14,15, Klien,Jaguar Cosworth,1:15.090,3
+2004,Germany,15,14, Webber,Jaguar Cosworth,1:15.093,3
+2004,Germany,16,16, da Matta,Toyota,1:15.119,3
+2004,Germany,17,19, Pantano,Jordan Ford,1:16.167,3
+2004,Germany,18,18, Heidfeld,Jordan Ford,1:16.538,3
+2004,Germany,19,20, Bruni,Minardi Cosworth,1:17.283,3
+2004,Germany,20,21, Baumgartner,Minardi Cosworth,1:17.515,3
+2004,Hungary,1,2, Barrichello,Ferrari,1:18.436,3
+2004,Hungary,2,1, Schumacher,Ferrari,1:19.107,3
+2004,Hungary,3,12, Massa,Sauber Petronas,1:19.658,3
+2004,Hungary,4,11, Fisichella,Sauber Petronas,1:19.668,3
+2004,Hungary,5,10, Sato,BAR Honda,1:19.695,3
+2004,Hungary,6,3, Montoya,Williams BMW,1:19.821,3
+2004,Hungary,7,9, Button,BAR Honda,1:19.878,3
+2004,Hungary,8,7, Trulli,Renault,1:19.879,3
+2004,Hungary,9,4, Pizzonia,Williams BMW,1:20.019,3
+2004,Hungary,10,6, Räikkönen,McLaren Mercedes,1:20.066,3
+2004,Hungary,11,8, Alonso,Renault,1:20.135,3
+2004,Hungary,12,16, Zonta,Toyota,1:20.199,3
+2004,Hungary,13,18, Heidfeld,Jordan Ford,1:20.439,3
+2004,Hungary,14,17, Panis,Toyota,1:20.491,3
+2004,Hungary,15,19, Pantano,Jordan Ford,1:21.187,3
+2004,Hungary,16,5, Coulthard,McLaren Mercedes,1:21.192,3
+2004,Hungary,17,14, Webber,Jaguar Cosworth,1:21.452,3
+2004,Hungary,18,15, Klien,Jaguar Cosworth,1:21.510,3
+2004,Hungary,19,20, Bruni,Minardi Cosworth,1:23.362,3
+2004,Hungary,20,21, Baumgartner,Minardi Cosworth,1:24.656,3
+2004,Belgium,1,1, Schumacher,Ferrari,1:53.755,3
+2004,Belgium,2,2, Barrichello,Ferrari,1:54.913,3
+2004,Belgium,3,6, Räikkönen,McLaren Mercedes,1:55.371,3
+2004,Belgium,4,12, Massa,Sauber Petronas,1:56.057,3
+2004,Belgium,5,11, Fisichella,Sauber Petronas,1:56.068,3
+2004,Belgium,6,3, Montoya,Williams BMW,1:56.842,3
+2004,Belgium,7,5, Coulthard,McLaren Mercedes,1:56.994,3
+2004,Belgium,8,8, Alonso,Renault,1:58.242,3
+2004,Belgium,9,7, Trulli,Renault,1:58.606,3
+2004,Belgium,10,9, Button,BAR Honda,1:58.837,3
+2004,Belgium,11,10, Sato,BAR Honda,1:58.929,3
+2004,Belgium,12,4, Pizzonia,Williams BMW,1:59.100,3
+2004,Belgium,13,14, Webber,Jaguar Cosworth,1:59.437,3
+2004,Belgium,14,19, Pantano,Jordan Ford,1:59.442,3
+2004,Belgium,15,15, Klien,Jaguar Cosworth,1:59.997,3
+2004,Belgium,16,18, Heidfeld,Jordan Ford,2:00.166,3
+2004,Belgium,17,21, Baumgartner,Minardi Cosworth,2:01.195,3
+2004,Belgium,18,17, Panis,Toyota,2:01.472,3
+2004,Belgium,19,20, Bruni,Minardi Cosworth,2:03.226,3
+2004,Belgium,20,16, Zonta,Toyota,,2
+2004,Italy,1,3, Montoya,Williams BMW,1:19.525,3
+2004,Italy,2,4, Pizzonia,Williams BMW,1:19.671,3
+2004,Italy,3,10, Sato,BAR Honda,1:19.733,3
+2004,Italy,4,9, Button,BAR Honda,1:19.856,3
+2004,Italy,5,8, Alonso,Renault,1:20.341,3
+2004,Italy,6,11, Fisichella,Sauber Petronas,1:20.357,3
+2004,Italy,7,5, Coulthard,McLaren Mercedes,1:20.414,3
+2004,Italy,8,6, Räikkönen,McLaren Mercedes,1:20.501,3
+2004,Italy,9,1, Schumacher,Ferrari,1:20.528,3
+2004,Italy,10,2, Barrichello,Ferrari,1:20.552,3
+2004,Italy,11,12, Massa,Sauber Petronas,1:20.571,3
+2004,Italy,12,7, Trulli,Renault,1:21.011,3
+2004,Italy,13,14, Webber,Jaguar Cosworth,1:21.783,3
+2004,Italy,14,16, Zonta,Toyota,1:21.829,3
+2004,Italy,15,15, Klien,Jaguar Cosworth,1:22.114,3
+2004,Italy,16,17, Panis,Toyota,1:22.169,3
+2004,Italy,17,19, Pantano,Jordan Ford,1:23.264,3
+2004,Italy,18,20, Bruni,Minardi Cosworth,1:23.963,3
+2004,Italy,19,21, Baumgartner,Minardi Cosworth,1:25.082,3
+2004,Italy,20,18, Heidfeld,Jordan Ford,,2
+2004,China,1,1, Schumacher,Ferrari,1:33.185,3
+2004,China,2,6, Räikkönen,McLaren Mercedes,1:33.499,3
+2004,China,3,11, Fisichella,Sauber Petronas,1:33.738,3
+2004,China,4,2, Barrichello,Ferrari,1:33.787,3
+2004,China,5,12, Massa,Sauber Petronas,1:33.816,3
+2004,China,6,4, Schumacher,Williams BMW,1:33.849,3
+2004,China,7,3, Montoya,Williams BMW,1:34.016,3
+2004,China,8,10, Sato,BAR Honda,1:34.051,3
+2004,China,9,17, Panis,Toyota,1:34.153,3
+2004,China,10,9, Button,BAR Honda,1:34.273,3
+2004,China,11,14, Webber,Jaguar Cosworth,1:34.334,3
+2004,China,12,5, Coulthard,McLaren Mercedes,1:34.355,3
+2004,China,13,7, Villeneuve,Renault,1:34.425,3
+2004,China,14,8, Alonso,Renault,1:34.599,3
+2004,China,15,18, Heidfeld,Jordan Ford,1:34.808,3
+2004,China,16,16, Zonta,Toyota,1:34.958,3
+2004,China,17,15, Klien,Jaguar Cosworth,1:35.447,3
+2004,China,18,20, Bruni,Minardi Cosworth,1:36.623,3
+2004,China,19,19, Glock,Jordan Ford,1:37.143,3
+2004,China,20,21, Baumgartner,Minardi Cosworth,1:37.510,3
+2004,Japan,1,16, Trulli,Toyota,1:37.716,3
+2004,Japan,2,1, Schumacher,Ferrari,1:38.397,3
+2004,Japan,3,4, Schumacher,Williams BMW,1:38.864,3
+2004,Japan,4,14, Webber,Jaguar Cosworth,1:39.170,3
+2004,Japan,5,17, Panis,Toyota,1:40.029,3
+2004,Japan,6,10, Sato,BAR Honda,1:40.135,3
+2004,Japan,7,11, Fisichella,Sauber Petronas,1:40.151,3
+2004,Japan,8,2, Barrichello,Ferrari,1:41.001,3
+2004,Japan,9,5, Coulthard,McLaren Mercedes,1:41.126,3
+2004,Japan,10,9, Button,BAR Honda,1:41.423,3
+2004,Japan,11,6, Räikkönen,McLaren Mercedes,1:41.517,3
+2004,Japan,12,12, Massa,Sauber Petronas,1:41.707,3
+2004,Japan,13,7, Villeneuve,Renault,1:41.857,3
+2004,Japan,14,15, Klien,Jaguar Cosworth,1:42.054,3
+2004,Japan,15,8, Alonso,Renault,1:42.056,3
+2004,Japan,16,18, Heidfeld,Jordan Ford,1:42.434,3
+2004,Japan,17,19, Glock,Jordan Ford,1:43.682,3
+2004,Japan,18,3, Montoya,Williams BMW,1:44.370,3
+2004,Japan,19,20, Bruni,Minardi Cosworth,1:45.415,3
+2004,Japan,20,21, Baumgartner,Minardi Cosworth,,2
+2004,Brazil,1,2, Barrichello,Ferrari,1:09.822,3
+2004,Brazil,2,3, Montoya,Williams BMW,1:09.862,3
+2004,Brazil,3,12, Massa,Sauber Petronas,1:09.930,3
+2004,Brazil,4,1, Schumacher,Ferrari,1:10.192,3
+2004,Brazil,5,4, Schumacher,Williams BMW,1:10.258,3
+2004,Brazil,6,10, Sato,BAR Honda,1:10.373,3
+2004,Brazil,7,5, Coulthard,McLaren Mercedes,1:10.418,3
+2004,Brazil,8,6, Räikkönen,McLaren Mercedes,1:10.440,3
+2004,Brazil,9,11, Fisichella,Sauber Petronas,1:10.467,3
+2004,Brazil,10,16, Trulli,Toyota,1:10.478,3
+2004,Brazil,11,9, Button,BAR Honda,1:10.607,3
+2004,Brazil,12,8, Alonso,Renault,1:10.637,3
+2004,Brazil,13,7, Villeneuve,Renault,1:10.708,3
+2004,Brazil,14,14, Webber,Jaguar Cosworth,1:11.230,3
+2004,Brazil,15,17, Zonta,Toyota,1:11.315,3
+2004,Brazil,16,18, Heidfeld,Jordan Ford,1:11.394,3
+2004,Brazil,17,15, Klien,Jaguar Cosworth,1:11.912,3
+2004,Brazil,18,19, Glock,Jordan Ford,1:12.242,3
+2004,Brazil,19,20, Bruni,Minardi Cosworth,1:12.916,3
+2004,Brazil,20,21, Baumgartner,Minardi Cosworth,1:13.032,3
+2003,Australia,1,2, Barrichello,Ferrari,1:26.372,3
+2003,Australia,2,6, Räikkönen,McLaren Mercedes,1:26.551,3
+2003,Australia,3,16, Villeneuve,BAR Honda,1:26.832,3
+2003,Australia,4,1, Schumacher,Ferrari,1:27.103,3
+2003,Australia,5,17, Button,BAR Honda,1:27.159,3
+2003,Australia,6,5, Coulthard,McLaren Mercedes,1:27.242,3
+2003,Australia,7,8, Alonso,Renault,1:27.255,3
+2003,Australia,8,20, Panis,Toyota,1:27.352,3
+2003,Australia,9,7, Trulli,Renault,1:27.411,3
+2003,Australia,10,3, Montoya,Williams BMW,1:27.450,3
+2003,Australia,11,21, da Matta,Toyota,1:27.478,3
+2003,Australia,12,9, Heidfeld,Sauber Petronas,1:27.510,3
+2003,Australia,13,10, Frentzen,Sauber Petronas,1:27.563,3
+2003,Australia,14,11, Fisichella,Jordan Ford,1:27.633,3
+2003,Australia,15,14, Webber,Jaguar Cosworth,1:27.675,3
+2003,Australia,16,4, Schumacher,Williams BMW,1:28.266,3
+2003,Australia,17,12, Firman,Jordan Ford,1:29.977,3
+2003,Australia,18,19, Verstappen,Minardi Cosworth,1:30.053,3
+2003,Australia,19,15, Pizzonia,Jaguar Cosworth,1:30.092,3
+2003,Australia,20,18, Wilson,Minardi Cosworth,1:30.479,3
+2003,Malaysia,1,1, Schumacher,Ferrari,1:34.980,3
+2003,Malaysia,2,2, Barrichello,Ferrari,1:35.681,3
+2003,Malaysia,3,3, Montoya,Williams BMW,1:35.939,3
+2003,Malaysia,4,6, Räikkönen,McLaren Mercedes,1:36.038,3
+2003,Malaysia,5,5, Coulthard,McLaren Mercedes,1:36.297,3
+2003,Malaysia,6,7, Trulli,Renault,1:36.301,3
+2003,Malaysia,7,9, Heidfeld,Sauber Petronas,1:36.407,3
+2003,Malaysia,8,10, Frentzen,Sauber Petronas,1:36.615,3
+2003,Malaysia,9,17, Button,BAR Honda,1:36.632,3
+2003,Malaysia,10,8, Alonso,Renault,1:36.693,3
+2003,Malaysia,11,21, da Matta,Toyota,1:36.706,3
+2003,Malaysia,12,11, Fisichella,Jordan Ford,1:36.759,3
+2003,Malaysia,13,4, Schumacher,Williams BMW,1:36.805,3
+2003,Malaysia,14,20, Panis,Toyota,1:36.995,3
+2003,Malaysia,15,16, Villeneuve,BAR Honda,1:37.585,3
+2003,Malaysia,16,14, Webber,Jaguar Cosworth,1:37.669,3
+2003,Malaysia,17,12, Firman,Jordan Ford,1:38.240,3
+2003,Malaysia,18,19, Verstappen,Minardi Cosworth,1:38.904,3
+2003,Malaysia,19,18, Wilson,Minardi Cosworth,1:39.354,3
+2003,Brazil,1,14, Webber,Jaguar Cosworth,1:23.111,3
+2003,Brazil,2,2, Barrichello,Ferrari,1:23.249,3
+2003,Brazil,3,6, Räikkönen,McLaren Mercedes,1:24.607,3
+2003,Brazil,4,5, Coulthard,McLaren Mercedes,1:24.655,3
+2003,Brazil,5,1, Schumacher,Ferrari,1:25.585,3
+2003,Brazil,6,20, Panis,Toyota,1:25.614,3
+2003,Brazil,7,16, Villeneuve,BAR Honda,1:25.672,3
+2003,Brazil,8,15, Pizzonia,Jaguar Cosworth,1:25.764,3
+2003,Brazil,9,8, Alonso,Renault,1:26.203,3
+2003,Brazil,10,10, Frentzen,Sauber Petronas,1:26.375,3
+2003,Brazil,11,21, da Matta,Toyota,1:26.554,3
+2003,Brazil,12,7, Trulli,Renault,1:26.557,3
+2003,Brazil,13,4, Schumacher,Williams BMW,1:26.709,3
+2003,Brazil,14,11, Fisichella,Jordan Ford,1:26.726,3
+2003,Brazil,15,19, Verstappen,Minardi Cosworth,1:26.886,3
+2003,Brazil,16,9, Heidfeld,Sauber Petronas,1:27.111,3
+2003,Brazil,17,3, Montoya,Williams BMW,1:27.961,3
+2003,Brazil,18,12, Firman,Jordan Ford,1:28.083,3
+2003,Brazil,19,18, Wilson,Minardi Cosworth,1:28.317,3
+2003,Brazil,20,17, Button,BAR Honda,,2
+2003,San Marino,1,1, Schumacher,Ferrari,1:20.628,3
+2003,San Marino,2,2, Barrichello,Ferrari,1:21.082,3
+2003,San Marino,3,4, Schumacher,Williams BMW,1:21.193,3
+2003,San Marino,4,3, Montoya,Williams BMW,1:21.490,3
+2003,San Marino,5,14, Webber,Jaguar Cosworth,1:21.669,3
+2003,San Marino,6,17, Button,BAR Honda,1:21.891,3
+2003,San Marino,7,16, Villeneuve,BAR Honda,1:21.926,3
+2003,San Marino,8,6, Räikkönen,McLaren Mercedes,1:22.147,3
+2003,San Marino,9,5, Coulthard,McLaren Mercedes,1:22.326,3
+2003,San Marino,10,10, Frentzen,Sauber Petronas,1:22.531,3
+2003,San Marino,11,11, Fisichella,Jordan Ford,1:22.724,3
+2003,San Marino,12,20, Panis,Toyota,1:22.765,3
+2003,San Marino,13,8, Alonso,Renault,1:22.809,3
+2003,San Marino,14,9, Heidfeld,Sauber Petronas,1:22.911,3
+2003,San Marino,15,15, Pizzonia,Jaguar Cosworth,1:22.919,3
+2003,San Marino,16,7, Trulli,Renault,1:23.100,3
+2003,San Marino,17,12, Firman,Jordan Ford,1:24.360,3
+2003,San Marino,18,21, da Matta,Toyota,1:24.854,3
+2003,San Marino,19,19, Verstappen,Minardi Cosworth,1:24.990,3
+2003,San Marino,20,18, Wilson,Minardi Cosworth,1:25.195,3
+2003,Spain,1,1, Schumacher,Ferrari,1:17.130,3
+2003,Spain,2,7, Trulli,Renault,1:17.149,3
+2003,Spain,3,2, Barrichello,Ferrari,1:17.218,3
+2003,Spain,4,21, da Matta,Toyota,1:17.443,3
+2003,Spain,5,17, Button,BAR Honda,1:17.613,3
+2003,Spain,6,20, Panis,Toyota,1:17.746,3
+2003,Spain,7,14, Webber,Jaguar Cosworth,1:17.793,3
+2003,Spain,8,6, Räikkönen,McLaren Mercedes,1:17.862,3
+2003,Spain,9,5, Coulthard,McLaren Mercedes,1:18.060,3
+2003,Spain,10,8, Alonso,Renault,1:18.100,3
+2003,Spain,11,4, Schumacher,Williams BMW,1:18.409,3
+2003,Spain,12,16, Villeneuve,BAR Honda,1:18.461,3
+2003,Spain,13,15, Pizzonia,Jaguar Cosworth,1:18.528,3
+2003,Spain,14,3, Montoya,Williams BMW,1:18.607,3
+2003,Spain,15,11, Fisichella,Jordan Ford,1:18.879,3
+2003,Spain,16,10, Frentzen,Sauber Petronas,1:18.909,3
+2003,Spain,17,9, Heidfeld,Sauber Petronas,1:19.050,3
+2003,Spain,18,12, Firman,Jordan Ford,1:19.195,3
+2003,Spain,19,19, Verstappen,Minardi Cosworth,1:20.822,3
+2003,Spain,20,18, Wilson,Minardi Cosworth,1:21.100,3
+2003,Austria,1,1, Schumacher,Ferrari,1:07.908,3
+2003,Austria,2,2, Barrichello,Ferrari,1:08.187,3
+2003,Austria,3,14, Webber,Jaguar Cosworth,1:08.512,3
+2003,Austria,4,16, Villeneuve,BAR Honda,1:08.680,3
+2003,Austria,5,17, Button,BAR Honda,1:08.831,3
+2003,Austria,6,3, Montoya,Williams BMW,1:08.839,4
+2003,Austria,7,5, Coulthard,McLaren Mercedes,1:08.947,3
+2003,Austria,8,6, Räikkönen,McLaren Mercedes,1:08.978,3
+2003,Austria,9,15, Pizzonia,Jaguar Cosworth,1:09.024,3
+2003,Austria,10,11, Fisichella,Jordan Ford,1:09.281,3
+2003,Austria,11,7, Trulli,Renault,1:09.450,3
+2003,Austria,12,9, Heidfeld,Sauber Petronas,1:09.479,3
+2003,Austria,13,8, Alonso,Renault,1:09.680,3
+2003,Austria,14,20, Panis,Toyota,1:09.764,4
+2003,Austria,15,10, Frentzen,Sauber Petronas,1:10.055,3
+2003,Austria,16,21, da Matta,Toyota,1:10.370,3
+2003,Austria,17,19, Verstappen,Minardi Cosworth,1:10.894,3
+2003,Austria,18,18, Wilson,Minardi Cosworth,1:11.056,3
+2003,Austria,19,12, Firman,Jordan Ford,1:11.171,2
+2003,Austria,20,4, Schumacher,Williams BMW,,2
+2003,Monaco,1,1, Schumacher,Ferrari,1:16.305,3
+2003,Monaco,2,2, Barrichello,Ferrari,1:16.636,3
+2003,Monaco,3,17, Button,BAR Honda,1:16.895,3
+2003,Monaco,4,7, Trulli,Renault,1:16.905,3
+2003,Monaco,5,5, Coulthard,McLaren Mercedes,1:17.059,3
+2003,Monaco,6,4, Schumacher,Williams BMW,1:17.063,3
+2003,Monaco,7,11, Fisichella,Jordan Ford,1:17.080,3
+2003,Monaco,8,3, Montoya,Williams BMW,1:17.108,3
+2003,Monaco,9,14, Webber,Jaguar Cosworth,1:17.637,4
+2003,Monaco,10,9, Heidfeld,Sauber Petronas,1:17.912,3
+2003,Monaco,11,6, Räikkönen,McLaren Mercedes,1:17.926,3
+2003,Monaco,12,16, Villeneuve,BAR Honda,1:18.109,3
+2003,Monaco,13,12, Firman,Jordan Ford,1:18.286,3
+2003,Monaco,14,8, Alonso,Renault,1:18.370,3
+2003,Monaco,15,15, Pizzonia,Jaguar Cosworth,1:18.967,3
+2003,Monaco,16,19, Verstappen,Minardi Cosworth,1:19.421,3
+2003,Monaco,17,18, Wilson,Minardi Cosworth,1:19.680,3
+2003,Monaco,18,20, Panis,Toyota,1:19.903,3
+2003,Monaco,19,21, da Matta,Toyota,1:20.374,3
+2003,Monaco,20,10, Frentzen,Sauber Petronas,,2
+2003,Canada,1,2, Barrichello,Ferrari,1:30.925,3
+2003,Canada,2,1, Schumacher,Ferrari,1:31.969,3
+2003,Canada,3,9, Heidfeld,Sauber Petronas,1:32.778,3
+2003,Canada,4,12, Firman,Jordan Ford,1:34.759,3
+2003,Canada,5,8, Alonso,Renault,1:35.173,3
+2003,Canada,6,6, Räikkönen,McLaren Mercedes,1:35.373,3
+2003,Canada,7,10, Frentzen,Sauber Petronas,1:35.776,3
+2003,Canada,8,5, Coulthard,McLaren Mercedes,1:36.463,3
+2003,Canada,9,14, Webber,Jaguar Cosworth,1:36.699,3
+2003,Canada,10,20, Panis,Toyota,1:37.313,3
+2003,Canada,11,19, Verstappen,Minardi Cosworth,1:37.426,3
+2003,Canada,12,3, Montoya,Williams BMW,1:37.479,3
+2003,Canada,13,18, Wilson,Minardi Cosworth,1:38.088,3
+2003,Canada,14,17, Button,BAR Honda,1:38.109,3
+2003,Canada,15,4, Schumacher,Williams BMW,1:38.210,3
+2003,Canada,16,21, da Matta,Toyota,1:38.244,3
+2003,Canada,17,15, Pizzonia,Jaguar Cosworth,1:38.255,3
+2003,Canada,18,11, Fisichella,Jordan Ford,1:38.617,3
+2003,Canada,19,7, Trulli,Renault,1:41.413,3
+2003,Canada,20,16, Villeneuve,BAR Honda,1:44.702,3
+2003,Europe,1,6, Räikkönen,McLaren Mercedes,1:29.989,3
+2003,Europe,2,1, Schumacher,Ferrari,1:30.353,3
+2003,Europe,3,3, Montoya,Williams BMW,1:30.378,3
+2003,Europe,4,4, Schumacher,Williams BMW,1:30.522,3
+2003,Europe,5,2, Barrichello,Ferrari,1:30.842,3
+2003,Europe,6,5, Coulthard,McLaren Mercedes,1:30.903,3
+2003,Europe,7,7, Trulli,Renault,1:31.143,3
+2003,Europe,8,8, Alonso,Renault,1:31.533,3
+2003,Europe,9,11, Fisichella,Jordan Ford,1:32.196,3
+2003,Europe,10,10, Frentzen,Sauber Petronas,1:32.201,3
+2003,Europe,11,17, Button,BAR Honda,1:32.479,3
+2003,Europe,12,14, Webber,Jaguar Cosworth,1:35.972,3
+2003,Europe,13,9, Heidfeld,Sauber Petronas,1:52.300,3
+2003,Europe,14,12, Firman,Jordan Ford,1:53.893,3
+2003,Europe,15,18, Wilson,Minardi Cosworth,1:54.546,3
+2003,Europe,16,19, Verstappen,Minardi Cosworth,1:55.921,3
+2003,Europe,17,20, Panis,Toyota,1:57.327,4
+2003,Europe,18,15, Pizzonia,Jaguar Cosworth,1:57.435,3
+2003,Europe,19,21, da Matta,Toyota,,2
+2003,Europe,20,16, Villeneuve,BAR Honda,,2
+2003,France,1,19, Verstappen,Minardi Cosworth,1:20.817,3
+2003,France,2,12, Firman,Jordan Ford,1:23.496,3
+2003,France,3,9, Heidfeld,Sauber Petronas,1:24.042,3
+2003,France,4,20, Panis,Toyota,1:24.175,3
+2003,France,5,15, Pizzonia,Jaguar Cosworth,1:24.642,3
+2003,France,6,16, Villeneuve,BAR Honda,1:24.651,3
+2003,France,7,14, Webber,Jaguar Cosworth,1:25.178,3
+2003,France,8,10, Frentzen,Sauber Petronas,1:26.151,3
+2003,France,9,21, da Matta,Toyota,1:26.975,3
+2003,France,10,2, Barrichello,Ferrari,1:27.095,3
+2003,France,11,1, Schumacher,Ferrari,1:27.929,3
+2003,France,12,11, Fisichella,Jordan Ford,1:28.502,3
+2003,France,13,5, Coulthard,McLaren Mercedes,1:28.937,3
+2003,France,14,3, Montoya,Williams BMW,1:28.988,3
+2003,France,15,7, Trulli,Renault,1:29.024,3
+2003,France,16,6, Räikkönen,McLaren Mercedes,1:29.120,3
+2003,France,17,4, Schumacher,Williams BMW,1:29.327,3
+2003,France,18,8, Alonso,Renault,1:29.455,3
+2003,France,19,17, Button,BAR Honda,1:30.731,3
+2003,France,20,18, Wilson,Minardi Cosworth,,3
+2003,Great Britain,1,1, Schumacher,Ferrari,1:19.474,3
+2003,Great Britain,2,3, Montoya,Williams BMW,1:19.749,3
+2003,Great Britain,3,4, Schumacher,Williams BMW,1:19.788,3
+2003,Great Britain,4,8, Alonso,Renault,1:19.907,3
+2003,Great Britain,5,20, Panis,Toyota,1:19.959,3
+2003,Great Britain,6,7, Trulli,Renault,1:19.963,3
+2003,Great Britain,7,5, Coulthard,McLaren Mercedes,1:19.968,3
+2003,Great Britain,8,14, Webber,Jaguar Cosworth,1:20.171,3
+2003,Great Britain,9,17, Button,BAR Honda,1:20.569,3
+2003,Great Britain,10,21, da Matta,Toyota,1:20.765,3
+2003,Great Britain,11,15, Pizzonia,Jaguar Cosworth,1:20.877,3
+2003,Great Britain,12,6, Räikkönen,McLaren Mercedes,1:21.065,3
+2003,Great Britain,13,16, Villeneuve,BAR Honda,1:21.084,3
+2003,Great Britain,14,9, Heidfeld,Sauber Petronas,1:21.211,3
+2003,Great Britain,15,10, Frentzen,Sauber Petronas,1:21.363,3
+2003,Great Britain,16,11, Fisichella,Jordan Ford,1:21.500,3
+2003,Great Britain,17,12, Firman,Jordan Ford,1:22.335,3
+2003,Great Britain,18,19, Verstappen,Minardi Cosworth,1:23.418,3
+2003,Great Britain,19,2, Barrichello,Ferrari,,2
+2003,Great Britain,20,18, Wilson,Minardi Cosworth,,1
+2003,Germany,1,4, Schumacher,Williams BMW,1:14.427,3
+2003,Germany,2,3, Montoya,Williams BMW,1:14.673,3
+2003,Germany,3,7, Trulli,Renault,1:15.004,3
+2003,Germany,4,14, Webber,Jaguar Cosworth,1:15.030,3
+2003,Germany,5,8, Alonso,Renault,1:15.214,3
+2003,Germany,6,6, Räikkönen,McLaren Mercedes,1:15.276,3
+2003,Germany,7,15, Wilson,Jaguar Cosworth,1:15.373,3
+2003,Germany,8,2, Barrichello,Ferrari,1:15.399,3
+2003,Germany,9,1, Schumacher,Ferrari,1:15.456,3
+2003,Germany,10,20, Panis,Toyota,1:15.471,3
+2003,Germany,11,5, Coulthard,McLaren Mercedes,1:15.557,3
+2003,Germany,12,17, Button,BAR Honda,1:15.754,3
+2003,Germany,13,10, Frentzen,Sauber Petronas,1:15.968,3
+2003,Germany,14,9, Heidfeld,Sauber Petronas,1:15.985,3
+2003,Germany,15,21, da Matta,Toyota,1:16.450,3
+2003,Germany,16,12, Firman,Jordan Ford,1:17.044,3
+2003,Germany,17,11, Fisichella,Jordan Ford,1:17.111,3
+2003,Germany,18,19, Verstappen,Minardi Cosworth,1:17.702,3
+2003,Germany,19,16, Villeneuve,BAR Honda,,2
+2003,Hungary,1,7, Trulli,Renault,1:22.358,3
+2003,Hungary,2,4, Schumacher,Williams BMW,1:22.413,3
+2003,Hungary,3,14, Webber,Jaguar Cosworth,1:22.625,3
+2003,Hungary,4,5, Coulthard,McLaren Mercedes,1:22.786,3
+2003,Hungary,5,2, Barrichello,Ferrari,1:22.892,3
+2003,Hungary,6,8, Alonso,Renault,1:22.953,3
+2003,Hungary,7,20, Panis,Toyota,1:22.986,3
+2003,Hungary,8,3, Montoya,Williams BMW,1:23.305,3
+2003,Hungary,9,1, Schumacher,Ferrari,1:23.430,3
+2003,Hungary,10,9, Heidfeld,Sauber Petronas,1:23.482,3
+2003,Hungary,11,10, Frentzen,Sauber Petronas,1:23.660,3
+2003,Hungary,12,6, Räikkönen,McLaren Mercedes,1:23.695,3
+2003,Hungary,13,17, Button,BAR Honda,1:24.313,3
+2003,Hungary,14,16, Villeneuve,BAR Honda,1:24.333,3
+2003,Hungary,15,15, Wilson,Jaguar Cosworth,1:24.343,3
+2003,Hungary,16,11, Fisichella,Jordan Ford,1:24.725,3
+2003,Hungary,17,12, Firman,Jordan Ford,1:25.223,3
+2003,Hungary,18,19, Verstappen,Minardi Cosworth,1:26.052,3
+2003,Hungary,19,18, Kiesa,Minardi Cosworth,1:27.023,3
+2003,Hungary,20,21, da Matta,Toyota,1:55.138,3
+2003,Italy,1,3, Montoya,Williams BMW,1:20.656,3
+2003,Italy,2,2, Barrichello,Ferrari,1:20.784,3
+2003,Italy,3,1, Schumacher,Ferrari,1:21.268,3
+2003,Italy,4,21, da Matta,Toyota,1:21.829,3
+2003,Italy,5,6, Räikkönen,McLaren Mercedes,1:21.966,3
+2003,Italy,6,14, Webber,Jaguar Cosworth,1:21.966,3
+2003,Italy,7,7, Trulli,Renault,1:22.034,3
+2003,Italy,8,8, Alonso,Renault,1:22.103,3
+2003,Italy,9,10, Frentzen,Sauber Petronas,1:22.203,3
+2003,Italy,10,20, Panis,Toyota,1:22.372,3
+2003,Italy,11,17, Button,BAR Honda,1:22.495,3
+2003,Italy,12,9, Heidfeld,Sauber Petronas,1:22.547,3
+2003,Italy,13,16, Villeneuve,BAR Honda,1:22.858,3
+2003,Italy,14,5, Coulthard,McLaren Mercedes,1:23.154,3
+2003,Italy,15,15, Wilson,Jaguar Cosworth,1:23.609,3
+2003,Italy,16,11, Fisichella,Jordan Ford,1:24.179,3
+2003,Italy,17,12, Baumgartner,Jordan Ford,1:24.872,3
+2003,Italy,18,18, Kiesa,Minardi Cosworth,1:26.299,3
+2003,Italy,19,4, Schumacher,Williams BMW,,3
+2003,United States,1,7, Trulli,Renault,1:09.566,3
+2003,United States,2,2, Barrichello,Ferrari,1:09.835,3
+2003,United States,3,14, Webber,Jaguar Cosworth,1:10.081,3
+2003,United States,4,4, Schumacher,Williams BMW,1:10.222,3
+2003,United States,5,3, Montoya,Williams BMW,1:10.372,3
+2003,United States,6,5, Coulthard,McLaren Mercedes,1:10.450,3
+2003,United States,7,8, Alonso,Renault,1:10.556,3
+2003,United States,8,1, Schumacher,Ferrari,1:10.736,3
+2003,United States,9,6, Räikkönen,McLaren Mercedes,1:10.756,3
+2003,United States,10,17, Button,BAR Honda,1:11.847,3
+2003,United States,11,21, da Matta,Toyota,1:11.949,3
+2003,United States,12,11, Fisichella,Jordan Ford,1:12.227,3
+2003,United States,13,10, Frentzen,Sauber Petronas,1:13.541,3
+2003,United States,14,20, Panis,Toyota,1:17.666,3
+2003,United States,15,9, Heidfeld,Sauber Petronas,1:17.768,3
+2003,United States,16,16, Villeneuve,BAR Honda,1:18.547,3
+2003,United States,17,12, Firman,Jordan Ford,1:19.383,3
+2003,United States,18,15, Wilson,Jaguar Cosworth,1:19.491,3
+2003,United States,19,18, Kiesa,Minardi Cosworth,1:21.973,3
+2003,United States,20,19, Verstappen,Minardi Cosworth,,1
+2003,Japan,1,7, Trulli,Renault,1:30.281,3
+2003,Japan,2,4, Schumacher,Williams BMW,1:30.343,3
+2003,Japan,3,1, Schumacher,Ferrari,1:30.464,3
+2003,Japan,4,5, Coulthard,McLaren Mercedes,1:30.482,3
+2003,Japan,5,6, Räikkönen,McLaren Mercedes,1:30.558,3
+2003,Japan,6,8, Alonso,Renault,1:30.624,3
+2003,Japan,7,2, Barrichello,Ferrari,1:30.758,3
+2003,Japan,8,3, Montoya,Williams BMW,1:31.201,3
+2003,Japan,9,14, Webber,Jaguar Cosworth,1:31.305,3
+2003,Japan,10,9, Heidfeld,Sauber Petronas,1:31.783,3
+2003,Japan,11,16, Sato,BAR Honda,1:31.832,3
+2003,Japan,12,10, Frentzen,Sauber Petronas,1:31.892,3
+2003,Japan,13,20, Panis,Toyota,1:31.908,3
+2003,Japan,14,21, da Matta,Toyota,1:32.256,3
+2003,Japan,15,15, Wilson,Jaguar Cosworth,1:32.291,3
+2003,Japan,16,17, Button,BAR Honda,1:32.374,3
+2003,Japan,17,12, Firman,Jordan Ford,1:33.057,3
+2003,Japan,18,11, Fisichella,Jordan Ford,1:33.313,3
+2003,Japan,19,19, Verstappen,Minardi Cosworth,1:34.836,3
+2003,Japan,20,18, Kiesa,Minardi Cosworth,1:36.181,3
+1995,Brazil,1,5, Hill,Williams Renault,1:20.081,12
+1995,Brazil,2,28, Berger,Ferrari,1:21.015,10
+1995,Brazil,3,6, Coulthard,Williams Renault,1:21.343,10
+1995,Brazil,4,27, Alesi,Ferrari,1:21.655,10
+1995,Brazil,5,8, Hakkinen,McLaren Mercedes,1:22.017,11
+1995,Brazil,6,1, Schumacher,Benetton Renault,1:22.131,2
+1995,Brazil,7,26, Panis,Ligier Mugen Honda,1:22.208,11
+1995,Brazil,8,15, Irvine,Jordan Peugeot,1:22.370,9
+1995,Brazil,9,7, Blundell,McLaren Mercedes,1:22.821,11
+1995,Brazil,10,25, Suzuki,Ligier Mugen Honda,1:23.251,11
+1995,Brazil,11,14, Barrichello,Jordan Peugeot,1:23.350,8
+1995,Brazil,12,9, Morbidelli,Footwork Hart,1:23.403,11
+1995,Brazil,13,4, Salo,Tyrrell Yamaha,1:23.470,6
+1995,Brazil,14,30, Frentzen,Sauber Ford,1:24.065,8
+1995,Brazil,15,3, Katayama,Tyrrell Yamaha,1:24.165,6
+1995,Brazil,16,24, Badoer,Minardi Ford,1:24.443,12
+1995,Brazil,17,29, Wendlinger,Sauber Ford,1:24.723,11
+1995,Brazil,18,16, Gachot,Pacific Ilmor,1:25.819,11
+1995,Brazil,19,10, Inoue,Footwork Hart,1:27.036,12
+1995,Brazil,20,22, Moreno,Forti Ford,1:27.204,12
+1995,Brazil,21,17, Montermini,Pacific Ilmor,1:27.440,5
+1995,Brazil,22,23, Martini,Minardi Ford,1:56.532,2
+1995,Brazil,23,12, Verstappen,Simtek Ford,2:01.610,4
+1995,Argentina,1,6, Coulthard,Williams Renault,1:54.670,10
+1995,Argentina,2,27, Alesi,Ferrari,1:55.213,12
+1995,Argentina,3,30, Frentzen,Sauber Ford,1:55.583,12
+1995,Argentina,4,5, Hill,Williams Renault,1:55.677,9
+1995,Argentina,5,28, Berger,Ferrari,1:56.260,11
+1995,Argentina,6,8, Hakkinen,McLaren Mercedes,1:56.449,12
+1995,Argentina,7,15, Irvine,Jordan Peugeot,1:56.615,7
+1995,Argentina,8,14, Barrichello,Jordan Peugeot,1:56.746,12
+1995,Argentina,9,1, Schumacher,Benetton Renault,1:57.056,10
+1995,Argentina,10,2, Herbert,Benetton Renault,1:57.068,8
+1995,Argentina,11,24, Badoer,Minardi Ford,1:57.167,11
+1995,Argentina,12,9, Morbidelli,Footwork Hart,1:57.684,7
+1995,Argentina,13,4, Salo,Tyrrell Yamaha,1:57.738,5
+1995,Argentina,14,23, Martini,Minardi Ford,1:58.066,8
+1995,Argentina,15,7, Blundell,McLaren Mercedes,1:58.660,8
+1995,Argentina,16,26, Panis,Ligier Mugen Honda,1:59.204,10
+1995,Argentina,17,3, Katayama,Tyrrell Yamaha,1:59.909,9
+1995,Argentina,18,25, Suzuki,Ligier Mugen Honda,2:01.446,10
+1995,Argentina,19,17, Montermini,Pacific Ilmor,2:01.763,12
+1995,Argentina,20,29, Wendlinger,Sauber Ford,2:01.774,10
+1995,Argentina,21,12, Verstappen,Simtek Ford,2:02.410,6
+1995,Argentina,22,11, Schiattarella,Simtek Ford,2:02.806,7
+1995,Argentina,23,16, Gachot,Pacific Ilmor,2:04.050,9
+1995,Argentina,24,22, Moreno,Forti Ford,2:04.481,11
+1995,Argentina,25,21, Diniz,Forti Ford,2:05.932,10
+1995,Argentina,26,10, Inoue,Footwork Hart,2:07.298,4
+1995,San Marino,1,1, Schumacher,Benetton Renault,1:27.274,10
+1995,San Marino,2,28, Berger,Ferrari,1:27.282,12
+1995,San Marino,3,6, Coulthard,Williams Renault,1:27.459,11
+1995,San Marino,4,5, Hill,Williams Renault,1:27.537,12
+1995,San Marino,5,27, Alesi,Ferrari,1:27.813,12
+1995,San Marino,6,8, Hakkinen,McLaren Mercedes,1:28.343,11
+1995,San Marino,7,15, Irvine,Jordan Peugeot,1:28.516,8
+1995,San Marino,8,2, Herbert,Benetton Renault,1:29.403,12
+1995,San Marino,9,7, Mansell,McLaren Mercedes,1:29.517,11
+1995,San Marino,10,14, Barrichello,Jordan Peugeot,1:29.580,12
+1995,San Marino,11,9, Morbidelli,Footwork Hart,1:29.582,12
+1995,San Marino,12,26, Panis,Ligier Mugen Honda,1:30.801,11
+1995,San Marino,13,4, Salo,Tyrrell Yamaha,1:31.221,10
+1995,San Marino,14,30, Frentzen,Sauber Ford,1:31.358,12
+1995,San Marino,15,3, Katayama,Tyrrell Yamaha,1:31.630,11
+1995,San Marino,16,12, Verstappen,Simtek Ford,1:32.156,11
+1995,San Marino,17,25, Suzuki,Ligier Mugen Honda,1:32.297,11
+1995,San Marino,18,23, Martini,Minardi Ford,1:32.445,8
+1995,San Marino,19,10, Inoue,Footwork Hart,1:32.988,12
+1995,San Marino,20,24, Badoer,Minardi Ford,1:33.071,12
+1995,San Marino,21,29, Wendlinger,Sauber Ford,1:33.494,11
+1995,San Marino,22,16, Gachot,Pacific Ilmor,1:33.892,12
+1995,San Marino,23,11, Schiattarella,Simtek Ford,1:33.965,9
+1995,San Marino,24,17, Montermini,Pacific Ilmor,1:35.169,11
+1995,San Marino,25,21, Diniz,Forti Ford,1:36.686,12
+1995,San Marino,26,22, Moreno,Forti Ford,1:37.612,5
+1995,Spain,1,27, Alesi,Ferrari,1:23.104,9
+1995,Spain,2,28, Berger,Ferrari,1:23.458,11
+1995,Spain,3,6, Coulthard,Williams Renault,1:23.496,10
+1995,Spain,4,1, Schumacher,Benetton Renault,1:23.535,8
+1995,Spain,5,5, Hill,Williams Renault,1:24.356,9
+1995,Spain,6,8, Hakkinen,McLaren Mercedes,1:24.427,12
+1995,Spain,7,2, Herbert,Benetton Renault,1:24.461,10
+1995,Spain,8,15, Irvine,Jordan Peugeot,1:24.891,12
+1995,Spain,9,30, Frentzen,Sauber Ford,1:25.655,12
+1995,Spain,10,26, Panis,Ligier Mugen Honda,1:25.902,12
+1995,Spain,11,3, Katayama,Tyrrell Yamaha,1:26.033,12
+1995,Spain,12,7, Mansell,McLaren Mercedes,1:26.246,11
+1995,Spain,13,14, Barrichello,Jordan Peugeot,1:26.413,3
+1995,Spain,14,4, Salo,Tyrrell Yamaha,1:26.462,10
+1995,Spain,15,25, Brundle,Ligier Mugen Honda,1:26.747,12
+1995,Spain,16,10, Inoue,Footwork Hart,1:26.846,12
+1995,Spain,17,9, Morbidelli,Footwork Hart,1:27.280,11
+1995,Spain,18,12, Verstappen,Simtek Ford,1:27.666,6
+1995,Spain,19,23, Martini,Minardi Ford,1:28.008,12
+1995,Spain,20,29, Wendlinger,Sauber Ford,1:28.305,12
+1995,Spain,21,11, Schiattarella,Simtek Ford,1:28.312,11
+1995,Spain,22,24, Badoer,Minardi Ford,1:28.563,12
+1995,Spain,23,17, Montermini,Pacific Ilmor,1:29.942,10
+1995,Spain,24,16, Gachot,Pacific Ilmor,1:30.429,12
+1995,Spain,25,21, Diniz,Forti Ford,1:30.578,12
+1995,Spain,26,22, Moreno,Forti Ford,1:31.063,11
+1995,Monaco,1,27, Alesi,Ferrari,1:23.754,8
+1995,Monaco,2,1, Schumacher,Benetton Renault,1:24.146,9
+1995,Monaco,3,28, Berger,Ferrari,1:24.509,8
+1995,Monaco,4,5, Hill,Williams Renault,1:24.659,12
+1995,Monaco,5,8, Hakkinen,McLaren Mercedes,1:24.831,11
+1995,Monaco,6,2, Herbert,Benetton Renault,1:25.623,10
+1995,Monaco,7,30, Frentzen,Sauber Ford,1:25.661,11
+1995,Monaco,8,7, Blundell,McLaren Mercedes,1:26.017,7
+1995,Monaco,9,15, Irvine,Jordan Peugeot,1:26.447,12
+1995,Monaco,10,25, Brundle,Ligier Mugen Honda,1:26.457,6
+1995,Monaco,11,6, Coulthard,Williams Renault,1:26.556,11
+1995,Monaco,12,26, Panis,Ligier Mugen Honda,1:26.579,12
+1995,Monaco,13,14, Barrichello,Jordan Peugeot,1:26.787,12
+1995,Monaco,14,9, Morbidelli,Footwork Hart,1:26.828,11
+1995,Monaco,15,24, Badoer,Minardi Ford,1:27.615,12
+1995,Monaco,16,23, Martini,Minardi Ford,1:27.714,10
+1995,Monaco,17,4, Salo,Tyrrell Yamaha,1:28.123,12
+1995,Monaco,18,3, Katayama,Tyrrell Yamaha,1:28.439,11
+1995,Monaco,19,12, Verstappen,Simtek Ford,1:29.391,4
+1995,Monaco,20,11, Schiattarella,Simtek Ford,1:29.439,5
+1995,Monaco,21,29, Boullion,Sauber Ford,1:30.014,11
+1995,Monaco,22,17, Montermini,Pacific Ilmor,1:30.149,12
+1995,Monaco,23,22, Moreno,Forti Ford,1:30.461,6
+1995,Monaco,24,10, Inoue,Footwork Hart,1:31.542,8
+1995,Monaco,25,21, Diniz,Forti Ford,1:34.963,5
+1995,Monaco,26,16, Gachot,Pacific Ilmor,13:33.570,1
+1995,Canada,1,1, Schumacher,Benetton Renault,1:27.661,11
+1995,Canada,2,5, Hill,Williams Renault,1:28.039,12
+1995,Canada,3,28, Berger,Ferrari,1:28.247,9
+1995,Canada,4,27, Alesi,Ferrari,1:28.525,8
+1995,Canada,5,6, Coulthard,Williams Renault,1:28.590,12
+1995,Canada,6,15, Irvine,Jordan Peugeot,1:29.021,12
+1995,Canada,7,2, Herbert,Benetton Renault,1:29.295,9
+1995,Canada,8,14, Barrichello,Jordan Peugeot,1:29.393,10
+1995,Canada,9,8, Hakkinen,McLaren Mercedes,1:29.406,9
+1995,Canada,10,26, Panis,Ligier Mugen Honda,1:29.809,10
+1995,Canada,11,7, Blundell,McLaren Mercedes,1:30.279,12
+1995,Canada,12,30, Frentzen,Sauber Ford,1:30.285,12
+1995,Canada,13,4, Salo,Tyrrell Yamaha,1:30.657,12
+1995,Canada,14,9, Morbidelli,Footwork Hart,1:30.854,11
+1995,Canada,15,25, Brundle,Ligier Mugen Honda,1:30.880,5
+1995,Canada,16,23, Martini,Minardi Ford,1:31.859,12
+1995,Canada,17,29, Boullion,Sauber Ford,1:31.925,12
+1995,Canada,18,3, Katayama,Tyrrell Yamaha,1:31.958,6
+1995,Canada,19,24, Badoer,Minardi Ford,1:32.453,12
+1995,Canada,20,10, Inoue,Footwork Hart,1:32.995,12
+1995,Canada,21,16, Gachot,Pacific Ilmor,1:33.866,12
+1995,Canada,22,17, Montermini,Pacific Ilmor,1:33.910,9
+1995,Canada,23,22, Moreno,Forti Ford,1:34.000,12
+1995,Canada,24,21, Diniz,Forti Ford,1:36.187,7
+1995,France,1,5, Hill,Williams Renault,1:18.556,12
+1995,France,2,6, Coulthard,Williams Renault,1:18.585,11
+1995,France,3,1, Schumacher,Benetton Renault,1:18.893,12
+1995,France,4,28, Berger,Ferrari,1:19.051,9
+1995,France,5,27, Alesi,Ferrari,1:19.254,10
+1995,France,6,25, Brundle,Ligier Mugen Honda,1:19.384,9
+1995,France,7,26, Panis,Ligier Mugen Honda,1:19.466,11
+1995,France,8,2, Herbert,Benetton Renault,1:19.555,9
+1995,France,9,14, Barrichello,Jordan Peugeot,1:19.763,12
+1995,France,10,8, Hakkinen,McLaren Mercedes,1:20.218,10
+1995,France,11,15, Irvine,Jordan Peugeot,1:20.713,8
+1995,France,12,7, Blundell,McLaren Mercedes,1:20.804,12
+1995,France,13,30, Frentzen,Sauber Ford,1:21.111,8
+1995,France,14,9, Morbidelli,Footwork Hart,1:21.756,12
+1995,France,15,4, Salo,Tyrrell Yamaha,1:21.921,12
+1995,France,16,29, Boullion,Sauber Ford,1:22.372,11
+1995,France,17,3, Katayama,Tyrrell Yamaha,1:22.959,4
+1995,France,18,10, Inoue,Footwork Hart,1:23.355,12
+1995,France,19,17, Montermini,Pacific Ilmor,1:24.172,11
+1995,France,20,16, Gachot,Pacific Ilmor,1:24.509,9
+1995,France,21,21, Diniz,Forti Ford,1:25.787,9
+1995,France,22,22, Moreno,Forti Ford,1:26.445,9
+1995,Great Britain,1,5, Hill,Williams Renault,1:28.124,11
+1995,Great Britain,2,1, Schumacher,Benetton Renault,1:28.397,11
+1995,Great Britain,3,6, Coulthard,Williams Renault,1:28.947,12
+1995,Great Britain,4,28, Berger,Ferrari,1:29.657,8
+1995,Great Britain,5,2, Herbert,Benetton Renault,1:29.867,11
+1995,Great Britain,6,27, Alesi,Ferrari,1:29.874,12
+1995,Great Britain,7,15, Irvine,Jordan Peugeot,1:30.083,9
+1995,Great Britain,8,8, Hakkinen,McLaren Mercedes,1:30.140,12
+1995,Great Britain,9,14, Barrichello,Jordan Peugeot,1:30.354,12
+1995,Great Britain,10,7, Blundell,McLaren Mercedes,1:30.453,11
+1995,Great Britain,11,25, Brundle,Ligier Mugen Honda,1:30.946,11
+1995,Great Britain,12,30, Frentzen,Sauber Ford,1:31.602,11
+1995,Great Britain,13,26, Panis,Ligier Mugen Honda,1:31.842,11
+1995,Great Britain,14,3, Katayama,Tyrrell Yamaha,1:32.087,12
+1995,Great Britain,15,23, Martini,Minardi Ford,1:32.259,12
+1995,Great Britain,16,29, Boullion,Sauber Ford,1:33.166,12
+1995,Great Britain,17,9, Papis,Footwork Hart,1:34.154,10
+1995,Great Britain,18,24, Badoer,Minardi Ford,1:34.556,8
+1995,Great Britain,19,10, Inoue,Footwork Hart,1:35.323,12
+1995,Great Britain,20,21, Diniz,Forti Ford,1:36.023,12
+1995,Great Britain,21,16, Gachot,Pacific Ilmor,1:36.076,7
+1995,Great Britain,22,22, Moreno,Forti Ford,1:36.651,12
+1995,Germany,1,5, Hill,Williams Renault,1:44.932,12
+1995,Germany,2,6, Coulthard,Williams Renault,1:45.306,12
+1995,Germany,3,1, Schumacher,Benetton Renault,1:45.505,12
+1995,Germany,4,8, Hakkinen,McLaren Mercedes,1:46.291,7
+1995,Germany,5,27, Alesi,Ferrari,1:46.356,12
+1995,Germany,6,2, Herbert,Benetton Renault,1:46.381,12
+1995,Germany,7,28, Berger,Ferrari,1:46.482,12
+1995,Germany,8,15, Irvine,Jordan Peugeot,1:46.916,11
+1995,Germany,9,26, Panis,Ligier Mugen Honda,1:47.372,12
+1995,Germany,10,30, Frentzen,Sauber Ford,1:47.769,11
+1995,Germany,11,7, Blundell,McLaren Mercedes,1:47.854,8
+1995,Germany,12,14, Barrichello,Jordan Peugeot,1:48.203,9
+1995,Germany,13,29, Boullion,Sauber Ford,1:48.526,11
+1995,Germany,14,4, Salo,Tyrrell Yamaha,1:49.505,12
+1995,Germany,15,9, Papis,Footwork Hart,1:49.621,12
+1995,Germany,16,24, Badoer,Minardi Ford,1:50.409,12
+1995,Germany,17,10, Inoue,Footwork Hart,1:50.451,12
+1995,Germany,18,23, Martini,Minardi Ford,1:51.368,12
+1995,Germany,19,22, Moreno,Forti Ford,1:53.456,12
+1995,Germany,20,17, Montermini,Pacific Ilmor,1:53.492,5
+1995,Germany,21,21, Diniz,Forti Ford,1:54.303,12
+1995,Germany,22,16, Lavaggi,Pacific Ilmor,1:54.625,11
+1995,Germany,23,3, Katayama,Tyrrell Yamaha,1:56.518,5
+1995,Germany,24,25, Suzuki,Ligier Mugen Honda,2:04.193,3
+1995,Hungary,1,5, Hill,Williams Renault,1:18.374,10
+1995,Hungary,2,6, Coulthard,Williams Renault,1:19.000,12
+1995,Hungary,3,28, Berger,Ferrari,1:19.033,9
+1995,Hungary,4,1, Schumacher,Benetton Renault,1:19.490,11
+1995,Hungary,5,27, Alesi,Ferrari,1:20.134,4
+1995,Hungary,6,8, Hakkinen,McLaren Mercedes,1:20.577,10
+1995,Hungary,7,26, Panis,Ligier Mugen Honda,1:20.952,6
+1995,Hungary,8,30, Frentzen,Sauber Ford,1:21.234,6
+1995,Hungary,9,15, Irvine,Jordan Peugeot,1:21.246,9
+1995,Hungary,10,7, Blundell,McLaren Mercedes,1:21.663,12
+1995,Hungary,11,25, Brundle,Ligier Mugen Honda,1:21.818,12
+1995,Hungary,12,14, Barrichello,Jordan Peugeot,1:21.874,11
+1995,Hungary,13,2, Herbert,Benetton Renault,1:21.878,12
+1995,Hungary,14,24, Badoer,Minardi Ford,1:22.345,12
+1995,Hungary,15,23, Lamy,Minardi Ford,1:22.600,12
+1995,Hungary,16,29, Boullion,Sauber Ford,1:22.766,7
+1995,Hungary,17,3, Katayama,Tyrrell Yamaha,1:22.866,11
+1995,Hungary,18,9, Papis,Footwork Hart,1:23.275,10
+1995,Hungary,19,4, Salo,Tyrrell Yamaha,1:24.440,2
+1995,Hungary,20,10, Inoue,Footwork Hart,1:24.656,12
+1995,Hungary,21,17, Montermini,Pacific Ilmor,1:25.465,7
+1995,Hungary,22,21, Diniz,Forti Ford,1:25.934,11
+1995,Hungary,23,22, Moreno,Forti Ford,1:26.059,12
+1995,Hungary,24,16, Lavaggi,Pacific Ilmor,1:27.342,12
+1995,Belgium,1,28, Berger,Ferrari,2:14.744,8
+1995,Belgium,2,1, Schumacher,Benetton Renault,2:14.962,7
+1995,Belgium,3,27, Alesi,Ferrari,2:15.077,10
+1995,Belgium,4,5, Hill,Williams Renault,2:15.143,11
+1995,Belgium,5,6, Coulthard,Williams Renault,2:15.232,9
+1995,Belgium,6,30, Frentzen,Sauber Ford,2:15.533,12
+1995,Belgium,7,8, Hakkinen,McLaren Mercedes,2:15.848,11
+1995,Belgium,8,15, Irvine,Jordan Peugeot,2:16.540,11
+1995,Belgium,9,14, Barrichello,Jordan Peugeot,2:17.144,9
+1995,Belgium,10,25, Brundle,Ligier Mugen Honda,2:17.207,11
+1995,Belgium,11,24, Badoer,Minardi Ford,2:17.335,11
+1995,Belgium,12,29, Boullion,Sauber Ford,2:17.406,12
+1995,Belgium,13,26, Panis,Ligier Mugen Honda,2:17.579,11
+1995,Belgium,14,4, Salo,Tyrrell Yamaha,2:18.104,10
+1995,Belgium,15,7, Blundell,McLaren Mercedes,2:18.136,9
+1995,Belgium,16,3, Katayama,Tyrrell Yamaha,2:18.194,11
+1995,Belgium,17,23, Lamy,Minardi Ford,2:18.547,12
+1995,Belgium,18,9, Papis,Footwork Hart,2:19.300,12
+1995,Belgium,19,10, Inoue,Footwork Hart,2:23.311,10
+1995,Belgium,20,22, Moreno,Forti Ford,2:23.417,9
+1995,Belgium,21,17, Montermini,Pacific Ilmor,2:25.291,5
+1995,Belgium,22,21, Diniz,Forti Ford,2:25.699,7
+1995,Belgium,23,16, Lavaggi,Pacific Ilmor,2:26.311,8
+1995,Italy,1,6, Coulthard,Williams Renault,1:25.516,12
+1995,Italy,2,28, Berger,Ferrari,1:25.904,8
+1995,Italy,3,5, Hill,Williams Renault,1:25.912,12
+1995,Italy,4,1, Schumacher,Benetton Renault,1:26.098,11
+1995,Italy,5,27, Alesi,Ferrari,1:26.323,11
+1995,Italy,6,2, Herbert,Benetton Renault,1:26.631,12
+1995,Italy,7,14, Barrichello,Jordan Peugeot,1:26.981,12
+1995,Italy,8,30, Frentzen,Sauber Ford,1:27.245,12
+1995,Italy,9,7, Blundell,McLaren Mercedes,1:27.308,12
+1995,Italy,10,15, Irvine,Jordan Peugeot,1:27.573,12
+1995,Italy,11,26, Panis,Ligier Mugen Honda,1:28.418,8
+1995,Italy,12,8, Hakkinen,McLaren Mercedes,1:28.895,6
+1995,Italy,13,25, Brundle,Ligier Mugen Honda,1:29.200,12
+1995,Italy,14,4, Salo,Tyrrell Yamaha,1:29.535,12
+1995,Italy,15,23, Lamy,Minardi Ford,1:29.936,12
+1995,Italy,16,10, Inoue,Footwork Hart,1:30.632,12
+1995,Italy,17,24, Badoer,Minardi Ford,1:30.731,12
+1995,Italy,18,29, Boullion,Sauber Ford,1:30.997,8
+1995,Italy,19,3, Katayama,Tyrrell Yamaha,1:31.399,8
+1995,Italy,20,17, Montermini,Pacific Ilmor,1:32.121,12
+1995,Italy,21,22, Moreno,Forti Ford,1:32.491,12
+1995,Italy,22,21, Diniz,Forti Ford,1:32.540,10
+1995,Italy,23,16, Lavaggi,Pacific Ilmor,1:32.935,11
+1995,Italy,24,9, Papis,Footwork Hart,43:10.257,1
+1995,Portugal,1,5, Hill,Williams Renault,1:21.322,11
+1995,Portugal,2,6, Coulthard,Williams Renault,1:21.423,10
+1995,Portugal,3,1, Schumacher,Benetton Renault,1:21.885,9
+1995,Portugal,4,28, Berger,Ferrari,1:22.281,9
+1995,Portugal,5,27, Alesi,Ferrari,1:22.656,9
+1995,Portugal,6,15, Irvine,Jordan Peugeot,1:22.957,6
+1995,Portugal,7,8, Hakkinen,McLaren Mercedes,1:23.064,10
+1995,Portugal,8,14, Barrichello,Jordan Peugeot,1:23.142,10
+1995,Portugal,9,25, Brundle,Ligier Mugen Honda,1:23.244,11
+1995,Portugal,10,26, Panis,Ligier Mugen Honda,1:23.284,11
+1995,Portugal,11,30, Frentzen,Sauber Ford,1:23.485,10
+1995,Portugal,12,2, Herbert,Benetton Renault,1:23.786,11
+1995,Portugal,13,7, Blundell,McLaren Mercedes,1:24.583,10
+1995,Portugal,14,3, Katayama,Tyrrell Yamaha,1:24.631,9
+1995,Portugal,15,10, Inoue,Footwork Hart,1:24.883,12
+1995,Portugal,16,4, Salo,Tyrrell Yamaha,1:24.942,11
+1995,Portugal,17,9, Papis,Footwork Hart,1:25.696,12
+1995,Portugal,18,24, Badoer,Minardi Ford,1:25.746,11
+1995,Portugal,19,23, Lamy,Minardi Ford,1:26.210,11
+1995,Portugal,20,17, Montermini,Pacific Ilmor,1:27.659,4
+1995,Portugal,21,22, Moreno,Forti Ford,1:28.672,12
+1995,Portugal,22,21, Diniz,Forti Ford,1:29.137,4
+1995,Portugal,23,29, Boullion,Sauber Ford,14:20.150,1
+1995,Europe,1,6, Coulthard,Williams Renault,1:18.738,10
+1995,Europe,2,5, Hill,Williams Renault,1:18.972,11
+1995,Europe,3,1, Schumacher,Benetton Renault,1:19.470,11
+1995,Europe,4,28, Berger,Ferrari,1:19.821,9
+1995,Europe,5,15, Irvine,Jordan Peugeot,1:20.488,9
+1995,Europe,6,27, Alesi,Ferrari,1:20.521,5
+1995,Europe,7,2, Herbert,Benetton Renault,1:20.653,12
+1995,Europe,8,30, Frentzen,Sauber Ford,1:20.762,12
+1995,Europe,9,8, Hakkinen,McLaren Mercedes,1:20.866,11
+1995,Europe,10,7, Blundell,McLaren Mercedes,1:20.909,11
+1995,Europe,11,14, Barrichello,Jordan Peugeot,1:21.350,12
+1995,Europe,12,25, Brundle,Ligier Mugen Honda,1:21.541,11
+1995,Europe,13,29, Boullion,Sauber Ford,1:22.059,9
+1995,Europe,14,26, Panis,Ligier Mugen Honda,1:22.062,2
+1995,Europe,15,4, Salo,Tyrrell Yamaha,1:23.058,11
+1995,Europe,16,23, Lamy,Minardi Ford,1:23.328,9
+1995,Europe,17,9, Papis,Footwork Hart,1:23.689,5
+1995,Europe,18,24, Badoer,Minardi Ford,1:23.760,12
+1995,Europe,19,3, Tarquini,Tyrrell Yamaha,1:24.286,6
+1995,Europe,20,17, Montermini,Pacific Ilmor,1:24.696,12
+1995,Europe,21,21, Diniz,Forti Ford,1:25.647,11
+1995,Europe,22,10, Inoue,Footwork Hart,1:26.667,4
+1995,Europe,23,22, Moreno,Forti Ford,1:26.784,12
+1995,Europe,24,16, Deletraz,Pacific Ilmor,1:27.853,12
+1995,Pacific,1,6, Coulthard,Williams Renault,1:14.182,10
+1995,Pacific,2,5, Hill,Williams Renault,1:14.289,11
+1995,Pacific,3,1, Schumacher,Benetton Renault,1:14.524,12
+1995,Pacific,4,27, Alesi,Ferrari,1:14.919,9
+1995,Pacific,5,28, Berger,Ferrari,1:14.974,8
+1995,Pacific,6,2, Herbert,Benetton Renault,1:15.561,12
+1995,Pacific,7,7, Blundell,McLaren Mercedes,1:15.652,10
+1995,Pacific,8,15, Irvine,Jordan Peugeot,1:15.696,12
+1995,Pacific,9,30, Frentzen,Sauber Ford,1:15.942,8
+1995,Pacific,10,14, Barrichello,Jordan Peugeot,1:16.263,11
+1995,Pacific,11,8, Magnussen,McLaren Mercedes,1:16.339,11
+1995,Pacific,12,29, Boullion,Sauber Ford,1:16.646,10
+1995,Pacific,13,25, Suzuki,Ligier Mugen Honda,1:17.019,11
+1995,Pacific,14,26, Panis,Ligier Mugen Honda,1:17.071,8
+1995,Pacific,15,4, Salo,Tyrrell Yamaha,1:17.213,12
+1995,Pacific,16,23, Lamy,Minardi Ford,1:17.224,12
+1995,Pacific,17,3, Katayama,Tyrrell Yamaha,1:17.265,12
+1995,Pacific,18,24, Badoer,Minardi Ford,1:17.612,12
+1995,Pacific,19,9, Morbidelli,Footwork Hart,1:18.288,12
+1995,Pacific,20,10, Inoue,Footwork Hart,1:19.471,12
+1995,Pacific,21,22, Moreno,Forti Ford,1:19.745,11
+1995,Pacific,22,21, Diniz,Forti Ford,1:20.555,10
+1995,Pacific,23,17, Montermini,Pacific Ilmor,1:22.096,4
+1995,Pacific,24,16, Gachot,Pacific Ilmor,1:22.710,7
+1995,Japan,1,1, Schumacher,Benetton Renault,1:38.428,9
+1995,Japan,2,5, Hill,Williams Renault,1:39.032,11
+1995,Japan,3,8, Hakkinen,McLaren Mercedes,1:39.127,9
+1995,Japan,4,27, Alesi,Ferrari,1:39.142,11
+1995,Japan,5,6, Coulthard,Williams Renault,1:39.155,11
+1995,Japan,6,30, Frentzen,Sauber Ford,1:40.010,10
+1995,Japan,7,15, Irvine,Jordan Peugeot,1:40.153,9
+1995,Japan,8,28, Berger,Ferrari,1:40.305,4
+1995,Japan,9,2, Herbert,Benetton Renault,1:40.349,6
+1995,Japan,10,14, Barrichello,Jordan Peugeot,1:40.381,11
+1995,Japan,11,26, Panis,Ligier Mugen Honda,1:40.838,10
+1995,Japan,12,4, Salo,Tyrrell Yamaha,1:41.355,11
+1995,Japan,13,3, Katayama,Tyrrell Yamaha,1:41.977,9
+1995,Japan,14,25, Suzuki,Ligier Mugen Honda,1:42.561,11
+1995,Japan,15,9, Morbidelli,Footwork Hart,1:42.623,7
+1995,Japan,16,23, Lamy,Minardi Ford,1:43.387,12
+1995,Japan,17,29, Wendlinger,Sauber Ford,1:43.634,12
+1995,Japan,18,24, Badoer,Minardi Ford,1:43.940,11
+1995,Japan,19,10, Inoue,Footwork Hart,1:44.386,11
+1995,Japan,20,21, Diniz,Forti Ford,1:46.654,12
+1995,Japan,21,17, Montermini,Pacific Ilmor,1:46.869,9
+1995,Japan,22,16, Gachot,Pacific Ilmor,1:48.824,8
+1995,Japan,23,22, Moreno,Forti Ford,1:50.097,5
+1995,Japan,24,7, Blundell,McLaren Mercedes,16:42.640,1
+1995,Australia,1,5, Hill,Williams Renault,1:15.505,12
+1995,Australia,2,6, Coulthard,Williams Renault,1:15.628,12
+1995,Australia,3,28, Berger,Ferrari,1:15.932,12
+1995,Australia,4,1, Schumacher,Benetton Renault,1:16.039,9
+1995,Australia,5,14, Barrichello,Jordan Peugeot,1:16.725,11
+1995,Australia,6,30, Frentzen,Sauber Ford,1:16.837,11
+1995,Australia,7,15, Irvine,Jordan Peugeot,1:17.197,11
+1995,Australia,8,2, Herbert,Benetton Renault,1:17.289,5
+1995,Australia,9,7, Blundell,McLaren Mercedes,1:17.348,8
+1995,Australia,10,25, Brundle,Ligier Mugen Honda,1:17.788,12
+1995,Australia,11,26, Panis,Ligier Mugen Honda,1:18.033,11
+1995,Australia,12,4, Salo,Tyrrell Yamaha,1:18.604,11
+1995,Australia,13,9, Morbidelli,Footwork Hart,1:18.814,12
+1995,Australia,14,3, Katayama,Tyrrell Yamaha,1:18.828,12
+1995,Australia,15,23, Lamy,Minardi Ford,1:18.875,12
+1995,Australia,16,24, Badoer,Minardi Ford,1:19.285,12
+1995,Australia,17,29, Wendlinger,Sauber Ford,1:19.561,12
+1995,Australia,18,10, Inoue,Footwork Hart,1:19.764,10
+1995,Australia,19,22, Moreno,Forti Ford,1:21.419,12
+1995,Australia,20,17, Montermini,Pacific Ilmor,1:21.659,5
+1995,Australia,21,21, Diniz,Forti Ford,1:22.154,12
+1995,Australia,22,16, Gachot,Pacific Ilmor,1:22.881,6
+1995,Australia,23,8, Hakkinen,McLaren Mercedes,1:37.998,2
+1995,Australia,24,27, Alesi,Ferrari,32:21.400,2
+1994,Brazil,1,2, Senna,Williams Renault,1:16.386,11
+1994,Brazil,2,5, Schumacher,Benetton Ford,1:16.575,11
+1994,Brazil,3,27, Alesi,Ferrari,1:17.772,11
+1994,Brazil,4,29, Wendlinger,Sauber Mercedes,1:17.982,12
+1994,Brazil,5,7, Hakkinen,McLaren Peugeot,1:18.122,12
+1994,Brazil,6,30, Frentzen,Sauber Mercedes,1:18.144,12
+1994,Brazil,7,0, Hill,Williams Renault,1:18.270,12
+1994,Brazil,8,23, Martini,Minardi Ford,1:18.659,11
+1994,Brazil,9,9, Fittipaldi,Footwork Ford,1:18.730,12
+1994,Brazil,10,14, Barrichello,Jordan Hart,1:18.759,12
+1994,Brazil,11,6, Verstappen,Benetton Ford,1:18.787,12
+1994,Brazil,12,8, Brundle,McLaren Peugeot,1:18.864,12
+1994,Brazil,13,28, Berger,Ferrari,1:18.931,2
+1994,Brazil,14,10, Morbidelli,Footwork Ford,1:18.970,11
+1994,Brazil,15,20, Comas,Larrousse Ford,1:18.990,10
+1994,Brazil,16,4, Blundell,Tyrrell Yamaha,1:19.045,8
+1994,Brazil,17,15, Irvine,Jordan Hart,1:19.269,12
+1994,Brazil,18,26, Panis,Ligier Renault,1:19.304,12
+1994,Brazil,19,25, Bernard,Ligier Renault,1:19.396,10
+1994,Brazil,20,24, Alboreto,Minardi Ford,1:19.517,12
+1994,Brazil,21,3, Katayama,Tyrrell Yamaha,1:19.519,12
+1994,Brazil,22,12, Herbert,Lotus Mugen Honda,1:19.798,12
+1994,Brazil,23,19, Beretta,Larrousse Ford,1:19.922,8
+1994,Brazil,24,11, Lamy,Lotus Mugen Honda,1:21.029,11
+1994,Brazil,25,31, Brabham,Simtek Ford,1:22.266,7
+1994,Brazil,26,34, Gachot,Pacific Ilmor,1:22.495,8
+1994,Brazil,27,32, Ratzenberger,Simtek Ford,1:22.707,9
+1994,Pacific,1,2, Senna,Williams Renault,1:10.218,11
+1994,Pacific,2,5, Schumacher,Benetton Ford,1:10.440,9
+1994,Pacific,3,0, Hill,Williams Renault,1:10.771,10
+1994,Pacific,4,7, Hakkinen,McLaren Peugeot,1:11.683,9
+1994,Pacific,5,28, Berger,Ferrari,1:11.744,8
+1994,Pacific,6,8, Brundle,McLaren Peugeot,1:12.351,11
+1994,Pacific,7,27, Larini,Ferrari,1:12.372,10
+1994,Pacific,8,14, Barrichello,Jordan Hart,1:12.409,10
+1994,Pacific,9,6, Verstappen,Benetton Ford,1:12.554,11
+1994,Pacific,10,30, Frentzen,Sauber Mercedes,1:12.686,4
+1994,Pacific,11,10, Morbidelli,Footwork Ford,1:12.866,10
+1994,Pacific,12,4, Blundell,Tyrrell Yamaha,1:13.013,11
+1994,Pacific,13,3, Katayama,Tyrrell Yamaha,1:13.013,11
+1994,Pacific,14,20, Comas,Larrousse Ford,1:13.111,10
+1994,Pacific,15,9, Fittipaldi,Footwork Ford,1:13.169,11
+1994,Pacific,16,24, Alboreto,Minardi Ford,1:13.342,11
+1994,Pacific,17,23, Martini,Minardi Ford,1:13.529,7
+1994,Pacific,18,25, Bernard,Ligier Renault,1:13.613,8
+1994,Pacific,19,29, Wendlinger,Sauber Mercedes,1:13.855,11
+1994,Pacific,20,15, Suzuki,Jordan Hart,1:14.036,10
+1994,Pacific,21,19, Beretta,Larrousse Ford,1:14.101,11
+1994,Pacific,22,26, Panis,Ligier Renault,1:14.106,9
+1994,Pacific,23,12, Herbert,Lotus Mugen Honda,1:14.538,11
+1994,Pacific,24,11, Lamy,Lotus Mugen Honda,1:14.657,11
+1994,Pacific,25,31, Brabham,Simtek Ford,1:14.946,11
+1994,Pacific,26,34, Gachot,Pacific Ilmor,1:16.927,10
+1994,Pacific,27,33, Belmondo,Pacific Ilmor,1:18.671,11
+1994,San Marino,1,2, Senna,Williams Renault,1:21.548,10
+1994,San Marino,2,5, Schumacher,Benetton Ford,1:22.015,7
+1994,San Marino,3,28, Berger,Ferrari,1:22.110,35
+1994,San Marino,4,6, Jarvilehto,Benetton Ford,1:22.717,10
+1994,San Marino,5,27, Larini,Ferrari,1:22.841,6
+1994,San Marino,6,30, Frentzen,Sauber Mercedes,1:23.119,10
+1994,San Marino,7,0, Hill,Williams Renault,1:23.199,9
+1994,San Marino,8,7, Hakkinen,McLaren Peugeot,1:23.611,11
+1994,San Marino,9,10, Morbidelli,Footwork Ford,1:23.663,10
+1994,San Marino,10,4, Blundell,Tyrrell Yamaha,1:23.703,10
+1994,San Marino,11,29, Wendlinger,Sauber Mercedes,1:23.788,11
+1994,San Marino,12,3, Katayama,Tyrrell Yamaha,1:24.000,11
+1994,San Marino,13,23, Martini,Minardi Ford,1:24.078,11
+1994,San Marino,14,24, Alboreto,Minardi Ford,1:24.276,12
+1994,San Marino,15,8, Brundle,McLaren Peugeot,1:24.443,4
+1994,San Marino,16,9, Fittipaldi,Footwork Ford,1:24.655,11
+1994,San Marino,17,25, Bernard,Ligier Renault,1:24.678,11
+1994,San Marino,18,26, Panis,Ligier Renault,1:24.996,11
+1994,San Marino,19,12, Herbert,Lotus Mugen Honda,1:25.114,11
+1994,San Marino,20,15, de Cesaris,Jordan Hart,1:25.234,10
+1994,San Marino,21,20, Comas,Larrousse Ford,1:26.295,5
+1994,San Marino,22,11, Lamy,Lotus Mugen Honda,1:26.453,11
+1994,San Marino,23,19, Beretta,Larrousse Ford,1:27.179,5
+1994,San Marino,24,31, Brabham,Simtek Ford,1:27.607,5
+1994,San Marino,25,32, Ratzenberger,Simtek Ford,1:27.657,11
+1994,San Marino,26,34, Gachot,Pacific Ilmor,1:27.732,11
+1994,San Marino,27,33, Belmondo,Pacific Ilmor,1:28.361,12
+1994,San Marino,28,14, Barrichello,Jordan Hart,14:57.323,1
+1994,Monaco,1,5, Schumacher,Benetton Ford,1:20.230,9
+1994,Monaco,2,8, Brundle,McLaren Peugeot,1:21.580,10
+1994,Monaco,3,7, Hakkinen,McLaren Peugeot,1:21.881,11
+1994,Monaco,4,28, Berger,Ferrari,1:22.038,11
+1994,Monaco,5,27, Alesi,Ferrari,1:22.521,7
+1994,Monaco,6,0, Hill,Williams Renault,1:22.605,11
+1994,Monaco,7,23, Martini,Minardi Ford,1:23.162,8
+1994,Monaco,8,20, Comas,Larrousse Ford,1:23.514,7
+1994,Monaco,9,4, Blundell,Tyrrell Yamaha,1:23.522,3
+1994,Monaco,10,10, Morbidelli,Footwork Ford,1:23.580,11
+1994,Monaco,11,9, Fittipaldi,Footwork Ford,1:23.588,11
+1994,Monaco,12,6, Jarvilehto,Benetton Ford,1:23.885,11
+1994,Monaco,13,12, Herbert,Lotus Mugen Honda,1:24.103,8
+1994,Monaco,14,19, Beretta,Larrousse Ford,1:24.126,11
+1994,Monaco,15,3, Katayama,Tyrrell Yamaha,1:24.488,10
+1994,Monaco,16,15, de Cesaris,Jordan Hart,1:24.519,11
+1994,Monaco,17,14, Barrichello,Jordan Hart,1:24.731,11
+1994,Monaco,18,26, Panis,Ligier Renault,1:25.115,10
+1994,Monaco,19,24, Alboreto,Minardi Ford,1:25.421,11
+1994,Monaco,20,11, Lamy,Lotus Mugen Honda,1:25.859,11
+1994,Monaco,21,31, Brabham,Simtek Ford,1:26.690,10
+1994,Monaco,22,25, Bernard,Ligier Renault,1:27.694,3
+1994,Monaco,23,33, Belmondo,Pacific Ilmor,1:29.984,9
+1994,Monaco,24,34, Gachot,Pacific Ilmor,1:48.173,2
+1994,Spain,1,5, Schumacher,Benetton Ford,1:23.426,10
+1994,Spain,2,7, Hakkinen,McLaren Peugeot,1:24.580,12
+1994,Spain,3,0, Hill,Williams Renault,1:24.716,12
+1994,Spain,4,27, Alesi,Ferrari,1:24.957,11
+1994,Spain,5,30, Frentzen,Sauber Mercedes,1:25.115,12
+1994,Spain,6,23, Martini,Minardi Ford,1:25.502,12
+1994,Spain,7,6, Jarvilehto,Benetton Ford,1:25.587,10
+1994,Spain,8,4, Blundell,Tyrrell Yamaha,1:25.863,11
+1994,Spain,9,14, Barrichello,Jordan Hart,1:25.990,11
+1994,Spain,10,20, Comas,Larrousse Ford,1:26.097,12
+1994,Spain,11,28, Berger,Ferrari,1:26.121,7
+1994,Spain,12,15, Irvine,Jordan Hart,1:26.368,12
+1994,Spain,13,24, Alboreto,Minardi Ford,1:26.595,12
+1994,Spain,14,8, Brundle,McLaren Peugeot,1:26.614,12
+1994,Spain,15,3, Katayama,Tyrrell Yamaha,1:27.017,4
+1994,Spain,16,2, Coulthard,Williams Renault,1:27.428,7
+1994,Spain,17,10, Morbidelli,Footwork Ford,1:27.459,12
+1994,Spain,18,9, Fittipaldi,Footwork Ford,1:27.631,12
+1994,Spain,19,26, Panis,Ligier Renault,1:27.872,12
+1994,Spain,20,19, Beretta,Larrousse Ford,1:28.011,7
+1994,Spain,21,25, Bernard,Ligier Renault,1:28.289,12
+1994,Spain,22,11, Zanardi,Lotus Mugen Honda,1:30.379,5
+1994,Spain,23,31, Brabham,Simtek Ford,1:30.797,10
+1994,Spain,24,32, Montermini,Simtek Ford,1:31.111,11
+1994,Spain,25,33, Belmondo,Pacific Ilmor,1:31.750,12
+1994,Spain,26,34, Gachot,Pacific Ilmor,1:34.318,3
+1994,Spain,27,12, Herbert,Lotus Mugen Honda,1:59.009,3
+1994,Canada,1,27, Alesi,Ferrari,1:26.277,12
+1994,Canada,2,5, Schumacher,Benetton Ford,1:26.820,12
+1994,Canada,3,7, Hakkinen,McLaren Peugeot,1:27.616,12
+1994,Canada,4,28, Berger,Ferrari,1:27.652,12
+1994,Canada,5,3, Katayama,Tyrrell Yamaha,1:27.827,11
+1994,Canada,6,0, Hill,Williams Renault,1:28.011,12
+1994,Canada,7,30, Frentzen,Sauber Mercedes,1:28.048,10
+1994,Canada,8,8, Brundle,McLaren Peugeot,1:28.451,12
+1994,Canada,9,14, Barrichello,Jordan Hart,1:28.612,9
+1994,Canada,10,2, Coulthard,Williams Renault,1:28.636,8
+1994,Canada,11,10, Morbidelli,Footwork Ford,1:28.730,12
+1994,Canada,12,15, Irvine,Jordan Hart,1:28.843,12
+1994,Canada,13,4, Blundell,Tyrrell Yamaha,1:29.108,11
+1994,Canada,14,9, Fittipaldi,Footwork Ford,1:29.493,12
+1994,Canada,15,26, Panis,Ligier Renault,1:29.530,12
+1994,Canada,16,6, Jarvilehto,Benetton Ford,1:29.580,10
+1994,Canada,17,24, Alboreto,Minardi Ford,1:29.597,9
+1994,Canada,18,20, Comas,Larrousse Ford,1:29.653,12
+1994,Canada,19,23, Martini,Minardi Ford,1:29.691,11
+1994,Canada,20,29, de Cesaris,Sauber Mercedes,1:29.793,12
+1994,Canada,21,12, Herbert,Lotus Mugen Honda,1:30.063,11
+1994,Canada,22,25, Bernard,Ligier Renault,1:30.806,12
+1994,Canada,23,19, Beretta,Larrousse Ford,1:31.167,12
+1994,Canada,24,11, Zanardi,Lotus Mugen Honda,1:31.698,11
+1994,Canada,25,31, Brabham,Simtek Ford,1:32.376,11
+1994,Canada,26,34, Gachot,Pacific Ilmor,1:32.838,11
+1994,Canada,27,33, Belmondo,Pacific Ilmor,1:33.291,11
+1994,France,1,5, Schumacher,Benetton Ford,1:17.085,8
+1994,France,2,28, Berger,Ferrari,1:17.441,11
+1994,France,3,0, Hill,Williams Renault,1:17.539,12
+1994,France,4,27, Alesi,Ferrari,1:17.855,9
+1994,France,5,8, Brundle,McLaren Peugeot,1:18.112,11
+1994,France,6,14, Barrichello,Jordan Hart,1:18.326,10
+1994,France,7,2, Mansell,Williams Renault,1:18.340,11
+1994,France,8,6, Verstappen,Benetton Ford,1:18.669,7
+1994,France,9,7, Hakkinen,McLaren Peugeot,1:19.041,9
+1994,France,10,25, Bernard,Ligier Renault,1:19.292,10
+1994,France,11,30, Frentzen,Sauber Mercedes,1:19.318,10
+1994,France,12,15, Irvine,Jordan Hart,1:19.463,11
+1994,France,13,26, Panis,Ligier Renault,1:19.697,11
+1994,France,14,3, Katayama,Tyrrell Yamaha,1:19.969,12
+1994,France,15,4, Blundell,Tyrrell Yamaha,1:20.001,12
+1994,France,16,23, Martini,Minardi Ford,1:20.084,12
+1994,France,17,24, Alboreto,Minardi Ford,1:20.097,12
+1994,France,18,12, Herbert,Lotus Mugen Honda,1:20.108,12
+1994,France,19,11, Zanardi,Lotus Mugen Honda,1:20.122,11
+1994,France,20,29, de Cesaris,Sauber Mercedes,1:20.145,11
+1994,France,21,20, Comas,Larrousse Ford,1:20.576,8
+1994,France,22,10, Morbidelli,Footwork Ford,1:20.707,8
+1994,France,23,9, Fittipaldi,Footwork Ford,1:20.801,9
+1994,France,24,19, Beretta,Larrousse Ford,1:21.964,7
+1994,France,25,31, Brabham,Simtek Ford,1:22.527,11
+1994,France,26,32, Gounon,Simtek Ford,1:23.264,6
+1994,France,27,34, Gachot,Pacific Ilmor,1:24.048,10
+1994,France,28,33, Belmondo,Pacific Ilmor,1:24.637,5
+1994,Great Britain,1,5, Schumacher,Benetton Ford,1:26.323,8
+1994,Great Britain,2,28, Berger,Ferrari,1:26.738,12
+1994,Great Britain,3,27, Alesi,Ferrari,1:26.891,12
+1994,Great Britain,4,0, Hill,Williams Renault,1:26.894,8
+1994,Great Britain,5,30, Frentzen,Sauber Mercedes,1:27.284,10
+1994,Great Britain,6,2, Coulthard,Williams Renault,1:27.698,7
+1994,Great Britain,7,14, Barrichello,Jordan Hart,1:27.890,11
+1994,Great Britain,8,15, Irvine,Jordan Hart,1:27.890,11
+1994,Great Britain,9,3, Katayama,Tyrrell Yamaha,1:27.936,12
+1994,Great Britain,10,7, Hakkinen,McLaren Peugeot,1:27.983,9
+1994,Great Britain,11,10, Morbidelli,Footwork Ford,1:28.159,12
+1994,Great Britain,12,8, Brundle,McLaren Peugeot,1:28.224,12
+1994,Great Britain,13,4, Blundell,Tyrrell Yamaha,1:28.510,10
+1994,Great Britain,14,23, Martini,Minardi Ford,1:28.517,12
+1994,Great Britain,15,9, Fittipaldi,Footwork Ford,1:28.816,10
+1994,Great Britain,16,6, Verstappen,Benetton Ford,1:29.142,2
+1994,Great Britain,17,11, Zanardi,Lotus Mugen Honda,1:29.240,12
+1994,Great Britain,18,12, Herbert,Lotus Mugen Honda,1:29.268,12
+1994,Great Britain,19,26, Panis,Ligier Renault,1:29.381,12
+1994,Great Britain,20,24, Alboreto,Minardi Ford,1:29.403,12
+1994,Great Britain,21,19, Beretta,Larrousse Ford,1:29.971,12
+1994,Great Britain,22,29, de Cesaris,Sauber Mercedes,1:30.034,11
+1994,Great Britain,23,25, Bernard,Ligier Renault,1:30.058,9
+1994,Great Britain,24,20, Comas,Larrousse Ford,1:30.274,11
+1994,Great Britain,25,32, Gounon,Simtek Ford,1:31.225,12
+1994,Great Britain,26,31, Brabham,Simtek Ford,1:31.437,8
+1994,Great Britain,27,34, Gachot,Pacific Ilmor,1:31.496,11
+1994,Great Britain,28,33, Belmondo,Pacific Ilmor,1:34.631,5
+1994,Germany,1,0, Hill,Williams Renault,1:44.026,10
+1994,Germany,2,28, Berger,Ferrari,1:44.616,5
+1994,Germany,3,5, Schumacher,Benetton Ford,1:44.875,4
+1994,Germany,4,27, Alesi,Ferrari,1:45.272,5
+1994,Germany,5,2, Coulthard,Williams Renault,1:45.477,12
+1994,Germany,6,7, Hakkinen,McLaren Peugeot,1:45.487,10
+1994,Germany,7,4, Blundell,Tyrrell Yamaha,1:45.814,11
+1994,Germany,8,15, Irvine,Jordan Hart,1:45.911,11
+1994,Germany,9,14, Barrichello,Jordan Hart,1:45.962,12
+1994,Germany,10,30, Frentzen,Sauber Mercedes,1:46.488,9
+1994,Germany,11,3, Katayama,Tyrrell Yamaha,1:46.534,7
+1994,Germany,12,8, Brundle,McLaren Peugeot,1:46.644,12
+1994,Germany,13,9, Fittipaldi,Footwork Ford,1:47.150,11
+1994,Germany,14,25, Bernard,Ligier Renault,1:47.531,9
+1994,Germany,15,11, Zanardi,Lotus Mugen Honda,1:47.678,12
+1994,Germany,16,29, de Cesaris,Sauber Mercedes,1:47.745,8
+1994,Germany,17,10, Morbidelli,Footwork Ford,1:47.814,11
+1994,Germany,18,23, Martini,Minardi Ford,1:47.831,12
+1994,Germany,19,26, Panis,Ligier Renault,1:47.925,7
+1994,Germany,20,24, Alboreto,Minardi Ford,1:48.402,9
+1994,Germany,21,12, Herbert,Lotus Mugen Honda,1:48.621,2
+1994,Germany,22,19, Beretta,Larrousse Ford,1:48.681,12
+1994,Germany,23,20, Comas,Larrousse Ford,1:48.770,12
+1994,Germany,24,32, Gounon,Simtek Ford,1:50.361,8
+1994,Germany,25,31, Brabham,Simtek Ford,1:50.685,9
+1994,Germany,26,33, Belmondo,Pacific Ilmor,1:51.916,11
+1994,Germany,27,34, Gachot,Pacific Ilmor,1:52.839,5
+1994,Germany,28,6, Verstappen,Benetton Ford,40:34.496,1
+1994,Hungary,1,5, Schumacher,Benetton Ford,1:19.479,12
+1994,Hungary,2,0, Hill,Williams Renault,1:19.700,11
+1994,Hungary,3,2, Coulthard,Williams Renault,1:20.395,9
+1994,Hungary,4,8, Brundle,McLaren Peugeot,1:20.819,12
+1994,Hungary,5,28, Berger,Ferrari,1:21.009,12
+1994,Hungary,6,6, Verstappen,Benetton Ford,1:21.141,12
+1994,Hungary,7,27, Alesi,Ferrari,1:21.280,12
+1994,Hungary,8,15, Irvine,Jordan Hart,1:21.406,11
+1994,Hungary,9,14, Barrichello,Jordan Hart,1:21.498,12
+1994,Hungary,10,4, Blundell,Tyrrell Yamaha,1:21.731,12
+1994,Hungary,11,3, Katayama,Tyrrell Yamaha,1:21.877,12
+1994,Hungary,12,30, Frentzen,Sauber Mercedes,1:22.268,12
+1994,Hungary,13,10, Morbidelli,Footwork Ford,1:22.311,12
+1994,Hungary,14,9, Fittipaldi,Footwork Ford,1:22.375,10
+1994,Hungary,15,24, Alboreto,Minardi Ford,1:22.379,11
+1994,Hungary,16,20, Comas,Larrousse Ford,1:22.754,12
+1994,Hungary,17,7, Alliot,McLaren Peugeot,1:22.915,8
+1994,Hungary,18,26, Panis,Ligier Renault,1:23.244,12
+1994,Hungary,19,25, Bernard,Ligier Renault,1:23.269,12
+1994,Hungary,20,12, Herbert,Lotus Mugen Honda,1:23.306,12
+1994,Hungary,21,11, Zanardi,Lotus Mugen Honda,1:23.361,11
+1994,Hungary,22,29, de Cesaris,Sauber Mercedes,1:23.573,12
+1994,Hungary,23,31, Brabham,Simtek Ford,1:24.181,12
+1994,Hungary,24,23, Martini,Minardi Ford,1:24.440,4
+1994,Hungary,25,19, Beretta,Larrousse Ford,1:24.645,12
+1994,Hungary,26,34, Gachot,Pacific Ilmor,1:26.521,10
+1994,Hungary,27,32, Gounon,Simtek Ford,1:26.678,10
+1994,Hungary,28,33, Belmondo,Pacific Ilmor,1:28.334,11
+1994,Belgium,1,14, Barrichello,Jordan Hart,2:21.163,9
+1994,Belgium,2,5, Schumacher,Benetton Ford,2:21.494,7
+1994,Belgium,3,0, Hill,Williams Renault,2:21.681,10
+1994,Belgium,4,15, Irvine,Jordan Hart,2:22.074,11
+1994,Belgium,5,27, Alesi,Ferrari,2:22.202,11
+1994,Belgium,6,6, Verstappen,Benetton Ford,2:22.218,12
+1994,Belgium,7,2, Coulthard,Williams Renault,2:22.359,10
+1994,Belgium,8,7, Hakkinen,McLaren Peugeot,2:22.441,11
+1994,Belgium,9,30, Frentzen,Sauber Mercedes,2:22.634,11
+1994,Belgium,10,23, Martini,Minardi Ford,2:23.326,9
+1994,Belgium,11,28, Berger,Ferrari,2:23.895,5
+1994,Belgium,12,4, Blundell,Tyrrell Yamaha,2:24.048,9
+1994,Belgium,13,8, Brundle,McLaren Peugeot,2:24.117,11
+1994,Belgium,14,10, Morbidelli,Footwork Ford,2:25.114,12
+1994,Belgium,15,29, de Cesaris,Sauber Mercedes,2:25.695,11
+1994,Belgium,16,25, Bernard,Ligier Renault,2:26.044,12
+1994,Belgium,17,26, Panis,Ligier Renault,2:26.079,12
+1994,Belgium,18,24, Alboreto,Minardi Ford,2:26.738,11
+1994,Belgium,19,19, Alliot,Larrousse Ford,2:26.901,12
+1994,Belgium,20,12, Herbert,Lotus Mugen Honda,2:27.155,12
+1994,Belgium,21,31, Brabham,Simtek Ford,2:27.212,11
+1994,Belgium,22,20, Comas,Larrousse Ford,2:28.156,11
+1994,Belgium,23,3, Katayama,Tyrrell Yamaha,2:28.979,5
+1994,Belgium,24,32, Gounon,Simtek Ford,2:31.755,8
+1994,Belgium,25,11, Adams,Lotus Mugen Honda,2:33.885,11
+1994,Belgium,26,34, Gachot,Pacific Ilmor,2:34.582,7
+1994,Belgium,27,33, Belmondo,Pacific Ilmor,2:35.729,7
+1994,Belgium,28,9, Fittipaldi,Footwork Ford,16:56.162,1
+1994,Italy,1,27, Alesi,Ferrari,1:24.620,11
+1994,Italy,2,0, Hill,Williams Renault,1:24.734,9
+1994,Italy,3,2, Coulthard,Williams Renault,1:24.869,12
+1994,Italy,4,28, Berger,Ferrari,1:24.915,12
+1994,Italy,5,7, Hakkinen,McLaren Peugeot,1:26.004,12
+1994,Italy,6,12, Herbert,Lotus Mugen Honda,1:26.365,12
+1994,Italy,7,30, Frentzen,Sauber Mercedes,1:26.406,10
+1994,Italy,8,3, Katayama,Tyrrell Yamaha,1:26.525,11
+1994,Italy,9,4, Blundell,Tyrrell Yamaha,1:26.574,12
+1994,Italy,10,8, Brundle,McLaren Peugeot,1:26.899,11
+1994,Italy,11,26, Panis,Ligier Renault,1:26.958,12
+1994,Italy,12,14, Barrichello,Jordan Hart,1:27.034,8
+1994,Italy,13,29, de Cesaris,Sauber Mercedes,1:27.188,12
+1994,Italy,14,6, Verstappen,Benetton Ford,1:27.361,12
+1994,Italy,15,25, Bernard,Ligier Renault,1:27.387,9
+1994,Italy,16,5, Jarvilehto,Benetton Ford,1:27.611,12
+1994,Italy,17,11, Zanardi,Lotus Mugen Honda,1:27.617,12
+1994,Italy,18,24, Alboreto,Minardi Ford,1:27.623,12
+1994,Italy,19,9, Fittipaldi,Footwork Ford,1:27.675,12
+1994,Italy,20,10, Morbidelli,Footwork Ford,1:27.939,12
+1994,Italy,21,19, Dalmas,Larrousse Ford,1:29.528,11
+1994,Italy,22,32, Gounon,Simtek Ford,1:29.594,12
+1994,Italy,23,20, Comas,Larrousse Ford,1:30.530,4
+1994,Italy,24,31, Brabham,Simtek Ford,1:30.691,9
+1994,Italy,25,34, Gachot,Pacific Ilmor,1:31.549,12
+1994,Italy,26,33, Belmondo,Pacific Ilmor,1:32.035,12
+1994,Italy,27,23, Martini,Minardi Ford,19:42.320,2
+1994,Portugal,1,28, Berger,Ferrari,1:20.608,9
+1994,Portugal,2,0, Hill,Williams Renault,1:20.803,10
+1994,Portugal,3,2, Coulthard,Williams Renault,1:21.120,9
+1994,Portugal,4,7, Hakkinen,McLaren Peugeot,1:21.251,10
+1994,Portugal,5,27, Alesi,Ferrari,1:21.517,8
+1994,Portugal,6,3, Katayama,Tyrrell Yamaha,1:21.590,11
+1994,Portugal,7,8, Brundle,McLaren Peugeot,1:21.656,12
+1994,Portugal,8,14, Barrichello,Jordan Hart,1:21.839,11
+1994,Portugal,9,4, Blundell,Tyrrell Yamaha,1:22.288,11
+1994,Portugal,10,5, Jarvilehto,Benetton Ford,1:22.613,11
+1994,Portugal,11,6, Verstappen,Benetton Ford,1:22.614,11
+1994,Portugal,12,9, Fittipaldi,Footwork Ford,1:22.636,11
+1994,Portugal,13,30, Frentzen,Sauber Mercedes,1:22.795,3
+1994,Portugal,14,29, de Cesaris,Sauber Mercedes,1:22.885,12
+1994,Portugal,15,10, Morbidelli,Footwork Ford,1:22.974,11
+1994,Portugal,16,23, Martini,Minardi Ford,1:23.243,9
+1994,Portugal,17,24, Alboreto,Minardi Ford,1:23.364,11
+1994,Portugal,18,15, Irvine,Jordan Hart,1:23.411,10
+1994,Portugal,19,26, Panis,Ligier Renault,1:23.711,9
+1994,Portugal,20,20, Comas,Larrousse Ford,1:24.192,11
+1994,Portugal,21,19, Dalmas,Larrousse Ford,1:24.438,11
+1994,Portugal,22,31, Brabham,Simtek Ford,1:24.527,10
+1994,Portugal,23,25, Bernard,Ligier Renault,1:25.039,10
+1994,Portugal,24,11, Adams,Lotus Mugen Honda,1:25.313,9
+1994,Portugal,25,32, Gounon,Simtek Ford,1:25.686,9
+1994,Portugal,26,34, Gachot,Pacific Ilmor,1:27.960,7
+1994,Portugal,27,33, Belmondo,Pacific Ilmor,1:32.706,7
+1994,Europe,1,0, Hill,Williams Renault,1:24.137,12
+1994,Europe,2,30, Frentzen,Sauber Mercedes,1:24.184,8
+1994,Europe,3,5, Schumacher,Benetton Ford,1:24.207,10
+1994,Europe,4,14, Barrichello,Jordan Hart,1:24.700,9
+1994,Europe,5,15, Irvine,Jordan Hart,1:24.794,9
+1994,Europe,6,2, Mansell,Williams Renault,1:24.971,12
+1994,Europe,7,28, Berger,Ferrari,1:25.079,9
+1994,Europe,8,27, Alesi,Ferrari,1:25.182,9
+1994,Europe,9,7, Hakkinen,McLaren Peugeot,1:25.275,9
+1994,Europe,10,26, Panis,Ligier Renault,1:25.384,11
+1994,Europe,11,29, de Cesaris,Sauber Mercedes,1:25.407,10
+1994,Europe,12,23, Martini,Minardi Ford,1:25.812,11
+1994,Europe,13,8, Brundle,McLaren Peugeot,1:25.942,9
+1994,Europe,14,4, Blundell,Tyrrell Yamaha,1:25.995,12
+1994,Europe,15,10, Morbidelli,Footwork Ford,1:26.048,12
+1994,Europe,16,9, Fittipaldi,Footwork Ford,1:26.094,12
+1994,Europe,17,25, Herbert,Ligier Renault,1:26.241,12
+1994,Europe,18,3, Katayama,Tyrrell Yamaha,1:26.304,4
+1994,Europe,19,24, Alboreto,Minardi Ford,1:26.744,11
+1994,Europe,20,12, Zanardi,Lotus Mugen Honda,1:26.973,10
+1994,Europe,21,20, Comas,Larrousse Ford,1:28.042,12
+1994,Europe,22,11, Bernard,Lotus Mugen Honda,1:28.047,12
+1994,Europe,23,31, Brabham,Simtek Ford,1:28.388,11
+1994,Europe,24,19, Noda,Larrousse Ford,1:29.041,10
+1994,Europe,25,32, Schiattarella,Simtek Ford,1:30.069,12
+1994,Europe,26,34, Gachot,Pacific Ilmor,1:30.099,8
+1994,Europe,27,33, Belmondo,Pacific Ilmor,1:31.162,9
+1994,Europe,28,6, Verstappen,Benetton Ford,1:35.441,2
+1994,Japan,1,5, Schumacher,Benetton Ford,1:37.209,7
+1994,Japan,2,0, Hill,Williams Renault,1:37.696,12
+1994,Japan,3,30, Frentzen,Sauber Mercedes,1:37.742,9
+1994,Japan,4,2, Mansell,Williams Renault,1:37.768,11
+1994,Japan,5,6, Herbert,Benetton Ford,1:37.828,10
+1994,Japan,6,15, Irvine,Jordan Hart,1:37.880,12
+1994,Japan,7,27, Alesi,Ferrari,1:37.907,10
+1994,Japan,8,7, Hakkinen,McLaren Peugeot,1:37.998,12
+1994,Japan,9,8, Brundle,McLaren Peugeot,1:38.076,10
+1994,Japan,10,14, Barrichello,Jordan Hart,1:38.533,12
+1994,Japan,11,28, Berger,Ferrari,1:38.570,12
+1994,Japan,12,10, Morbidelli,Footwork Ford,1:39.030,10
+1994,Japan,13,4, Blundell,Tyrrell Yamaha,1:39.266,12
+1994,Japan,14,3, Katayama,Tyrrell Yamaha,1:39.462,11
+1994,Japan,15,29, Jarvilehto,Sauber Mercedes,1:39.483,9
+1994,Japan,16,23, Martini,Minardi Ford,1:39.548,9
+1994,Japan,17,12, Zanardi,Lotus Mugen Honda,1:39.721,12
+1994,Japan,18,9, Fittipaldi,Footwork Ford,1:39.868,10
+1994,Japan,19,26, Panis,Ligier Renault,1:40.042,12
+1994,Japan,20,25, Lagorce,Ligier Renault,1:40.577,11
+1994,Japan,21,24, Alboreto,Minardi Ford,1:40.652,12
+1994,Japan,22,20, Comas,Larrousse Ford,1:40.978,11
+1994,Japan,23,19, Noda,Larrousse Ford,1:40.990,12
+1994,Japan,24,31, Brabham,Simtek Ford,1:41.659,11
+1994,Japan,25,11, Salo,Lotus Mugen Honda,1:41.805,12
+1994,Japan,26,32, Inoue,Simtek Ford,1:45.004,9
+1994,Japan,27,34, Gachot,Pacific Ilmor,1:46.374,5
+1994,Japan,28,33, Belmondo,Pacific Ilmor,1:46.629,9
+1994,Australia,1,2, Mansell,Williams Renault,1:16.179,11
+1994,Australia,2,5, Schumacher,Benetton Ford,1:16.197,9
+1994,Australia,3,0, Hill,Williams Renault,1:16.830,12
+1994,Australia,4,7, Hakkinen,McLaren Peugeot,1:16.992,11
+1994,Australia,5,14, Barrichello,Jordan Hart,1:17.537,12
+1994,Australia,6,15, Irvine,Jordan Hart,1:17.667,11
+1994,Australia,7,6, Herbert,Benetton Ford,1:17.727,10
+1994,Australia,8,27, Alesi,Ferrari,1:17.801,11
+1994,Australia,9,8, Brundle,McLaren Peugeot,1:17.950,10
+1994,Australia,10,30, Frentzen,Sauber Mercedes,1:17.962,11
+1994,Australia,11,28, Berger,Ferrari,1:18.070,11
+1994,Australia,12,26, Panis,Ligier Renault,1:18.072,12
+1994,Australia,13,4, Blundell,Tyrrell Yamaha,1:18.237,12
+1994,Australia,14,12, Zanardi,Lotus Mugen Honda,1:18.331,12
+1994,Australia,15,3, Katayama,Tyrrell Yamaha,1:18.411,10
+1994,Australia,16,24, Alboreto,Minardi Ford,1:18.755,12
+1994,Australia,17,29, Jarvilehto,Sauber Mercedes,1:18.806,12
+1994,Australia,18,23, Martini,Minardi Ford,1:18.957,12
+1994,Australia,19,9, Fittipaldi,Footwork Ford,1:19.061,11
+1994,Australia,20,25, Lagorce,Ligier Renault,1:19.153,12
+1994,Australia,21,10, Morbidelli,Footwork Ford,1:19.610,12
+1994,Australia,22,11, Salo,Lotus Mugen Honda,1:19.844,11
+1994,Australia,23,19, Noda,Larrousse Ford,1:20.145,12
+1994,Australia,24,31, Brabham,Simtek Ford,1:20.442,11
+1994,Australia,25,20, Deletraz,Larrousse Ford,1:22.422,12
+1994,Australia,26,32, Schiattarella,Simtek Ford,1:22.529,7
+1994,Australia,27,33, Belmondo,Pacific Ilmor,1:24.087,12
+1994,Australia,28,34, Gachot,Pacific Ilmor,7:40.317,2
+1993,South Africa,1,2, Prost,Williams Renault,1:16.804,18
+1993,South Africa,2,8, Senna,McLaren Ford,1:17.152,14
+1993,South Africa,3,5, Schumacher,Benetton Ford,1:17.507,16
+1993,South Africa,4,0, Hill,Williams Renault,1:17.732,15
+1993,South Africa,5,27, Alesi,Ferrari,1:18.775,16
+1993,South Africa,6,7, Andretti,McLaren Ford,1:18.903,19
+1993,South Africa,7,30, Jarvilehto,Sauber,1:19.120,13
+1993,South Africa,8,25, Brundle,Ligier Renault,1:19.138,17
+1993,South Africa,9,6, Patrese,Benetton Ford,1:19.341,18
+1993,South Africa,10,19, Alliot,Larrousse Lamborghini,1:19.350,16
+1993,South Africa,11,26, Blundell,Ligier Renault,1:19.688,13
+1993,South Africa,12,23, Fittipaldi,Minardi Ford,1:19.825,19
+1993,South Africa,13,12, Herbert,Lotus Ford,1:20.009,12
+1993,South Africa,14,28, Berger,Ferrari,1:20.066,11
+1993,South Africa,15,14, Barrichello,Jordan Hart,1:20.118,14
+1993,South Africa,16,11, Zanardi,Lotus Ford,1:20.150,13
+1993,South Africa,17,29, Wendlinger,Sauber,1:20.365,5
+1993,South Africa,18,3, Katayama,Tyrrell Yamaha,1:20.401,13
+1993,South Africa,19,4, de Cesaris,Tyrrell Yamaha,1:20.721,13
+1993,South Africa,20,9, Warwick,Footwork Mugen Honda,1:20.821,16
+1993,South Africa,21,15, Capelli,Jordan Hart,1:20.841,13
+1993,South Africa,22,24, Barbazza,Minardi Ford,1:20.994,13
+1993,South Africa,23,20, Comas,Larrousse Lamborghini,1:21.000,5
+1993,South Africa,24,10, Suzuki,Footwork Mugen Honda,1:21.342,14
+1993,South Africa,25,21, Alboreto,Lola Ferrari,1:22.843,12
+1993,South Africa,26,22, Badoer,Lola Ferrari,1:24.737,6
+1993,Brazil,1,2, Prost,Williams Renault,1:16.809,12
+1993,Brazil,2,0, Hill,Williams Renault,1:17.856,12
+1993,Brazil,3,8, Senna,McLaren Ford,1:18.639,11
+1993,Brazil,4,5, Schumacher,Benetton Ford,1:19.061,12
+1993,Brazil,5,29, Wendlinger,Sauber,1:19.230,12
+1993,Brazil,6,27, Alesi,Ferrari,1:19.260,12
+1993,Brazil,7,28, Berger,Ferrari,1:19.561,8
+1993,Brazil,8,12, Herbert,Lotus Ford,1:19.830,9
+1993,Brazil,9,19, Alliot,Larrousse Lamborghini,1:20.057,12
+1993,Brazil,10,20, Comas,Larrousse Lamborghini,1:20.061,12
+1993,Brazil,11,7, Andretti,McLaren Ford,1:20.093,12
+1993,Brazil,12,26, Blundell,Ligier Renault,1:20.281,11
+1993,Brazil,13,6, Patrese,Benetton Ford,1:20.388,11
+1993,Brazil,14,25, Brundle,Ligier Renault,1:20.390,12
+1993,Brazil,15,30, Jarvilehto,Sauber,1:20.571,11
+1993,Brazil,16,11, Zanardi,Lotus Ford,1:20.891,8
+1993,Brazil,17,14, Barrichello,Jordan Hart,1:20.999,8
+1993,Brazil,18,4, de Cesaris,Tyrrell Yamaha,1:21.224,11
+1993,Brazil,19,9, Warwick,Footwork Mugen Honda,1:21.532,12
+1993,Brazil,20,23, Fittipaldi,Minardi Ford,1:21.547,12
+1993,Brazil,21,21, Alboreto,Lola Ferrari,1:21.752,11
+1993,Brazil,22,3, Katayama,Tyrrell Yamaha,1:21.923,12
+1993,Brazil,23,24, Barbazza,Minardi Ford,1:22.112,12
+1993,Brazil,24,10, Suzuki,Footwork Mugen Honda,1:22.297,4
+1993,Brazil,25,22, Badoer,Lola Ferrari,1:22.938,12
+1993,Brazil,26,15, Capelli,Jordan Hart,1:23.674,12
+1993,Europe,1,8, Senna,McLaren Ford,1:23.976,11
+1993,Europe,2,0, Hill,Williams Renault,1:24.014,12
+1993,Europe,3,2, Prost,Williams Renault,1:24.467,12
+1993,Europe,4,30, Jarvilehto,Sauber,1:25.469,12
+1993,Europe,5,27, Alesi,Ferrari,1:25.699,12
+1993,Europe,6,28, Berger,Ferrari,1:25.971,12
+1993,Europe,7,5, Schumacher,Benetton Ford,1:26.264,11
+1993,Europe,8,14, Barrichello,Jordan Hart,1:26.557,12
+1993,Europe,9,25, Brundle,Ligier Renault,1:26.788,10
+1993,Europe,10,29, Wendlinger,Sauber,1:26.805,12
+1993,Europe,11,7, Andretti,McLaren Ford,1:26.859,12
+1993,Europe,12,12, Herbert,Lotus Ford,1:27.173,12
+1993,Europe,13,6, Patrese,Benetton Ford,1:27.273,11
+1993,Europe,14,24, Barbazza,Minardi Ford,1:27.275,10
+1993,Europe,15,26, Blundell,Ligier Renault,1:27.302,12
+1993,Europe,16,23, Fittipaldi,Minardi Ford,1:28.065,12
+1993,Europe,17,9, Warwick,Footwork Mugen Honda,1:28.096,12
+1993,Europe,18,19, Alliot,Larrousse Lamborghini,1:28.648,12
+1993,Europe,19,15, Boutsen,Jordan Hart,1:28.701,12
+1993,Europe,20,11, Zanardi,Lotus Ford,1:28.782,12
+1993,Europe,21,4, de Cesaris,Tyrrell Yamaha,1:29.177,11
+1993,Europe,22,20, Comas,Larrousse Lamborghini,1:29.310,5
+1993,Europe,23,3, Katayama,Tyrrell Yamaha,1:29.851,11
+1993,Europe,24,21, Alboreto,Lola Ferrari,1:30.049,10
+1993,Europe,25,10, Suzuki,Footwork Mugen Honda,1:30.107,12
+1993,Europe,26,22, Badoer,Lola Ferrari,1:31.178,6
+1993,San Marino,1,0, Hill,Williams Renault,1:22.540,12
+1993,San Marino,2,2, Prost,Williams Renault,1:22.788,11
+1993,San Marino,3,5, Schumacher,Benetton Ford,1:23.988,12
+1993,San Marino,4,8, Senna,McLaren Ford,1:24.042,10
+1993,San Marino,5,28, Berger,Ferrari,1:24.822,11
+1993,San Marino,6,27, Alesi,Ferrari,1:24.906,12
+1993,San Marino,7,6, Patrese,Benetton Ford,1:24.916,11
+1993,San Marino,8,26, Blundell,Ligier Renault,1:25.405,12
+1993,San Marino,9,19, Alliot,Larrousse Lamborghini,1:25.482,12
+1993,San Marino,10,12, Herbert,Lotus Ford,1:25.742,7
+1993,San Marino,11,29, Wendlinger,Sauber,1:25.789,12
+1993,San Marino,12,30, Jarvilehto,Sauber,1:25.941,11
+1993,San Marino,13,9, Warwick,Footwork Mugen Honda,1:25.971,11
+1993,San Marino,14,14, Barrichello,Jordan Hart,1:26.142,12
+1993,San Marino,15,25, Brundle,Ligier Renault,1:26.181,12
+1993,San Marino,16,11, Zanardi,Lotus Ford,1:26.465,12
+1993,San Marino,17,10, Suzuki,Footwork Mugen Honda,1:26.707,9
+1993,San Marino,18,15, Boutsen,Jordan Hart,1:26.810,11
+1993,San Marino,19,20, Comas,Larrousse Lamborghini,1:26.947,11
+1993,San Marino,20,4, de Cesaris,Tyrrell Yamaha,1:27.312,11
+1993,San Marino,21,22, Badoer,Lola Ferrari,1:27.371,12
+1993,San Marino,22,3, Katayama,Tyrrell Yamaha,1:27.569,9
+1993,San Marino,23,23, Fittipaldi,Minardi Ford,1:27.753,11
+1993,San Marino,24,21, Alboreto,Lola Ferrari,1:27.801,11
+1993,San Marino,25,24, Barbazza,Minardi Ford,1:28.032,8
+1993,San Marino,26,7, Andretti,McLaren Ford,1:31.809,4
+1993,Spain,1,2, Prost,Williams Renault,1:19.599,12
+1993,Spain,2,8, Senna,McLaren Ford,1:20.221,12
+1993,Spain,3,0, Hill,Williams Renault,1:20.400,12
+1993,Spain,4,5, Schumacher,Benetton Ford,1:21.148,12
+1993,Spain,5,6, Patrese,Benetton Ford,1:21.880,12
+1993,Spain,6,7, Andretti,McLaren Ford,1:22.286,11
+1993,Spain,7,30, Jarvilehto,Sauber,1:22.801,12
+1993,Spain,8,12, Herbert,Lotus Ford,1:23.541,12
+1993,Spain,9,11, Zanardi,Lotus Ford,1:23.579,12
+1993,Spain,10,27, Alesi,Ferrari,1:23.614,12
+1993,Spain,11,29, Wendlinger,Sauber,1:23.696,12
+1993,Spain,12,9, Warwick,Footwork Mugen Honda,1:23.971,12
+1993,Spain,13,26, Blundell,Ligier Renault,1:24.107,12
+1993,Spain,14,10, Suzuki,Footwork Mugen Honda,1:24.158,12
+1993,Spain,15,23, Fittipaldi,Minardi Ford,1:24.304,12
+1993,Spain,16,28, Berger,Ferrari,1:24.346,12
+1993,Spain,17,15, Boutsen,Jordan Hart,1:24.476,11
+1993,Spain,18,14, Barrichello,Jordan Hart,1:24.708,12
+1993,Spain,19,25, Brundle,Ligier Renault,1:24.748,12
+1993,Spain,20,20, Comas,Larrousse Lamborghini,1:24.995,12
+1993,Spain,21,3, Katayama,Tyrrell Yamaha,1:25.607,11
+1993,Spain,22,24, Barbazza,Minardi Ford,1:25.616,11
+1993,Spain,23,19, Alliot,Larrousse Lamborghini,1:26.698,8
+1993,Spain,24,21, Alboreto,Lola Ferrari,1:26.813,12
+1993,Spain,25,22, Badoer,Lola Ferrari,1:26.851,12
+1993,Spain,26,4, de Cesaris,Tyrrell Yamaha,1:27.724,8
+1993,Monaco,1,0, Hill,Williams Renault,1:38.963,12
+1993,Monaco,2,2, Prost,Williams Renault,1:39.649,11
+1993,Monaco,3,5, Schumacher,Benetton Ford,1:40.780,12
+1993,Monaco,4,28, Berger,Ferrari,1:40.853,12
+1993,Monaco,5,8, Senna,McLaren Ford,1:42.127,12
+1993,Monaco,6,6, Patrese,Benetton Ford,1:42.136,12
+1993,Monaco,7,27, Alesi,Ferrari,1:42.160,12
+1993,Monaco,8,19, Alliot,Larrousse Lamborghini,1:43.031,11
+1993,Monaco,9,26, Blundell,Ligier Renault,1:43.449,12
+1993,Monaco,10,23, Fittipaldi,Minardi Ford,1:43.829,11
+1993,Monaco,11,12, Herbert,Lotus Ford,1:43.898,12
+1993,Monaco,12,4, de Cesaris,Tyrrell Yamaha,1:44.193,9
+1993,Monaco,13,14, Barrichello,Jordan Hart,1:44.310,12
+1993,Monaco,14,20, Comas,Larrousse Lamborghini,1:44.483,10
+1993,Monaco,15,24, Barbazza,Minardi Ford,1:44.524,12
+1993,Monaco,16,9, Warwick,Footwork Mugen Honda,1:44.884,8
+1993,Monaco,17,29, Wendlinger,Sauber,1:45.439,12
+1993,Monaco,18,15, Boutsen,Jordan Hart,1:45.512,12
+1993,Monaco,19,7, Andretti,McLaren Ford,1:45.993,9
+1993,Monaco,20,25, Brundle,Ligier Renault,1:46.446,3
+1993,Monaco,21,22, Badoer,Lola Ferrari,1:46.745,12
+1993,Monaco,22,11, Zanardi,Lotus Ford,1:46.935,10
+1993,Monaco,23,21, Alboreto,Lola Ferrari,1:47.082,12
+1993,Monaco,24,30, Jarvilehto,Sauber,1:48.526,3
+1993,Monaco,25,3, Katayama,Tyrrell Yamaha,1:49.210,12
+1993,Monaco,26,10, Suzuki,Footwork Mugen Honda,10:06.384,3
+1993,Canada,1,2, Prost,Williams Renault,1:18.987,12
+1993,Canada,2,0, Hill,Williams Renault,1:19.491,12
+1993,Canada,3,5, Schumacher,Benetton Ford,1:20.808,12
+1993,Canada,4,6, Patrese,Benetton Ford,1:20.948,12
+1993,Canada,5,28, Berger,Ferrari,1:21.278,12
+1993,Canada,6,27, Alesi,Ferrari,1:21.414,12
+1993,Canada,7,25, Brundle,Ligier Renault,1:21.603,12
+1993,Canada,8,8, Senna,McLaren Ford,1:21.706,12
+1993,Canada,9,29, Wendlinger,Sauber,1:21.936,12
+1993,Canada,10,26, Blundell,Ligier Renault,1:22.097,12
+1993,Canada,11,30, Jarvilehto,Sauber,1:22.198,12
+1993,Canada,12,20, Comas,Larrousse Lamborghini,1:22.263,12
+1993,Canada,13,7, Andretti,McLaren Ford,1:22.751,12
+1993,Canada,14,10, Suzuki,Footwork Mugen Honda,1:22.891,12
+1993,Canada,15,19, Alliot,Larrousse Lamborghini,1:22.983,7
+1993,Canada,16,14, Barrichello,Jordan Hart,1:23.152,9
+1993,Canada,17,11, Zanardi,Lotus Ford,1:23.240,12
+1993,Canada,18,4, de Cesaris,Tyrrell Yamaha,1:23.268,11
+1993,Canada,19,12, Herbert,Lotus Ford,1:23.341,12
+1993,Canada,20,9, Warwick,Footwork Mugen Honda,1:23.518,12
+1993,Canada,21,24, Barbazza,Minardi Ford,1:23.946,12
+1993,Canada,22,21, Alboreto,Lola Ferrari,1:24.382,12
+1993,Canada,23,3, Katayama,Tyrrell Yamaha,1:24.391,10
+1993,Canada,24,23, Fittipaldi,Minardi Ford,1:24.559,11
+1993,Canada,25,15, Boutsen,Jordan Hart,1:24.632,12
+1993,Canada,26,22, Badoer,Lola Ferrari,1:25.212,12
+1993,France,1,0, Hill,Williams Renault,1:15.051,12
+1993,France,2,2, Prost,Williams Renault,1:15.725,12
+1993,France,3,5, Schumacher,Benetton Ford,1:16.720,11
+1993,France,4,8, Senna,McLaren Ford,1:16.782,12
+1993,France,5,27, Alesi,Ferrari,1:16.825,12
+1993,France,6,26, Blundell,Ligier Renault,1:16.834,12
+1993,France,7,25, Brundle,Ligier Renault,1:16.847,11
+1993,France,8,14, Barrichello,Jordan Hart,1:17.347,12
+1993,France,9,10, Suzuki,Footwork Mugen Honda,1:17.441,12
+1993,France,10,29, Wendlinger,Sauber,1:17.650,11
+1993,France,11,6, Patrese,Benetton Ford,1:17.675,12
+1993,France,12,12, Herbert,Lotus Ford,1:17.862,12
+1993,France,13,20, Comas,Larrousse Lamborghini,1:18.180,12
+1993,France,14,19, Alliot,Larrousse Lamborghini,1:18.230,11
+1993,France,15,11, Zanardi,Lotus Ford,1:18.331,10
+1993,France,16,7, Andretti,McLaren Ford,1:18.585,12
+1993,France,17,15, Boutsen,Jordan Hart,1:18.685,12
+1993,France,18,28, Berger,Ferrari,1:18.741,12
+1993,France,19,9, Warwick,Footwork Mugen Honda,1:19.180,12
+1993,France,20,30, Jarvilehto,Sauber,1:19.252,12
+1993,France,21,23, Fittipaldi,Minardi Ford,1:19.968,12
+1993,France,22,3, Katayama,Tyrrell Yamaha,1:20.553,12
+1993,France,23,4, de Cesaris,Tyrrell Yamaha,1:21.024,12
+1993,France,24,24, Barbazza,Minardi Ford,1:21.113,2
+1993,France,25,22, Badoer,Lola Ferrari,1:21.931,12
+1993,France,26,21, Alboreto,Lola Ferrari,1:22.106,12
+1993,Great Britain,1,2, Prost,Williams Renault,1:34.483,11
+1993,Great Britain,2,0, Hill,Williams Renault,1:36.297,12
+1993,Great Britain,3,8, Senna,McLaren Ford,1:37.050,12
+1993,Great Britain,4,5, Schumacher,Benetton Ford,1:37.264,12
+1993,Great Britain,5,27, Alesi,Ferrari,1:37.899,12
+1993,Great Britain,6,28, Berger,Ferrari,1:37.976,11
+1993,Great Britain,7,7, Andretti,McLaren Ford,1:38.283,11
+1993,Great Britain,8,6, Patrese,Benetton Ford,1:38.371,12
+1993,Great Britain,9,25, Brundle,Ligier Renault,1:38.384,12
+1993,Great Britain,10,9, Warwick,Footwork Mugen Honda,1:39.433,12
+1993,Great Britain,11,30, Jarvilehto,Sauber,1:39.821,10
+1993,Great Britain,12,10, Suzuki,Footwork Mugen Honda,1:40.537,12
+1993,Great Britain,13,4, de Cesaris,Tyrrell Yamaha,1:40.624,12
+1993,Great Britain,14,24, Martini,Minardi Ford,1:40.851,12
+1993,Great Britain,15,14, Barrichello,Jordan Hart,1:40.869,12
+1993,Great Britain,16,12, Herbert,Lotus Ford,1:41.037,12
+1993,Great Britain,17,23, Fittipaldi,Minardi Ford,1:41.726,12
+1993,Great Britain,18,22, Badoer,Lola Ferrari,1:41.838,11
+1993,Great Britain,19,11, Zanardi,Lotus Ford,1:41.908,12
+1993,Great Britain,20,20, Comas,Larrousse Lamborghini,1:41.926,11
+1993,Great Britain,21,29, Wendlinger,Sauber,1:41.940,10
+1993,Great Britain,22,19, Alliot,Larrousse Lamborghini,1:41.985,11
+1993,Great Britain,23,21, Alboreto,Lola Ferrari,1:42.844,12
+1993,Great Britain,24,15, Boutsen,Jordan Hart,1:42.957,12
+1993,Great Britain,25,3, Katayama,Tyrrell Yamaha,1:43.173,12
+1993,Great Britain,26,26, Blundell,Ligier Renault,9:32.793,1
+1993,Germany,1,2, Prost,Williams Renault,1:39.046,8
+1993,Germany,2,5, Schumacher,Benetton Ford,1:39.640,11
+1993,Germany,3,0, Hill,Williams Renault,1:40.211,12
+1993,Germany,4,26, Blundell,Ligier Renault,1:40.279,10
+1993,Germany,5,8, Senna,McLaren Ford,1:40.642,8
+1993,Germany,6,25, Brundle,Ligier Renault,1:40.916,10
+1993,Germany,7,6, Patrese,Benetton Ford,1:41.101,11
+1993,Germany,8,10, Suzuki,Footwork Mugen Honda,1:41.138,10
+1993,Germany,9,28, Berger,Ferrari,1:41.290,5
+1993,Germany,10,27, Alesi,Ferrari,1:41.304,12
+1993,Germany,11,7, Andretti,McLaren Ford,1:41.531,9
+1993,Germany,12,12, Herbert,Lotus Ford,1:41.564,12
+1993,Germany,13,11, Zanardi,Lotus Ford,1:41.858,12
+1993,Germany,14,29, Wendlinger,Sauber,1:41.922,6
+1993,Germany,15,20, Comas,Larrousse Lamborghini,1:42.086,12
+1993,Germany,16,14, Barrichello,Jordan Hart,1:42.152,10
+1993,Germany,17,23, Fittipaldi,Minardi Ford,1:42.658,12
+1993,Germany,18,24, Martini,Minardi Ford,1:42.786,11
+1993,Germany,19,30, Jarvilehto,Sauber,1:42.845,12
+1993,Germany,20,19, Alliot,Larrousse Lamborghini,1:42.912,12
+1993,Germany,21,9, Warwick,Footwork Mugen Honda,1:42.977,8
+1993,Germany,22,22, Badoer,Lola Ferrari,1:43.345,10
+1993,Germany,23,4, de Cesaris,Tyrrell Yamaha,1:43.471,9
+1993,Germany,24,15, Boutsen,Jordan Hart,1:43.476,12
+1993,Germany,25,21, Alboreto,Lola Ferrari,1:44.198,8
+1993,Germany,26,3, Katayama,Tyrrell Yamaha,1:46.709,2
+1993,Hungary,1,2, Prost,Williams Renault,1:15.488,12
+1993,Hungary,2,5, Schumacher,Benetton Ford,1:16.003,12
+1993,Hungary,3,0, Hill,Williams Renault,1:16.135,12
+1993,Hungary,4,6, Patrese,Benetton Ford,1:17.755,11
+1993,Hungary,5,8, Senna,McLaren Ford,1:18.260,9
+1993,Hungary,6,24, Martini,Minardi Ford,1:19.129,11
+1993,Hungary,7,25, Brundle,Ligier Renault,1:19.277,10
+1993,Hungary,8,28, Berger,Ferrari,1:19.379,12
+1993,Hungary,9,27, Alesi,Ferrari,1:19.438,12
+1993,Hungary,10,10, Suzuki,Footwork Mugen Honda,1:19.533,6
+1993,Hungary,11,11, Zanardi,Lotus Ford,1:19.673,12
+1993,Hungary,12,7, Andretti,McLaren Ford,1:20.088,11
+1993,Hungary,13,12, Herbert,Lotus Ford,1:20.527,12
+1993,Hungary,14,29, Wendlinger,Sauber,1:20.590,3
+1993,Hungary,15,14, Barrichello,Jordan Hart,1:20.658,12
+1993,Hungary,16,26, Blundell,Ligier Renault,1:20.770,6
+1993,Hungary,17,9, Warwick,Footwork Mugen Honda,1:20.780,8
+1993,Hungary,18,23, Fittipaldi,Minardi Ford,1:20.953,12
+1993,Hungary,19,19, Alliot,Larrousse Lamborghini,1:20.959,12
+1993,Hungary,20,20, Comas,Larrousse Lamborghini,1:21.049,12
+1993,Hungary,21,15, Boutsen,Jordan Hart,1:21.484,12
+1993,Hungary,22,4, de Cesaris,Tyrrell Yamaha,1:22.489,11
+1993,Hungary,23,3, Katayama,Tyrrell Yamaha,1:22.668,12
+1993,Hungary,24,22, Badoer,Lola Ferrari,1:23.543,12
+1993,Hungary,25,21, Alboreto,Lola Ferrari,1:23.560,11
+1993,Hungary,26,30, Jarvilehto,Sauber,1:24.596,2
+1993,Belgium,1,0, Hill,Williams Renault,1:48.716,11
+1993,Belgium,2,2, Prost,Williams Renault,1:48.794,10
+1993,Belgium,3,5, Schumacher,Benetton Ford,1:50.305,9
+1993,Belgium,4,8, Senna,McLaren Ford,1:51.385,11
+1993,Belgium,5,10, Suzuki,Footwork Mugen Honda,1:51.904,11
+1993,Belgium,6,6, Patrese,Benetton Ford,1:51.925,12
+1993,Belgium,7,27, Alesi,Ferrari,1:52.159,10
+1993,Belgium,8,30, Jarvilehto,Sauber,1:52.210,9
+1993,Belgium,9,12, Herbert,Lotus Ford,1:52.369,11
+1993,Belgium,10,28, Berger,Ferrari,1:52.689,12
+1993,Belgium,11,9, Warwick,Footwork Mugen Honda,1:52.730,12
+1993,Belgium,12,26, Blundell,Ligier Renault,1:53.030,12
+1993,Belgium,13,29, Wendlinger,Sauber,1:53.139,12
+1993,Belgium,14,14, Barrichello,Jordan Hart,1:53.235,12
+1993,Belgium,15,25, Brundle,Ligier Renault,1:53.323,12
+1993,Belgium,16,7, Andretti,McLaren Ford,1:53.554,12
+1993,Belgium,17,4, de Cesaris,Tyrrell Yamaha,1:53.559,12
+1993,Belgium,18,24, Martini,Minardi Ford,1:54.968,12
+1993,Belgium,19,3, Katayama,Tyrrell Yamaha,1:55.271,5
+1993,Belgium,20,15, Boutsen,Jordan Hart,1:55.382,12
+1993,Belgium,21,20, Comas,Larrousse Lamborghini,1:56.072,11
+1993,Belgium,22,19, Alliot,Larrousse Lamborghini,1:56.822,5
+1993,Belgium,23,23, Fittipaldi,Minardi Ford,1:56.947,5
+1993,Belgium,24,22, Badoer,Lola Ferrari,1:57.599,10
+1993,Belgium,25,21, Alboreto,Lola Ferrari,1:57.852,12
+1993,Italy,1,2, Prost,Williams Renault,1:22.163,12
+1993,Italy,2,0, Hill,Williams Renault,1:22.283,9
+1993,Italy,3,27, Alesi,Ferrari,1:22.625,12
+1993,Italy,4,8, Senna,McLaren Ford,1:23.310,10
+1993,Italy,5,28, Berger,Ferrari,1:23.750,12
+1993,Italy,6,5, Schumacher,Benetton Ford,1:23.888,12
+1993,Italy,7,30, Jarvilehto,Sauber,1:24.298,12
+1993,Italy,8,25, Brundle,Ligier Renault,1:24.608,12
+1993,Italy,9,9, Warwick,Footwork Mugen Honda,1:24.673,12
+1993,Italy,10,29, Wendlinger,Sauber,1:25.016,12
+1993,Italy,11,26, Blundell,Ligier Renault,1:25.238,10
+1993,Italy,12,7, Andretti,McLaren Ford,1:25.348,12
+1993,Italy,13,12, Herbert,Lotus Ford,1:25.463,12
+1993,Italy,14,4, de Cesaris,Tyrrell Yamaha,1:25.482,12
+1993,Italy,15,19, Alliot,Larrousse Lamborghini,1:25.529,12
+1993,Italy,16,24, Martini,Minardi Ford,1:25.903,11
+1993,Italy,17,22, Badoer,Lola Ferrari,1:26.049,12
+1993,Italy,18,6, Patrese,Benetton Ford,1:26.082,12
+1993,Italy,19,10, Suzuki,Footwork Mugen Honda,1:26.127,12
+1993,Italy,20,23, Fittipaldi,Minardi Ford,1:26.135,11
+1993,Italy,21,21, Alboreto,Lola Ferrari,1:26.287,11
+1993,Italy,22,3, Katayama,Tyrrell Yamaha,1:26.300,12
+1993,Italy,23,20, Comas,Larrousse Lamborghini,1:26.323,12
+1993,Italy,24,11, Lamy,Lotus Ford,1:26.380,12
+1993,Italy,25,14, Barrichello,Jordan Hart,1:26.664,6
+1993,Italy,26,15, Apicella,Jordan Hart,1:51.300,2
+1993,Portugal,1,2, Prost,Williams Renault,1:11.683,12
+1993,Portugal,2,0, Hill,Williams Renault,1:12.290,12
+1993,Portugal,3,8, Senna,McLaren Ford,1:12.954,11
+1993,Portugal,4,7, Hakkinen,McLaren Ford,1:12.956,12
+1993,Portugal,5,5, Schumacher,Benetton Ford,1:13.403,12
+1993,Portugal,6,27, Alesi,Ferrari,1:13.682,12
+1993,Portugal,7,28, Berger,Ferrari,1:14.159,12
+1993,Portugal,8,6, Patrese,Benetton Ford,1:14.206,12
+1993,Portugal,9,26, Blundell,Ligier Renault,1:14.591,12
+1993,Portugal,10,25, Brundle,Ligier Renault,1:14.779,12
+1993,Portugal,11,30, Jarvilehto,Sauber,1:14.978,12
+1993,Portugal,12,29, Wendlinger,Sauber,1:15.016,12
+1993,Portugal,13,9, Warwick,Footwork Mugen Honda,1:15.200,12
+1993,Portugal,14,14, Barrichello,Jordan Hart,1:15.479,12
+1993,Portugal,15,12, Herbert,Lotus Ford,1:15.831,8
+1993,Portugal,16,24, Martini,Minardi Ford,1:15.942,12
+1993,Portugal,17,10, Suzuki,Footwork Mugen Honda,1:15.968,12
+1993,Portugal,18,4, de Cesaris,Tyrrell Yamaha,1:16.072,12
+1993,Portugal,19,20, Comas,Larrousse Lamborghini,1:16.417,12
+1993,Portugal,20,23, Fittipaldi,Minardi Ford,1:16.651,12
+1993,Portugal,21,3, Katayama,Tyrrell Yamaha,1:16.655,12
+1993,Portugal,22,19, Alliot,Larrousse Lamborghini,1:16.777,12
+1993,Portugal,23,11, Lamy,Lotus Ford,1:17.198,11
+1993,Portugal,24,21, Alboreto,Lola Ferrari,1:17.778,12
+1993,Portugal,25,15, Naspetti,Jordan Hart,1:17.845,11
+1993,Portugal,26,22, Badoer,Lola Ferrari,1:19.064,12
+1993,Japan,1,2, Prost,Williams Renault,1:38.587,12
+1993,Japan,2,5, Schumacher,Benetton Ford,1:38.589,11
+1993,Japan,3,7, Hakkinen,McLaren Ford,1:38.813,12
+1993,Japan,4,8, Senna,McLaren Ford,1:38.942,10
+1993,Japan,5,0, Hill,Williams Renault,1:38.979,12
+1993,Japan,6,28, Berger,Ferrari,1:39.024,10
+1993,Japan,7,27, Alesi,Ferrari,1:39.535,5
+1993,Japan,8,30, Jarvilehto,Sauber,1:40.346,11
+1993,Japan,9,6, Patrese,Benetton Ford,1:40.748,12
+1993,Japan,10,3, Katayama,Tyrrell Yamaha,1:40.963,11
+1993,Japan,11,15, Irvine,Jordan Hart,1:41.018,12
+1993,Japan,12,9, Warwick,Footwork Mugen Honda,1:41.086,12
+1993,Japan,13,26, Blundell,Ligier Renault,1:41.278,12
+1993,Japan,14,29, Wendlinger,Sauber,1:41.367,12
+1993,Japan,15,10, Suzuki,Footwork Mugen Honda,1:41.380,12
+1993,Japan,16,4, de Cesaris,Tyrrell Yamaha,1:41.480,11
+1993,Japan,17,12, Herbert,Lotus Ford,1:41.488,11
+1993,Japan,18,25, Brundle,Ligier Renault,1:41.543,11
+1993,Japan,19,14, Barrichello,Jordan Hart,1:41.624,12
+1993,Japan,20,24, Martini,Minardi Ford,1:42.388,12
+1993,Japan,21,11, Lamy,Lotus Ford,1:43.165,11
+1993,Japan,22,20, Comas,Larrousse Lamborghini,1:43.483,8
+1993,Japan,23,19, Suzuki,Larrousse Lamborghini,1:44.562,10
+1993,Japan,24,23, Gounon,Minardi Ford,1:46.782,12
+1993,Australia,1,8, Senna,McLaren Ford,1:13.371,12
+1993,Australia,2,2, Prost,Williams Renault,1:13.807,12
+1993,Australia,3,5, Schumacher,Benetton Ford,1:14.098,12
+1993,Australia,4,7, Hakkinen,McLaren Ford,1:14.106,12
+1993,Australia,5,28, Berger,Ferrari,1:14.194,12
+1993,Australia,6,0, Hill,Williams Renault,1:14.721,12
+1993,Australia,7,27, Alesi,Ferrari,1:15.332,11
+1993,Australia,8,25, Brundle,Ligier Renault,1:16.022,12
+1993,Australia,9,6, Patrese,Benetton Ford,1:16.077,12
+1993,Australia,10,10, Suzuki,Footwork Mugen Honda,1:16.079,12
+1993,Australia,11,29, Wendlinger,Sauber,1:16.106,12
+1993,Australia,12,30, Jarvilehto,Sauber,1:16.286,12
+1993,Australia,13,14, Barrichello,Jordan Hart,1:16.459,12
+1993,Australia,14,26, Blundell,Ligier Renault,1:16.862,3
+1993,Australia,15,24, Martini,Minardi Ford,1:16.905,12
+1993,Australia,16,3, Katayama,Tyrrell Yamaha,1:17.018,11
+1993,Australia,17,4, de Cesaris,Tyrrell Yamaha,1:17.350,11
+1993,Australia,18,12, Herbert,Lotus Ford,1:17.612,12
+1993,Australia,19,20, Comas,Larrousse Lamborghini,1:17.750,12
+1993,Australia,20,23, Gounon,Minardi Ford,1:17.754,12
+1993,Australia,21,11, Lamy,Lotus Ford,1:19.628,10
+1993,Australia,22,15, Irvine,Jordan Hart,1:19.733,10
+1993,Australia,23,19, Suzuki,Larrousse Lamborghini,1:21.793,4
