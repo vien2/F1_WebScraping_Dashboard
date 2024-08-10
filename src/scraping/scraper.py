@@ -1082,6 +1082,174 @@ def get_driver_details(driver):
     
     return driver_data
 
+def extract_all_history_drivers(driver):
+    all_drivers_history_data = []
+    drivers_page_url="https://www.formula1.com/en/drivers/hall-of-fame.html"
+
+    # Navegar a la página de todos los pilotos
+    driver.get(drivers_page_url)
+    time.sleep(3)
+    aceptar_cookies(driver)
+    time.sleep(3)
+
+    # Esperar que los elementos se carguen
+    wait = WebDriverWait(driver, 10)
+    driver_links = wait.until(EC.presence_of_all_elements_located((By.CSS_SELECTOR, 'a.column.column-4')))
+
+    # Iterar sobre cada piloto y extraer los datos
+    for i in range(len(driver_links)):
+        try:
+            # Navegar de nuevo a la página de la lista de pilotos
+            driver.get(drivers_page_url)
+            time.sleep(3)
+            
+            # Volver a encontrar los enlaces en cada iteración
+            driver_links = driver.find_elements(By.CSS_SELECTOR, 'a.column.column-4')
+            
+            # Obtener el enlace actual
+            link = driver_links[i]
+            
+            # Navegar a la página del piloto
+            driver.get(link.get_attribute('href'))
+            time.sleep(3)
+            
+            # Recoger los datos del piloto
+            driver_history_data = get_driver_details(driver)
+            if driver_history_data:
+                all_drivers_history_data.extend(driver_history_data)  # Añadir a la lista de datos
+        except Exception as e:
+            print(f"Error al procesar el enlace de piloto: {e}")
+
+    # Guardar los datos en un archivo CSV
+    if all_drivers_history_data:
+        columns = ['name', 'team', 'country', 'podiums', 'points', 'grands_prix_entered', 'world_championships', 'highest_race_finish', 'highest_grid_position', 'date_of_birth', 'place_of_birth', 'profile_img', 'helmet_img']
+        save_to_csv(all_drivers_history_data, './data/raw/f1_drivers_hall_of_fame.csv', columns)
+
+def get_driver_details(driver):
+    driver_history_data = []
+    try:
+        # Obtener el nombre del piloto
+        driver_name = driver.find_element(By.CSS_SELECTOR, 'h1.font-formula.text-left.text-carbonBlack.text-24').text
+        # Obtener las imágenes (perfil y casco)
+        try:
+            profile_img = driver.find_element(By.XPATH, '//img[contains(@class, "rounded-tr-md") and contains(@class, "tablet:rounded-tr-2xl")]').get_attribute('src')
+        except NoSuchElementException:
+            profile_img = None  # Asignar None si no se encuentra la imagen
+
+        # Agregar todos los datos a un diccionario
+        driver_history_data.append({
+            'name': driver_name,
+            'team': None,
+            'country': None,
+            'podiums': None,
+            'points': None,
+            'grands_prix_entered': None,
+            'world_championships': None,
+            'highest_race_finish': None,
+            'highest_grid_position': None,
+            'date_of_birth': None,
+            'place_of_birth': None,
+            'profile_img': profile_img,
+            'helmet_img': None
+        })
+
+    except Exception as e:
+        print(f"Error al extraer datos del piloto: {e}")
+    
+    return driver_history_data
+
+def extract_all_teams(driver):
+    all_teams_data = []
+    drivers_page_url="https://www.formula1.com/en/teams"
+
+    # Navegar a la página de todos los pilotos
+    driver.get(drivers_page_url)
+    time.sleep(3)
+    aceptar_cookies(driver)
+    time.sleep(3)
+
+    # Esperar que los elementos se carguen
+    wait = WebDriverWait(driver, 10)
+    teams_links = wait.until(EC.presence_of_all_elements_located((By.CSS_SELECTOR, 'a.outline.outline-offset-4.outline-brand-black.group.outline-0')))
+
+    # Iterar sobre cada piloto y extraer los datos
+    for i in range(len(teams_links)):
+        try:
+            # Navegar de nuevo a la página de la lista de pilotos
+            driver.get(drivers_page_url)
+            time.sleep(3)
+            
+            # Volver a encontrar los enlaces en cada iteración
+            teams_links = driver.find_elements(By.CSS_SELECTOR, 'a.outline.outline-offset-4.outline-brand-black.group.outline-0')
+            
+            # Obtener el enlace actual
+            link = teams_links[i]
+            
+            # Navegar a la página del piloto
+            driver.get(link.get_attribute('href'))
+            time.sleep(3)
+            
+            # Recoger los datos del piloto
+            teams_data = get_teams_details(driver)
+            if teams_data:
+                all_teams_data.extend(teams_data)  # Añadir a la lista de datos
+        except Exception as e:
+            print(f"Error al procesar el enlace de piloto: {e}")
+
+    # Guardar los datos en un archivo CSV
+    if all_teams_data:
+        columns = ['full_team_name', 'base', 'team_chief', 'technical_chief', 'chasis', 'power_unit', 'first_team_entry', 'highest_grid_position', 'world_championships', 'highest_race_finish', 'pole_positions', 'fastest_laps', 'drivers', 'logo_img']
+        save_to_csv(all_teams_data, './data/raw/f1_teams.csv', columns)
+
+def get_teams_details(driver):
+    team_data = []
+    wait = WebDriverWait(driver, 10)
+    try:
+        dl_element = wait.until(EC.presence_of_element_located((By.CSS_SELECTOR, 'div.f1-dl')))
+
+        # Capturar todos los <dt> y <dd> dentro del <dl>
+        driver_stats = dl_element.find_elements(By.TAG_NAME, 'dt')
+        stats_values = dl_element.find_elements(By.TAG_NAME, 'dd')
+
+        # Asegurarse de que ambos elementos coinciden en longitud
+        if len(driver_stats) == len(stats_values):
+            stats_dict = {driver_stats[i].text: stats_values[i].text for i in range(len(driver_stats))}
+        else:
+            print("Error: La cantidad de etiquetas <dt> y <dd> no coincide")
+        # Obtener las imágenes (perfil y casco)
+        try:
+            logo_img = driver.find_element(By.CSS_SELECTOR, 'img.f1-c-image').get_attribute('src')
+        except NoSuchElementException:
+            logo_img = None  # Asignar None si no se encuentra la imagen
+
+        try:
+            driver_names_elements = driver.find_elements(By.CSS_SELECTOR, 'p.f1-heading.text-fs-18px')
+            driver_names = " - ".join([element.text for element in driver_names_elements])
+        except NoSuchElementException:
+            driver_names = None  # Asignar None si no se encuentran los pilotos
+
+        # Agregar todos los datos a un diccionario
+        team_data.append({
+            'full_team_name': stats_dict.get('Full Team Name'),
+            'base': stats_dict.get('Base'),
+            'team_chief': stats_dict.get('Team Chief'),
+            'technical_chief': stats_dict.get('Technical Chief'),
+            'chasis': stats_dict.get('Chassis'),
+            'power_unit': stats_dict.get('Power Unit'),
+            'first_team_entry': stats_dict.get('First Team Entry'),
+            'world_championships': stats_dict.get('World Championships'),
+            'highest_race_finish': stats_dict.get('Highest Race Finish'),
+            'pole_positions': stats_dict.get('Pole Positions'),
+            'fastest_laps': stats_dict.get('Fastest Laps'),
+            'drivers': driver_names,
+            'logo_img': logo_img
+        })
+
+    except Exception as e:
+        print(f"Error al extraer datos del piloto: {e}")
+    
+    return team_data
+
 def main():
     driver = init_webdriver()
     if driver is None:
@@ -1108,7 +1276,9 @@ def main():
     #all_data_drivers = []
     #all_data_teams = []
 
-    extract_all_drivers(driver)
+    #extract_all_drivers(driver)
+    #extract_all_history_drivers(driver)
+    extract_all_teams(driver)
     """
     for year_url in year_urls:
         year = year_url.split('/')[-2]
