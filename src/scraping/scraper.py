@@ -42,7 +42,7 @@ def get_race_result(driver, year, race_name):
     race_result = []
     try:
         wait = WebDriverWait(driver, 5)
-        # Verificar si el mensaje de resultados no disponibles está presente
+        # Verificamos si el mensaje de resultados no disponibles está presente
         no_results_messages = driver.find_elements(By.CSS_SELECTOR, 'p.f1-text.f1-text__body')
         for message in no_results_messages:
             if message.text.strip() == "Results for this session aren’t available yet.":
@@ -59,13 +59,13 @@ def get_race_result(driver, year, race_name):
                 })
                 return race_result
         else:
-            # Espera explícita para la tabla con la clase especificada
+            # Esperamos a la tabla
             results_table = wait.until(EC.presence_of_element_located((By.CSS_SELECTOR, 'table.f1-table.f1-table-with-data.w-full')))
             
-            rows = results_table.find_elements(By.TAG_NAME, 'tr')[1:]  # Saltar la cabecera
+            rows = results_table.find_elements(By.TAG_NAME, 'tr')[1:]  # Saltamos la cabecera de la tabla
             for row in rows:
                 cols = row.find_elements(By.TAG_NAME, 'td')
-                if len(cols) >= 6:  # Asegurarse de que haya suficientes columnas
+                if len(cols) >= 6:
                     position = cols[0].text
                     number = cols[1].text
                     driver_name = cols[2].text
@@ -95,7 +95,7 @@ def get_fastest_laps(driver, year, race_name):
     fastest_laps = []
     try:
         wait = WebDriverWait(driver, 10)
-        # Verificar si el mensaje de resultados no disponibles está presente
+        # Esperamos al mensaje
         no_results_messages = driver.find_elements(By.CSS_SELECTOR, 'p.f1-text.f1-text__body')
         for message in no_results_messages:
             if message.text.strip() == "Results for this session aren’t available yet.":
@@ -113,14 +113,14 @@ def get_fastest_laps(driver, year, race_name):
                 })
                 return fastest_laps
         
-        # Espera explícita para la tabla con la clase especificada
+        # Esperamos a la tabla
         results_table = wait.until(EC.presence_of_element_located((By.CSS_SELECTOR, 'table.f1-table.f1-table-with-data.w-full')))
         rows = results_table.find_elements(By.TAG_NAME, 'tr')[1:]  # Saltar la cabecera
         
         for row in rows:
             cols = row.find_elements(By.TAG_NAME, 'td')
             if len(cols) == 7:
-                # Caso con 7 columnas
+                # Cuando tenemos 7 columnas
                 position = cols[0].text
                 number = cols[1].text
                 driver_name = cols[2].text
@@ -144,7 +144,7 @@ def get_fastest_laps(driver, year, race_name):
                     'avg_speed': avg_speed
                 })
             elif len(cols) == 8:
-                # Caso con 8 columnas
+                # Cuando tenemos 8 columnas
                 position = cols[0].text
                 number = cols[1].text
                 driver_name = cols[2].text
@@ -169,7 +169,7 @@ def get_fastest_laps(driver, year, race_name):
                     'avg_speed': avg_speed
                 })
             elif len(cols) == 6:
-                # Caso con 6 columnas
+                # Cuando tenemos 6 columnas
                 position = cols[0].text
                 number = cols[1].text
                 driver_name = cols[2].text
@@ -192,7 +192,7 @@ def get_fastest_laps(driver, year, race_name):
                     'avg_speed': None
                 })
             else:
-                print(f"Skipping row with unexpected columns count: {len(cols)} columns found")  # Debugging output
+                print(f"Saltando la fila porque no cumple con las colummnas: {len(cols)} columnas no encontradas")  # Debug
 
     except Exception as e:
         print(f"Error al extraer resultados de la carrera {race_name}: {e}")
@@ -910,7 +910,7 @@ def get_race_urls(driver, year_url):
     race_urls = []
     try:
         wait = WebDriverWait(driver, 10)
-        # Espera explícita para cualquier li con data-name="races"
+        # Esperamos a la lista de las carreras
         race_elements = wait.until(EC.presence_of_all_elements_located((By.CSS_SELECTOR, 'li.f1-menu-item[data-name="races"]')))
 
         for race in race_elements:
@@ -923,7 +923,7 @@ def get_race_urls(driver, year_url):
                 print(f"Error al procesar la carrera: {e}")
 
     except Exception as e:
-        print(f"Error al extraer URLs de los circuitos: {e}")
+        print(f"Error al extraer URLs de las carreras: {e}")
     return race_urls
 
 def get_year_urls(driver):
@@ -934,23 +934,23 @@ def get_year_urls(driver):
     year_urls = []
 
     try:
-        # Espera explícita para el ul con la clase especificada
+        # Esperamos a que el elemento ul esté disponible
         wait = WebDriverWait(driver, 10)
         years_ul = wait.until(EC.presence_of_element_located((By.CSS_SELECTOR, 'ul.f1-menu-wrapper.flex.flex-col.gap-micro.f1-filters-wrapper.max-h-\\[7\\.5em\\].max-laptop\\:bg-brand-offWhite.overflow-y-auto.p-normal.relative')))
 
-        # Captura inicial de los elementos
+        # Empezamos a obtener los años
         years = years_ul.find_elements(By.CSS_SELECTOR, 'li.f1-menu-item[data-name="year"]')
 
         for i in range(len(years)):
             retries = 0
-            while retries < 3:  # Limitar a 3 reintentos
+            while retries < 3:  # 3 reintentos por si hay algún problema
                 try:
-                    # Encuentra los elementos año nuevamente para evitar stale references
+                    # Volvemos a encontrar los años para evitar el error de stale references
                     years_ul = wait.until(EC.presence_of_element_located((By.CSS_SELECTOR, 'ul.f1-menu-wrapper.flex.flex-col.gap-micro.f1-filters-wrapper.max-h-\\[7\\.5em\\].max-laptop\\:bg-brand-offWhite.overflow-y-auto.p-normal.relative')))
                     years = years_ul.find_elements(By.CSS_SELECTOR, 'li.f1-menu-item[data-name="year"]')
                     year = years[i]
                     
-                    # Captura data-value y href individualmente
+                    # Obtenemos los valores
                     data_value = year.get_attribute('data-value')
                     href = year.find_element(By.TAG_NAME, 'a').get_attribute('href')
                     
@@ -958,9 +958,9 @@ def get_year_urls(driver):
                         year_value = int(data_value)
                         if 'races' in href and 1950 <= year_value <= 2023:
                             year_urls.append(href)
-                    break  # Sal del bucle si se capturan correctamente
+                    break  # Terminamos el bucle cuando los hayamos obtenido
                 except StaleElementReferenceException:
-                    print(f"Stale element at index {i}, retrying {retries+1}/3")
+                    print(f"Stale element en {i}, reintento {retries+1}/3")
                     retries += 1
                 except Exception as e:
                     print(f"Error al capturar data-value y href: {e}")
@@ -990,37 +990,32 @@ def extract_all_drivers(driver):
     all_drivers_data = []
     drivers_page_url="https://www.formula1.com/en/drivers"
 
-    # Navegar a la página de todos los pilotos
     driver.get(drivers_page_url)
     time.sleep(3)
     aceptar_cookies(driver)
     time.sleep(3)
 
-    # Esperar que los elementos se carguen
+    # Esperamos
     wait = WebDriverWait(driver, 10)
     driver_links = wait.until(EC.presence_of_all_elements_located((By.CSS_SELECTOR, 'a.outline.outline-offset-4.outline-brand-black.group')))
 
-    # Iterar sobre cada piloto y extraer los datos
+    # Iteramos por cada piloto
     for i in range(len(driver_links)):
         try:
-            # Navegar de nuevo a la página de la lista de pilotos
+            # Volvemos atrás
             driver.get(drivers_page_url)
             time.sleep(3)
-            
-            # Volver a encontrar los enlaces en cada iteración
+            # Volvemos a iterar
             driver_links = driver.find_elements(By.CSS_SELECTOR, 'a.outline.outline-offset-4.outline-brand-black.group.outline-0')
-            
-            # Obtener el enlace actual
+            # Obtenemos el enlace actual
             link = driver_links[i]
             
-            # Navegar a la página del piloto
             driver.get(link.get_attribute('href'))
             time.sleep(3)
-            
-            # Recoger los datos del piloto
+            # Recogemos los datos de los pilotos
             driver_data = get_driver_details(driver)
             if driver_data:
-                all_drivers_data.extend(driver_data)  # Añadir a la lista de datos
+                all_drivers_data.extend(driver_data)
         except Exception as e:
             print(f"Error al procesar el enlace de piloto: {e}")
 
@@ -1033,34 +1028,34 @@ def get_driver_details(driver):
     driver_data = []
     wait = WebDriverWait(driver, 10)
     try:
-        # Obtener el nombre del piloto
+        # Obtenemos el nombre del piloto
         driver_name = driver.find_element(By.CSS_SELECTOR, 'h1.f1-heading').text
 
         dl_element = wait.until(EC.presence_of_element_located((By.CSS_SELECTOR, 'div.f1-dl')))
 
-        # Capturar todos los <dt> y <dd> dentro del <dl>
+        # Capturamos todos los dt y dd
         driver_stats = dl_element.find_elements(By.TAG_NAME, 'dt')
         stats_values = dl_element.find_elements(By.TAG_NAME, 'dd')
 
-        # Asegurarse de que ambos elementos coinciden en longitud
+        # Comparamos la longitud de los elementos
         if len(driver_stats) == len(stats_values):
             stats_dict = {driver_stats[i].text: stats_values[i].text for i in range(len(driver_stats))}
         else:
             print("Error: La cantidad de etiquetas <dt> y <dd> no coincide")
 
 
-        # Obtener las imágenes (perfil y casco)
+        # Obtenemos las imágenes
         try:
             profile_img = driver.find_element(By.CSS_SELECTOR, 'img.f1-c-image').get_attribute('src')
         except NoSuchElementException:
-            profile_img = None  # Asignar None si no se encuentra la imagen
+            profile_img = None  # None si no se encuentra
 
         try:
             helmet_img = driver.find_element(By.CSS_SELECTOR, 'img.f1-c-image.w-full.h-full.object-cover').get_attribute('src')
         except NoSuchElementException:
-            helmet_img = None  # Asignar None si no se encuentra la imagen
+            helmet_img = None
 
-        # Agregar todos los datos a un diccionario
+        # Diccionario de los datos
         driver_data.append({
             'name': driver_name,
             'team': stats_dict.get('Team'),
@@ -1255,31 +1250,31 @@ def main():
     if driver is None:
         return
 
-    #year_urls = get_year_urls(driver)
+    year_urls = get_year_urls(driver)
 
-    #sections = {
-        #'race_result': ['year','race','position', 'number', 'driver', 'car', 'laps', 'time', 'points'],
-        #'fastest_laps': ['year','race','position', 'number', 'driver', 'car', 'lap', 'time_of_day', 'time', 'avg_speed'],
-        #'pit_stop_summary': ['year','race','stops', 'number', 'driver', 'car', 'lap', 'time_of_day', 'time', 'total'],
-        #'starting_grid': ['year','race','position', 'number', 'driver', 'car', 'time'],
-        #'qualifying': ['year','race','position', 'number', 'driver', 'car', 'q1', 'q2', 'q3', 'time', 'laps'],
-        #'practice_3': ['year','race','position', 'number', 'driver', 'car', 'time', 'gap', 'laps'],
-        #'practice_2': ['year','race','position', 'number', 'driver', 'car', 'time', 'gap', 'laps'],
-        #'practice_1': ['year','race','position', 'number', 'driver', 'car', 'time', 'gap', 'laps'],
-        #'warm_up': ['year','race','position', 'number', 'driver', 'car', 'time', 'gap', 'laps'],
-        #'overall_qualifying': ['year','race','position', 'number', 'driver', 'car', 'time', 'laps'],
-        #'qualifying_2': ['year','race','position', 'number', 'driver', 'car', 'time','laps'],
-        #'qualifying_1': ['year','race','position', 'number', 'driver', 'car','time', 'laps']
-    #}
+    sections = {
+        'race_result': ['year','race','position', 'number', 'driver', 'car', 'laps', 'time', 'points'],
+        'fastest_laps': ['year','race','position', 'number', 'driver', 'car', 'lap', 'time_of_day', 'time', 'avg_speed'],
+        'pit_stop_summary': ['year','race','stops', 'number', 'driver', 'car', 'lap', 'time_of_day', 'time', 'total'],
+        'starting_grid': ['year','race','position', 'number', 'driver', 'car', 'time'],
+        'qualifying': ['year','race','position', 'number', 'driver', 'car', 'q1', 'q2', 'q3', 'time', 'laps'],
+        'practice_3': ['year','race','position', 'number', 'driver', 'car', 'time', 'gap', 'laps'],
+        'practice_2': ['year','race','position', 'number', 'driver', 'car', 'time', 'gap', 'laps'],
+        'practice_1': ['year','race','position', 'number', 'driver', 'car', 'time', 'gap', 'laps'],
+        'warm_up': ['year','race','position', 'number', 'driver', 'car', 'time', 'gap', 'laps'],
+        'overall_qualifying': ['year','race','position', 'number', 'driver', 'car', 'time', 'laps'],
+        'qualifying_2': ['year','race','position', 'number', 'driver', 'car', 'time','laps'],
+        'qualifying_1': ['year','race','position', 'number', 'driver', 'car','time', 'laps']
+    }
 
-    #all_data = {section: [] for section in sections}
-    #all_data_drivers = []
-    #all_data_teams = []
+    all_data = {section: [] for section in sections}
+    all_data_drivers = []
+    all_data_teams = []
 
-    #extract_all_drivers(driver)
-    #extract_all_history_drivers(driver)
+    extract_all_drivers(driver)
+    extract_all_history_drivers(driver)
     extract_all_teams(driver)
-    """
+    
     for year_url in year_urls:
         year = year_url.split('/')[-2]
         print(f"Extrayendo datos del año {year}")
@@ -1379,7 +1374,7 @@ def main():
     for section_name, data in all_data.items():
         if data:
             save_to_csv(data, f'./data/raw/f1_{section_name}.csv', sections[section_name])
-    """
+    
     driver.quit()
 
 if __name__ == '__main__':
